@@ -1,0 +1,156 @@
+Phase 11 Step 5 -- Final Training Dataset Report
+=================================================================
+
+Output  : data/processed/final_training_dataset.csv
+Script  : data/prepare_training_dataset.py
+Created : 2026-08-25 17:03:12
+
+-----------------------------------------------------------------
+ROW COUNTS
+-----------------------------------------------------------------
+  Total rows                 : 1818
+  Positive samples (flood=1) : 909
+  Negative samples (flood=0) : 909
+  Class balance              : 50.0% positive / 50.0% negative
+
+-----------------------------------------------------------------
+ROWS PER STATE
+-----------------------------------------------------------------
+  Kerala               : 1204
+  Tamil Nadu           : 374
+  Uttarakhand          : 240
+
+-----------------------------------------------------------------
+FINAL FEATURE COLUMNS  (28 total)
+-----------------------------------------------------------------
+  01. event_id
+  02. date
+  03. year
+  04. state
+  05. district
+  06. latitude
+  07. longitude
+  08. coordinate_precision
+  09. sample_type
+  10. flood_occurred
+  11. rain_1h_mm
+  12. rain_3h_mm
+  13. rain_6h_mm
+  14. rain_12h_mm
+  15. rain_24h_mm
+  16. temperature_c
+  17. humidity_percent
+  18. soil_moisture_m3m3
+  19. elevation_m
+  20. slope_deg
+  21. local_relief_m
+  22. nearest_landslide_km
+  23. landslide_count_5km
+  24. landslide_count_10km
+  25. landslide_count_25km
+  26. terrain_status
+  27. terrain_error
+  28. retrieval_status
+
+-----------------------------------------------------------------
+MISSING VALUES PER FEATURE
+-----------------------------------------------------------------
+  rain_1h_mm                     : 0 (0.0%)
+  rain_3h_mm                     : 0 (0.0%)
+  rain_6h_mm                     : 0 (0.0%)
+  rain_12h_mm                    : 0 (0.0%)
+  rain_24h_mm                    : 0 (0.0%)
+  temperature_c                  : 0 (0.0%)
+  humidity_percent               : 0 (0.0%)
+  soil_moisture_m3m3             : 0 (0.0%)
+  elevation_m                    : 0 (0.0%)
+  slope_deg                      : 146 (8.0%)
+  local_relief_m                 : 146 (8.0%)
+  nearest_landslide_km           : 1444 (79.4%)
+  landslide_count_5km            : 1444 (79.4%)
+  landslide_count_10km           : 1444 (79.4%)
+  landslide_count_25km           : 1444 (79.4%)
+
+-----------------------------------------------------------------
+DUPLICATE ROWS
+-----------------------------------------------------------------
+  Exact duplicate rows       : 0
+  Duplicate event_id values  : 0
+
+-----------------------------------------------------------------
+COORDINATE PRECISION SUMMARY
+-----------------------------------------------------------------
+  district             : 1818 rows
+
+-----------------------------------------------------------------
+TERRAIN RETRIEVAL  (NASA SRTM GL1 via OpenTopography)
+-----------------------------------------------------------------
+  Unique (lat,lon) pairs     : 60
+  Terrain success (rows)     : 1672
+  Terrain failed/null (rows) : 146
+  elevation_m missing        : 0 (0.0%)
+  slope_deg missing          : 146 (8.0%)
+  local_relief_m missing     : 146 (8.0%)
+  Cache file                 : data/terrain_cache.json
+
+-----------------------------------------------------------------
+LANDSLIDE FEATURE COVERAGE  (GSI Tamil Nadu Inventory)
+-----------------------------------------------------------------
+  Inventory records          : 1361
+  States covered             : Tamil Nadu only
+  Tamil Nadu rows in dataset : 374
+  Rows with landslide data   : 374 / 1818  (20.6%)
+  Kerala rows                : no coverage -- GSI TN inventory only
+  Uttarakhand rows           : no coverage -- GSI TN inventory only
+  nearest_landslide_km miss  : 1444 (79.4%)
+  landslide_count_5km miss   : 1444 (79.4%)
+  landslide_count_10km miss  : 1444 (79.4%)
+  landslide_count_25km miss  : 1444 (79.4%)
+
+-----------------------------------------------------------------
+NOTES
+-----------------------------------------------------------------
+  1. Terrain values are static per district centroid.
+     All 1818 rows sharing a centroid get identical terrain values.
+  2. Landslide proximity is NULL for Kerala and Uttarakhand because
+     the only available inventory (GSI) covers Tamil Nadu only.
+     These four columns should be treated as optional features in
+     the ML model (present for TN, absent for KL/UK).
+  3. No values were fabricated or synthesised.
+  4. Positive and negative source CSVs were NOT modified.
+  5. Phase 10 code was NOT modified.
+  6. ML training has NOT been performed.
+
+-----------------------------------------------------------------
+TERRAIN RESUME ATTEMPT (this run) -- data/resume_terrain_completion.py
+-----------------------------------------------------------------
+  Prior state    : 24 coordinates (170 rows) cached as "partial"
+                   (elevation_m present, slope_deg/local_relief_m
+                   missing) after a previous OpenTopography
+                   50-calls/24hr quota exhaustion.
+  Action taken   : Re-used terrain_cache.json and prepare_training_
+                   dataset.py's compute_terrain() logic. Fetched
+                   ONLY the GeoTIFF (1 API call) for each of the 24
+                   still-incomplete coordinates; success rows and
+                   cached elevation_m values were left untouched.
+  Result         : 1 of 24 coordinates completed successfully
+                   (30.465818,78.483735 -> slope=41.77deg,
+                   relief=869.0m) before the API again returned the
+                   rate-limit error below. Cache now: 37 success,
+                   23 partial (was 36 success, 24 partial).
+  Exact API error: HTTP 401
+                   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+                   <error>Error: API maximum rate limit reached.
+                   (50 API calls/24hrs)</error>
+  Coordinates remaining : 23 unique coordinates (146 rows) still
+                   missing slope_deg / local_relief_m.
+  Per task instructions: run STOPPED immediately on this error.
+                   No substitute data source was used and no values
+                   were fabricated or estimated for the remaining
+                   23 coordinates.
+  Next step      : Re-run data/resume_terrain_completion.py (which
+                   reuses this same cache and skips all completed
+                   coordinates) after the OpenTopography 24-hour
+                   quota window resets, then re-run
+                   data/prepare_training_dataset.py to refresh this
+                   file with zero additional API calls.

@@ -1,0 +1,36 @@
+FLASH FLOOD ML MODEL V1
+=======================
+
+Total samples: 1818
+Training samples: 1646
+Test samples: 172
+Features: 9
+
+Logistic Regression
+-------------------
+Accuracy: 0.6628
+Precision: 0.7188
+Recall: 0.5349
+F1: 0.6133
+ROC-AUC: 0.6855
+Confusion Matrix: [[68, 18], [40, 46]]
+
+Random Forest
+-------------
+Accuracy: 0.5756
+Precision: 0.5783
+Recall: 0.5581
+F1: 0.568
+ROC-AUC: 0.6331
+Confusion Matrix: [[51, 35], [38, 48]]
+
+Gradient Boosting
+-----------------
+Accuracy: 0.5872
+Precision: 0.5949
+Recall: 0.5465
+F1: 0.5697
+ROC-AUC: 0.6374
+Confusion Matrix: [[54, 32], [39, 47]]
+
+Best model: Logistic Regression

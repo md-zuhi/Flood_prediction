@@ -1,0 +1,8 @@
+Phase 11 — Training Data
+
+Place labelled flash flood event CSV files here.
+Format (to be defined in a later sub-phase):
+
+  location, date, rain_1h_mm, ..., flood_occurred (0/1)
+
+DO NOT place raw HDF5 or GeoTIFF files here.

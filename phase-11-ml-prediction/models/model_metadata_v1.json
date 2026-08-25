@@ -1,0 +1,36 @@
+{
+    "version": "v1",
+    "model_name": "Logistic Regression",
+    "features": [
+        "rain_1h_mm",
+        "rain_3h_mm",
+        "rain_6h_mm",
+        "rain_12h_mm",
+        "rain_24h_mm",
+        "temperature_c",
+        "humidity_percent",
+        "soil_moisture_m3m3",
+        "elevation_m"
+    ],
+    "target": "flood_occurred",
+    "group_split": "district",
+    "training_samples": 1646,
+    "test_samples": 172,
+    "metrics": {
+        "accuracy": 0.6628,
+        "precision": 0.7188,
+        "recall": 0.5349,
+        "f1": 0.6133,
+        "roc_auc": 0.6855,
+        "confusion_matrix": [
+            [
+                68,
+                18
+            ],
+            [
+                40,
+                46
+            ]
+        ]
+    }
+}

@@ -1,0 +1,920 @@
+event_id,date,year,state,district,location,latitude,longitude,event_type,flood_occurred,source
+PH11-00001,1968-07-01,1968,Kerala,"Kasaragod, Wayanad, Kozhikode, Malappuram, Palakkad, Thrissur, Idukki, Ernakulam, Alappuzha, Kottayam, Pathanamthitta, Kollam, Thiruvananthapuram, Kannur, Churu, Jhunjhunun, Jaisalmer, Sikar, Alwar, Jaipur, Jodhpur, Bharatpur, Nagaur, Dausa, Karauli, Dholpur, Barmer, Sawai Madhopur, Tonk, Pali, Bhilwara, Jalore, Bundi, Kota, Sirohi, Baran, Udaipur, Jhalawar, Dungarpur, Banswara, Ajmer, Rajsamand, Chittorgarh, Ganganagar, Hanumangarh, Bikaner, Pratapgarh, Jhajjar, Gurugram, Faridabad, Mahendragarh, Rewari, Nuh, Palwal, Charki Dadri, Yamunanagar, Kurukshetra, Kaithal, Sirsa, Karnal, Jind, Fatehabad, Hisar, Panipat, Sonipat, Bhiwani, Rohtak, Panchkula, Ambala, Pashchim Champaran, Purbi Champaran, Sitamarhi, Sheohar, Gopalganj, Samastipur, Katihar, Khagaria, Bhojpur, Buxar, Darbhanga, Saharsa, Kaimur (Bhabua), Rohtas, Jamui, Banka, Nawada, Gaya, Munger, Vaishali, Begusarai, Bhagalpur, Lakhisarai, Sheikhpura, Arwal, Jehanabad, Nalanda, Patna, Saran, Siwan, Muzaffarpur, Madhepura, Araria, Supaul, Madhubani, Purnia, Kishanganj, Aurangabad, Amroha, Hapur, Bareilly, Pilibhit, Bulandshahr, Gautam Buddha Nagar, Kheri, Budaun, Bahraich, Shahjahanpur, Aligarh, Kasganj, Mathura, SShrawasti, Sitapur, Hathras, Etah, Hardoi, Farrukhabad, Firozabad, Siddharthnagar, Mainpuri, Mahrajganj, Agra, Gonda, Bara Banki, Kushinagar, Kannauj, Lucknow, Basti, Gorakhpur, Sant Kabir Nagar, Unnao, Etawah, Kanpur nagar Nagar, Auraiya, Ayodhya, Kanpur nagar Dehat, Deoria, Sultanpur, Ambedkar Nagar, Rae Bareli, Jalaun, Azamgarh, Mau, Fatehpur, Ballia, Jaunpur, Jhansi, Banda, Ghazipurr, Kaushambi, Prayagraj, Varanasi, Chitrakoot, Chandauli, Bhadohi, Mirzapur, Lalitpur, Sonbhadra, Amethi, Ghaziabad, Sambhal, Mahoba, Saharanpur, Bijnor, Muzaffarnagar, Baghpat, Meerut, Moradabad, Rampur, Shamli, Balrampur, Hamirpur, Pratapgarh",,,,floods,1,IMD
+PH11-00002,1969-07-15,1969,Kerala,"Beedar, Kalaburagi, Belagavi, Yadgir, Bagalkotee, Raichur, Koppal, Gadag, Ballari, Dharwad, Uttar Kashia Kannada, Haveri, Chitradurga, Davangere, Shivamogga, Udupi, Chikkamagaluru, Chikkaballapura, Hassan, Kolar, Bengaluru Rural, Dakshina Kannada, Bengaluru Urban, Kodagu, Chamarajanagaraa, Tumakuru, Ramanagara, Mandya, Mysuru, Vijayapura, Kasaragod, Wayanad, Kozhikode, Malappuram, Palakkad, Thrissur, Idukki, Ernakulam, Alappuzha, Kottayam, Pathanamthitta, Kollam, Thiruvananthapuram, Kannur",,,,floods,1,IMD
+PH11-00003,1969-10-15,1969,Tamil Nadu,Chennai,,,,heavy rains,1,IMD
+PH11-00004,1970-07-15,1970,Uttarakhand,Entire village,,,,flood,1,IMD
+PH11-00005,1970-09-11,1970,Kerala,,,,,heavy rains,1,IMD
+PH11-00006,1970-11-21,1970,Tamil Nadu,Chennai,,,,"heavy rains,floods",1,IMD
+PH11-00007,1971-05-08,1971,Kerala,Thrissur,,,,heavy rains,1,IMD
+PH11-00008,1971-06-01,1971,Kerala,"Amroha, Hapur, Bareilly, Pilibhit, Bulandshahr, Gautam Buddha Nagar, Kheri, Budaun, Bahraich, Shahjahanpur, Aligarh, Kasganj, Mathura, SShrawasti, Sitapur, Hathras, Etah, Hardoi, Farrukhabad, Firozabad, Siddharthnagar, Mainpuri, Mahrajganj, Agra, Gonda, Bara Banki, Kushinagar, Kannauj, Lucknow, Basti, Gorakhpur, Sant Kabir Nagar, Unnao, Etawah, Kanpur nagar Nagar, Auraiya, Ayodhya, Kanpur nagar Dehat, Deoria, Sultanpur, Ambedkar Nagar, Rae Bareli, Jalaun, Azamgarh, Mau, Fatehpur, Ballia, Jaunpur, Jhansi, Banda, Ghazipurr, Kaushambi, Prayagraj, Varanasi, Chitrakoot, Chandauli, Bhadohi, Mirzapur, Lalitpur, Sonbhadra, Amethi, Ghaziabad, Sambhal, Mahoba, Saharanpur, Bijnor, Muzaffarnagar, Baghpat, Meerut, Moradabad, Rampur, Shamli, Balrampur, Hamirpur, Pratapgarh, Tinsukia, Dhemaji, Dibrugarh, Lakhimpur, Sivasagar, Jorhat, Sonitpur, Golaghat, Udalguri, Chirang, Baksa, Nagaon, Kokrajhar, Darrang, Barpeta, Nalbari, Marigaon, Kamrup, Bongaigaon, Dhubri, Kamrup Metro, Goalpara, Dima Hasao, Cachar, Karimganj, Hailakandi, Charaideo, Majuli, Biswanath, Hojai, South Salmara Mancachar, Karbi Anglong, West Karbi Anglong, Pashchim Champaran, Purbi Champaran, Sitamarhi, Sheohar, Gopalganj, Samastipur, Katihar, Khagaria, Bhojpur, Buxar, Darbhanga, Saharsa, Kaimur (Bhabua), Rohtas, Jamui, Banka, Nawada, Gaya, Munger, Vaishali, Begusarai, Bhagalpur, Lakhisarai, Sheikhpura, Arwal, Jehanabad, Nalanda, Patna, Saran, Siwan, Muzaffarpur, Madhepura, Araria, Supaul, Madhubani, Purnia, Kishanganj, Aurangabad, South 24 Parganas, Darjeeling, Jalpaiguri, Dakshin Dinajpur, Maldah, Murshidabad, Birbhum, Nadia, Purba Purba Bardhaman, Purulia, Bankura, North 24 Parganas",,,,heavy rains,1,IMD
+PH11-00009,1972-05-08,1972,Kerala,,,,,heavy rains,1,IMD
+PH11-00010,1972-07-01,1972,Kerala,,,,,heavy rains,1,IMD
+PH11-00011,1974-07-22,1974,Kerala,"Kasaragod, Wayanad, Kozhikode, Malappuram, Palakkad, Thrissur, Idukki, Ernakulam, Alappuzha, Kottayam, Pathanamthitta, Kannur,Beedar, Kalaburagi, Belagavi, Yadgir, Bagalkotee, Raichur, Koppal, Gadag, Ballari, Dharwad, Uttar Kashia Kannada, Haveri, Chitradurga, Davangere, Shivamogga, Udupi, Chikkamagaluru, Chikkaballapura, Hassan, Kolar, Bengaluru Rural, Bengaluru Urban, Kodagu, Chamarajanagaraa, Tumakuru, Ramanagara, Mandya, Mysuru, Vijayapura",,,,floods,1,IMD
+PH11-00012,1975-06-15,1975,Kerala,"Kasaragod, Wayanad, Kozhikode, Malappuram, Palakkad, Thrissur, Idukki, Ernakulam, Alappuzha, Kottayam, Pathanamthitta, Kollam, Thiruvananthapuram, Kannur",,,,floods,1,IMD
+PH11-00013,1975-11-01,1975,Kerala,"Thiruvananthapuram, Kollam, Alappuzha, Kottayam, Thrissur",,,,heavy rains,1,IMD
+PH11-00014,1975-11-21,1975,Tamil Nadu,"Thanjavur, Chennai, Chengalpattu",,,,heavy rains,1,IMD
+PH11-00015,1976-07-22,1976,Kerala,"Thiruvananthapuram, Kottayam, Ernakulam, Kozhikode,Thrissur",,,,heavy rains,1,IMD
+PH11-00016,1976-05-11,1976,Tamil Nadu,,,,,heavy rains,1,IMD
+PH11-00017,1976-10-08,1976,Tamil Nadu,"Chennai, The Nilgiris, Coimbatore",,,,floods,1,IMD
+PH11-00018,1976-11-15,1976,Tamil Nadu,Coimbatore,,,,"heavy rains,floods",1,IMD
+PH11-00019,1978-11-01,1978,Kerala,"Thiruvananthapuram, Kollam, Alappuzha, Thrissur, Kannur,Malappuram",,,,severe,1,IMD
+PH11-00020,1978-04-01,1978,Tamil Nadu,The Nilgiris,,,,moderate,1,IMD
+PH11-00021,1978-11-01,1978,Tamil Nadu,"Coimbatore, Erode, Salem,Thanjavur, The Nilgiris",,,,moderate to severe,1,IMD
+PH11-00022,1978-11-22,1978,Tamil Nadu,The Nilgiris,,,,severe,1,IMD
+PH11-00023,1978-12-22,1978,Tamil Nadu,"Chennai, Ramanathapuram",,,,moderate to severe,1,IMD
+PH11-00024,1979-06-10,1979,Kerala,Alappuzha,,,,heavy rains,1,IMD
+PH11-00025,1979-06-14,1979,Kerala,Ernakulam,,,,heavy rains,1,IMD
+PH11-00026,1979-07-02,1979,Kerala,Kannur,,,,heavy rains,1,IMD
+PH11-00027,1979-07-29,1979,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00028,1979-08-01,1979,Kerala,"Kannur,Kozhikode",,,,heavy rains,1,IMD
+PH11-00029,1979-08-06,1979,Kerala,Kannur,,,,heavy rains,1,IMD
+PH11-00030,1979-11-15,1979,Kerala,Palakkad,,,,moderate floods,1,IMD
+PH11-00031,1979-11-17,1979,Tamil Nadu,Coimbatore,,,,heavy rains,1,IMD
+PH11-00032,1979-05-12,1979,Tamil Nadu,Chennai,,,,heavy rains,1,IMD
+PH11-00033,1979-11-13,1979,Tamil Nadu,Madurai,,,,severe floods,1,IMD
+PH11-00034,1979-11-22,1979,Tamil Nadu,Pudukkottai,,,,heavy rains,1,IMD
+PH11-00035,1979-11-19,1979,Tamil Nadu,Ramanathapuram,,,,heavy rains,1,IMD
+PH11-00036,1979-11-13,1979,Tamil Nadu,Cuddalore,,,,heavy rains,1,IMD
+PH11-00037,1979-07-23,1979,Tamil Nadu,Thanjavur,,,,heavy rains,1,IMD
+PH11-00038,1979-11-13,1979,Tamil Nadu,The Nilgiris,,,,heavy rains,1,IMD
+PH11-00039,1979-11-13,1979,Tamil Nadu,Tiruchirappalli,,,,"heavy rains,moderate floods",1,IMD
+PH11-00040,1979-11-12,1979,Tamil Nadu,Tirunelveli,,,,severe floods,1,IMD
+PH11-00041,1979-03-09,1979,Uttarakhand,Chamoli,,,,heavy rains,1,IMD
+PH11-00042,1979-07-08,1979,Uttarakhand,"Azamgarh, Bahraich, Ballia, Bara Banki, Basti, Chamoli, Dehradun, Deoria, Ayodhya, Gonda, Gorakhpur, Kheri,Sitapur",,,,severe floods,1,IMD
+PH11-00043,1980-06-15,1980,Kerala,"Kannur, Malappuram, Kozhikode, Kollam,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00044,1980-06-22,1980,Kerala,Palakkad,,,,heavy rains,1,IMD
+PH11-00045,1980-07-01,1980,Kerala,"Alappuzha,Kannur, Kottayam, Kozhikode, Malappuram, Palakkad,Thrissur",,,,heavy rains,1,IMD
+PH11-00046,1980-08-22,1980,Kerala,"Alappuzha, Kozhikode, Kollam, Thrissur,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00047,1980-09-22,1980,Kerala,Kottayam,,,,heavy rains,1,IMD
+PH11-00048,1980-10-01,1980,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00049,1980-07-01,1980,Tamil Nadu,Coimbatore,,,,moderate floods,1,IMD
+PH11-00050,1980-11-12,1980,Tamil Nadu,Chengalpattu,,,,flash floods,1,IMD
+PH11-00051,1980-11-15,1980,Tamil Nadu,Chennai,,,,heavy rains,1,IMD
+PH11-00052,1980-06-25,1980,Uttarakhand,Uttar Kashi Kashi,,,,heavy rains,1,IMD
+PH11-00053,1980-07-08,1980,Uttarakhand,"Chamoli, Tehri Garhwal , Uttar Kashi Kashi, Ballia, Pratapgarh, Dehradun",,,,"modern floods, flash floods, heavy rains",1,IMD
+PH11-00054,1980-07-15,1980,Uttarakhand,"Bahraich, Ballia, Bara Banki, Bareilly,Basti, Bulandshahr, Deoria, Fatehpur, Gonda, Gorakhpur, Hamirpur, Hardoi, Jaunpur, Lucknow, Nainital, Pilibhit, Shahjahanpur, Saharanpur, Sitapur,Rae Bareli, Uttar Kashi Kashi",,,,severe floods,1,IMD
+PH11-00055,1980-08-01,1980,Uttarakhand,"Prayagraj,Azamgarh, Bahraich,Ballia, Bara Banki, Basti, Budaun, Bulandshahr, Dehradun, Deoria, Etah, Etawah, Ayodhya, Farrukhabad, Fatehpur, Garhwal, Gonda, Gorakhpur, Hamirpur, Jaunpur, Kanpur nagar Nagar,Kanpur nagar Dehat, Kheri, Lucknow, Mainpuri, Mathura, Mirzapur, Moradabad, Muzaffarnagar, Pilibhit, Pithoragarh, Pratapgarh,Saharanpur, Sitapur, Sultanpur, Unnao, Uttar Kashi Kashi, Varanasi",,,,severe floods,1,IMD
+PH11-00056,1981-06-01,1981,Kerala,"Kozhikode, Malappuram, Ernakulam, Thrissur, Kollam, Kottayam, Alappuzha,Kannur",,,,moderate floods,1,IMD
+PH11-00057,1981-06-08,1981,Kerala,"Malappuram, Kollam, Thrissur,Kozhikode",,,,heavy rains,1,IMD
+PH11-00058,1981-06-14,1981,Kerala,Alappuzha,,,,flash floods,1,IMD
+PH11-00059,1981-07-27,1981,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00060,1981-08-17,1981,Kerala,Kozhikode,,,,continuous heavy rains,1,IMD
+PH11-00061,1981-09-15,1981,Kerala,Alappuzha,,,,heavy rains,1,IMD
+PH11-00062,1981-09-11,1981,Tamil Nadu,Vellore,,,,palar river in floods,1,IMD
+PH11-00063,1981-07-01,1981,Uttarakhand,"Mathura, Mainpuri, Aligarh, Pratapgarh, Sultanpur, Agra, Farrukhabad, Ballia, Gorakhpur, Bahraich, Azamgarh, Bara Banki,Chamoli",,,,"rivers gomti, ghagra,tapti in floods",1,IMD
+PH11-00064,1982-07-30,1982,Kerala,Kannur,,,,moderate (streams from cape comorin) ...,1,IMD
+PH11-00065,1982-08-01,1982,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00066,1982-08-13,1982,Tamil Nadu,"Viluppuram, Cuddalore",,,,flash flood(tambraparni river),1,IMD
+PH11-00067,1982-04-15,1982,Uttarakhand,"Dehradun, Almora",,,,heavy rains (unseasonal),1,IMD
+PH11-00068,1982-08-08,1982,Uttarakhand,Chamoli,,,,flash floods in a nullah,1,IMD
+PH11-00069,1982-08-22,1982,Uttarakhand,"Bahraich, Gonda, Basti, Gorakhpur, Deoria, Ballia, Azamgarh, Ayodhya, Sultanpur, Jaunpur, Ghazipurr, Varanasi, Mirzapur, Prayagraj, Almora, Pithoragarh, Shahjahanpur, Gautam Buddha Nagar, Ghaziabad, Hapur, Baghpat, Muzaffarnagar, Shamli, Rampur, Amroha, Sambhal, Bareilly, Pilibhit, Shahjahanpur, Agra, Firozabad, Mainpuri, Mathura, Etah, Hathras, Kasganj, Etawah, Auraiya, Farrukhabad",,,,"severe(ganga, yamuna,their tributaries, ghagra, rapti, gomti,burhi-gandak,betwa) )",1,IMD
+PH11-00070,1983-07-23,1983,Kerala,Malappuram,,,,heavy rains,1,IMD
+PH11-00071,1983-08-10,1983,Kerala,Ernakulam,,,,incessant rains,1,IMD
+PH11-00072,1983-11-02,1983,Kerala,Palakkad,,,,heavy rains,1,IMD
+PH11-00073,1983-09-07,1983,Tamil Nadu,Vellore,,,,"severe(flash flooding in palar,mahakamanta)",1,IMD
+PH11-00074,1983-12-21,1983,Tamil Nadu,"Pudukkottai, Ramanathapuram,  Viluppuram, Cuddalore, Thanjavur,Tiruchirappalli",,,,heavy rains,1,IMD
+PH11-00075,1983-07-22,1983,Uttarakhand,Almora,,,,heavy rains,1,IMD
+PH11-00076,1984-04-23,1984,Kerala,Malappuram,,,,severe,1,IMD
+PH11-00077,1984-06-15,1984,Kerala,"Kottayam, Wayanad",,,,heavy rains,1,IMD
+PH11-00078,1984-06-16,1984,Kerala,"Kozhikode, Palakkad",,,,heavy rains,1,IMD
+PH11-00079,1984-06-17,1984,Kerala,"Alappuzha,Kannur, Malappuram",,,,heavy rains,1,IMD
+PH11-00080,1984-06-17,1984,Kerala,Ernakulam,,,,heavy rains,1,IMD
+PH11-00081,1984-06-18,1984,Kerala,Alappuzha,,,,heavy rains,1,IMD
+PH11-00082,1984-07-01,1984,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00083,1984-10-05,1984,Kerala,Alappuzha,,,,heavy rains,1,IMD
+PH11-00084,1984-10-06,1984,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00085,1984-02-16,1984,Tamil Nadu,Chennai,,,,heavy rains,1,IMD
+PH11-00086,1984-03-04,1984,Tamil Nadu,Tirunelveli,,,,heavy rains,1,IMD
+PH11-00087,1984-03-04,1984,Tamil Nadu,"Madurai,Vellore",,,,severe,1,IMD
+PH11-00088,1984-03-06,1984,Tamil Nadu,Tiruchirappalli,,,,heavy rains,1,IMD
+PH11-00089,1984-04-30,1984,Tamil Nadu,Madurai,,,,heavy rains,1,IMD
+PH11-00090,1984-10-03,1984,Tamil Nadu,Coimbatore,,,,severe,1,IMD
+PH11-00091,1984-06-29,1984,Uttarakhand,Nainital,,,,heavy rains,1,IMD
+PH11-00092,1984-07-02,1984,Uttarakhand,Almora,,,,heavy rains,1,IMD
+PH11-00093,1984-07-30,1984,Uttarakhand,Nainital,,,,heavy rains,1,IMD
+PH11-00094,1985-06-15,1985,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00095,1985-06-24,1985,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00096,1985-06-25,1985,Kerala,"Alappuzha,Kannur, Kottayam, Kozhikode, Palakkad,Thrissur",,,,heavy rains,1,IMD
+PH11-00097,1985-07-14,1985,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00098,1985-11-01,1985,Tamil Nadu,"Thiruvallur, Chennai, Krishnagiri, Tiruvannamalai, Dharmapuri, Salem, Erode, The Nilgiris, Namakkal, Perambalur, Coimbatore, Tiruchirappalli, Ariyalur, Tiruppur, Thanjavur, Karur, Thiruvarur, Dindigul, Madurai, Theni, Virudhunagar, Thoothukkudi, Kanniyakumariumari, Viluppuram, Cuddalore, Pudukkottai, Sivaganga, Ramanathapuram, Nagapattinam, Kallakurichi, Tenkasi, Tirunelveli, Vellore, Ranipet, Tirupathur, Kancheepuram, Chengalpattu",,,,severe,1,IMD
+PH11-00099,1985-07-22,1985,Uttarakhand,Garhwal,,,,flash floods,1,IMD
+PH11-00100,1985-08-08,1985,Uttarakhand,"Ballia, Deoria, Ghazipurr, Moradabad, Nainital",,,,severe,1,IMD
+PH11-00101,1985-10-22,1985,Uttarakhand,Garhwal,,,,heavy rains,1,IMD
+PH11-00102,1986-05-04,1986,Kerala,"Kozhikode,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00103,1986-03-12,1986,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00104,1986-06-18,1986,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00105,1986-06-24,1986,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00106,1986-08-01,1986,Kerala,"Alappuzha,Kannur, Ernakulam, Idukki, Kottayam,Kollam",,,,severe,1,IMD
+PH11-00107,1986-11-03,1986,Tamil Nadu,Tiruchirappalli,,,,flash floods,1,IMD
+PH11-00108,1986-11-05,1986,Tamil Nadu,"Chengalpattu, Chennai, Cuddalore, Kallakurichi, Viluppuram, Tiruchirappalli",,,,heavy rains,1,IMD
+PH11-00109,1987-06-18,1987,Kerala,Ernakulam,,,,heavy rains,1,IMD
+PH11-00110,1987-10-13,1987,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00111,1987-11-09,1987,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00112,1987-12-01,1987,Kerala,Thrissur,,,,heavy rains,1,IMD
+PH11-00113,1987-12-05,1987,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00114,1987-12-17,1987,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00115,1987-12-06,1987,Tamil Nadu,"Pudukkottai, Thanjavur, Tiruchirappalli",,,,heavy rains,1,IMD
+PH11-00116,1988-04-17,1988,Kerala,Ernakulam,,,,heavy rains,1,IMD
+PH11-00117,1988-06-05,1988,Kerala,Malappuram,,,,heavy rains,1,IMD
+PH11-00118,1988-07-18,1988,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00119,1988-07-21,1988,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00120,1988-07-23,1988,Kerala,Kannur,,,,heavy rains,1,IMD
+PH11-00121,1988-08-25,1988,Kerala,Malappuram,,,,heavy rains,1,IMD
+PH11-00122,1988-09-15,1988,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00123,1988-09-22,1988,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00124,1988-11-06,1988,Tamil Nadu,Chennai,,,,heavy rains,1,IMD
+PH11-00125,1989-06-08,1989,Kerala,"Alappuzha,Thrissur",,,,heavy rains,1,IMD
+PH11-00126,1989-06-09,1989,Kerala,Kasaragod,,,,heavy rains,1,IMD
+PH11-00127,1989-06-11,1989,Kerala,Kasaragod,,,,heavy rains,1,IMD
+PH11-00128,1989-06-11,1989,Kerala,"Idukki,Kottayam",,,,heavy rains,1,IMD
+PH11-00129,1989-07-16,1989,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00130,1989-07-18,1989,Kerala,Pathanamthitta,,,,heavy rains,1,IMD
+PH11-00131,1989-07-21,1989,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00132,1989-07-21,1989,Kerala,"Alappuzha, Ernakulam, Idukki, Kozhikode, Malappuram,Palakkad",,,,heavy rains,1,IMD
+PH11-00133,1989-06-19,1989,Tamil Nadu,Chennai,,,,heavy rains,1,IMD
+PH11-00134,1989-07-22,1989,Tamil Nadu,"Coimbatore, The Nilgiris",,,,heavy rains,1,IMD
+PH11-00135,1990-05-26,1990,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00136,1990-07-03,1990,Kerala,"Kannur,Kozhikode",,,,heavy rains,1,IMD
+PH11-00137,1990-11-03,1990,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00138,1990-07-09,1990,Uttarakhand,Garhwal,,,,heavy rains,1,IMD
+PH11-00139,1990-10-18,1990,Tamil Nadu,"Chennai,The Nilgiris",,,,heavy rains,1,IMD
+PH11-00140,1991-03-09,1991,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00141,1991-05-21,1991,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00142,1991-06-03,1991,Kerala,Ernakulam,,,,heavy rains,1,IMD
+PH11-00143,1991-06-06,1991,Kerala,"Alappuzha, Idukki, Kasaragod, Kollam, Kottayam, Kozhikode, Palakkad, Pathanamthitta, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00144,1991-06-09,1991,Kerala,"Alappuzha,Kozhikode",,,,heavy rains,1,IMD
+PH11-00145,1991-06-19,1991,Kerala,"Ernakulam,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00146,1991-07-07,1991,Kerala,"Kannur, Kollam, Palakkad,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00147,1991-10-20,1991,Tamil Nadu,"Thiruvallur, Chennai, Krishnagiri, Tiruvannamalai, Dharmapuri, Salem, Erode, The Nilgiris, Namakkal, Perambalur, Coimbatore, Tiruchirappalli, Ariyalur, Tiruppur, Thanjavur, Karur, Thiruvarur, Dindigul, Madurai, Theni, Virudhunagar, Thoothukkudi, Kanniyakumariumari, Viluppuram, Cuddalore, Pudukkottai, Sivaganga, Ramanathapuram, Nagapattinam, Kallakurichi, Tenkasi, Tirunelveli, Vellore, Ranipet, Tirupathur, Kancheepuram, Chengalpattu",,,,heavy rains,1,IMD
+PH11-00148,1991-08-15,1991,Uttarakhand,Chamoli,,,,heavy rains,1,IMD
+PH11-00149,1991-08-16,1991,Uttarakhand,Almora,,,,heavy rains,1,IMD
+PH11-00150,1991-08-18,1991,Uttarakhand,Tehri Garhwal,,,,heavy rains,1,IMD
+PH11-00151,1992-05-18,1992,Kerala,"Alappuzha,Ernakulam",,,,heavy rains,1,IMD
+PH11-00152,1992-06-08,1992,Kerala,"Kasaragod, Wayanad, Kozhikode, Malappuram, Palakkad, Thrissur, Idukki, Ernakulam, Alappuzha, Kottayam, Pathanamthitta, Kollam, Thiruvananthapuram, Kannur",,,,heavy rains,1,IMD
+PH11-00153,1992-07-02,1992,Kerala,"Kasaragod, Wayanad, Kozhikode, Malappuram, Palakkad, Thrissur, Idukki, Ernakulam, Alappuzha, Kottayam, Pathanamthitta, Kollam, Thiruvananthapuram, Kannur",,,,heavy rains,1,IMD
+PH11-00154,1992-07-16,1992,Kerala,"Alappuzha,Kollam",,,,heavy rains,1,IMD
+PH11-00155,1992-07-27,1992,Kerala,Ernakulam,,,,heavy rains,1,IMD
+PH11-00156,1992-07-28,1992,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00157,1992-07-31,1992,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00158,1992-08-02,1992,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00159,1992-08-08,1992,Kerala,"Kollam,Kozhikode",,,,heavy rains,1,IMD
+PH11-00160,1992-10-10,1992,Kerala,"Alappuzha, Kollam, Pathanamthitta,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00161,1992-10-09,1992,Tamil Nadu,Kanniyakumariumari,,,,heavy rains,1,IMD
+PH11-00162,1993-06-01,1993,Kerala,"Alappuzha, Ernakulam, Idukki,  Kollam, Pathanamthitta, Thiruvananthapuram,Thrissur",,,,heavy rains,1,IMD
+PH11-00163,1993-06-13,1993,Kerala,Alappuzha,,,,heavy rains,1,IMD
+PH11-00164,1993-06-18,1993,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00165,1993-07-03,1993,Kerala,Kottayam,,,,heavy rains,1,IMD
+PH11-00166,1993-07-18,1993,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00167,1993-07-22,1993,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00168,1993-07-26,1993,Kerala,"Kannur,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00169,1993-07-27,1993,Kerala,Malappuram,,,,heavy rains,1,IMD
+PH11-00170,1993-07-28,1993,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00171,1993-10-06,1993,Kerala,Kottayam,,,,heavy rains,1,IMD
+PH11-00172,1993-10-08,1993,Kerala,Malappuram,,,,heavy rains,1,IMD
+PH11-00173,1993-10-09,1993,Kerala,Palakkad,,,,heavy rains,1,IMD
+PH11-00174,1993-10-11,1993,Kerala,Alappuzha,,,,heavy rains,1,IMD
+PH11-00175,1993-11-10,1993,Kerala,"Idukki, Kollam,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00176,1993-08-06,1993,Tamil Nadu,Dindigul,,,,heavy rains,1,IMD
+PH11-00177,1993-11-07,1993,Tamil Nadu,"Coimbatore, The Nilgiris, Ramanathapuram,Thanjavur",,,,heavy rains,1,IMD
+PH11-00178,1994-05-28,1994,Kerala,Palakkad,,,,heavy rains,1,IMD
+PH11-00179,1994-06-01,1994,Kerala,"Alappuzha, Ernakulam, Idukki, Kasaragod, Kollam, Kottayam, Kozhikode, Malappuram, Palakkad, Pathanamthitta, Thiruvananthapuram,Thrissur",,,,severe flood,1,IMD
+PH11-00180,1994-07-11,1994,Kerala,Kasaragod,,,,heavy rains,1,IMD
+PH11-00181,1994-07-14,1994,Kerala,"Idukki,Malappuram",,,,heavy rains,1,IMD
+PH11-00182,1994-07-14,1994,Kerala,"Alappuzha, Ernakulam, Idukki, Kozhikode, Malappuram, Palakkad,Thrissur",,,,heavy rains,1,IMD
+PH11-00183,1994-07-15,1994,Kerala,"Kannur, Kozhikode, Malappuram, Thiruvananthapuram,Thrissur",,,,heavy rains,1,IMD
+PH11-00184,1994-07-23,1994,Kerala,Thrissur,,,,heavy rains,1,IMD
+PH11-00185,1994-07-31,1994,Kerala,"Kasaragod, Kollam, Kozhikode, Palakkad, Pathanamthitta,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00186,1994-08-01,1994,Kerala,"Alappuzha, Thiruvananthapuram,Thrissur",,,,heavy rains,1,IMD
+PH11-00187,1994-08-02,1994,Kerala,"Ernakulam, Idukki, Kollam, Kottayam,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00188,1994-08-03,1994,Kerala,"Alappuzha, Ernakulam, Idukki, Kannur, Kasaragod, Kollam, Kottayam, Pathanamthitta, Thiruvananthapuram,Thrissur",,,,heavy rains,1,IMD
+PH11-00189,1994-09-22,1994,Kerala,Kannur,,,,heavy rains,1,IMD
+PH11-00190,1994-10-03,1994,Kerala,"Kollam,Thiruvananthapuram",,,,heav rains,1,IMD
+PH11-00191,1994-10-11,1994,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00192,1994-10-16,1994,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00193,1994-10-24,1994,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00194,1994-07-13,1994,Tamil Nadu,Coimbatore,,,,heavy rains,1,IMD
+PH11-00195,1994-11-03,1994,Tamil Nadu,"Chennai,Madurai",,,,heavy rains,1,IMD
+PH11-00196,1994-11-07,1994,Tamil Nadu,"Dindigul, Tiruchirappalli",,,,heavy rains,1,IMD
+PH11-00197,1994-12-20,1994,Tamil Nadu,Chennai,,,,heavy rains,1,IMD
+PH11-00198,1995-03-28,1995,Kerala,Pathanamthitta,,,,heavy rains,1,IMD
+PH11-00199,1995-05-07,1995,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00200,1995-05-07,1995,Kerala,"Ernakulam, Idukki, Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00201,1995-05-07,1995,Kerala,"Alappuzha,Kottayam",,,,heavy rains,1,IMD
+PH11-00202,1995-05-07,1995,Kerala,"Kozhikode, Pathanamthitta",,,,heavy rains,1,IMD
+PH11-00203,1995-06-13,1995,Kerala,"Ernakulam, Idukki, Kasaragod, Kollam, Kottayam, Kozhikode, Malappuram,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00204,1995-06-29,1995,Kerala,Kasaragod,,,,heavy rains,1,IMD
+PH11-00205,1995-07-05,1995,Kerala,"Idukki, Kasaragod,Kozhikode",,,,heavy rains,1,IMD
+PH11-00206,1995-07-14,1995,Kerala,"Idukki, Kottayam,Malappuram",,,,heavy rains,1,IMD
+PH11-00207,1995-07-21,1995,Kerala,"Kannur, Kasaragod,Kottayam",,,,heavy rains,1,IMD
+PH11-00208,1995-08-04,1995,Kerala,Kannur,,,,heavy rains,1,IMD
+PH11-00209,1995-09-02,1995,Kerala,"Alappuzha, Idukki,Wayanad",,,,heavy rains,1,IMD
+PH11-00210,1995-10-07,1995,Kerala,"Kozhikode,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00211,1995-10-15,1995,Kerala,"Alappuzha, Kollam, Malappuram, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00212,1995-10-18,1995,Kerala,"Idukki,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00213,1995-05-06,1995,Tamil Nadu,Kanniyakumariumari,,,,heavy rains,1,IMD
+PH11-00214,1995-09-07,1995,Tamil Nadu,Kancheepuram,,,,heavy rains,1,IMD
+PH11-00215,1995-11-02,1995,Tamil Nadu,"Nagapattinam,Thanjavur",,,,heavy rains,1,IMD
+PH11-00216,1996-06-03,1996,Kerala,Kottayam,,,,heavy rains,1,IMD
+PH11-00217,1996-06-13,1996,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00218,1996-06-14,1996,Kerala,"Alappuzha, Ernakulam, Idukki, Kannur, Kasaragod, Kottayam, Kozhikode, Malappuram, Thrissur, Wayanad",,,,heavy rains,1,IMD
+PH11-00219,1996-06-16,1996,Kerala,"Kasaragod, Wayanad, Kozhikode, Malappuram, Palakkad, Thrissur, Idukki, Ernakulam, Alappuzha, Kottayam, Pathanamthitta, Kollam, Thiruvananthapuram, Kannur",,,,heavy rains,1,IMD
+PH11-00220,1996-06-17,1996,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00221,1996-06-20,1996,Kerala,"Kozhikode, Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00222,1996-07-20,1996,Kerala,"Idukki, Pathanamthitta",,,,heavy rains,1,IMD
+PH11-00223,1996-07-24,1996,Kerala,"Idukki, Kozhikode",,,,heavy rains,1,IMD
+PH11-00224,1996-08-08,1996,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00225,1996-08-12,1996,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00226,1996-08-23,1996,Kerala,Kottayam,,,,heavy rains,1,IMD
+PH11-00227,1996-09-11,1996,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00228,1996-06-14,1996,Tamil Nadu,"Chennai, Cuddalore, Coimbatore, Thanjavur",,,,heavy rains,1,IMD
+PH11-00229,1996-10-17,1996,Tamil Nadu,"Chengalpattu,Chennai, Dharmapuri, Dindigul, Kanniyakumariumari, Madurai, Nagapattinam, Salem, Tirunelveli, Tiruchirappalli, Tiruvannamalai",,,,severe flood,1,IMD
+PH11-00230,1996-11-17,1996,Tamil Nadu,"Chennai, Nagapattinam,Thanjavur",,,,heavy rains,1,IMD
+PH11-00231,1996-12-12,1996,Tamil Nadu,"Thiruvallur, Chennai, Krishnagiri, Tiruvannamalai, Dharmapuri, Salem, Erode, The Nilgiris, Namakkal, Perambalur, Coimbatore, Tiruchirappalli, Ariyalur, Tiruppur, Thanjavur, Karur, Thiruvarur, Dindigul, Madurai, Theni, Virudhunagar, Thoothukkudi, Kanniyakumariumari, Viluppuram, Cuddalore, Pudukkottai, Sivaganga, Ramanathapuram, Nagapattinam, Kallakurichi, Tenkasi, Tirunelveli, Vellore, Ranipet, Tirupathur, Kancheepuram, Chengalpattu",,,,heavy rains,1,IMD
+PH11-00232,1997-05-07,1997,Kerala,Kottayam,,,,heavy rains,1,IMD
+PH11-00233,1997-06-30,1997,Kerala,Ernakulam,,,,heavy rains,1,IMD
+PH11-00234,1997-07-01,1997,Kerala,"Kannur, Kasaragod, Kottayam, Kozhikode, Malappuram, Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00235,1997-07-20,1997,Kerala,"Idukki, Kottayam",,,,heavy rains,1,IMD
+PH11-00236,1997-07-24,1997,Kerala,"Alappuzha, Malappuram",,,,heavy rains,1,IMD
+PH11-00237,1997-08-08,1997,Kerala,"Malappuram, Thiruvananthapuram,Thrissur",,,,heavy rains,1,IMD
+PH11-00238,1997-09-12,1997,Kerala,Kottayam,,,,heavy rains,1,IMD
+PH11-00239,1997-09-22,1997,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00240,1997-11-03,1997,Kerala,"Alappuzha, Idukki, Kottayam, Malappuram,Pathanamthitta",,,,heavy rains,1,IMD
+PH11-00241,1997-11-28,1997,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00242,1997-12-16,1997,Kerala,Ernakulam,,,,heavy rains,1,IMD
+PH11-00243,1997-10-28,1997,Tamil Nadu,"Chennai, Chengalpattu,Dindigul",,,,heavy rains,1,IMD
+PH11-00244,1997-11-01,1997,Tamil Nadu,"Chengalpattu, Chennai, Nagapattinam, Thanjavur,Tiruchirappalli",,,,heavy rains,1,IMD
+PH11-00245,1997-12-05,1997,Tamil Nadu,"Thiruvallur, Chennai, Krishnagiri, Tiruvannamalai, Dharmapuri, Salem, Erode, The Nilgiris, Namakkal, Perambalur, Coimbatore, Tiruchirappalli, Ariyalur, Tiruppur, Thanjavur, Karur, Thiruvarur, Dindigul, Madurai, Theni, Virudhunagar, Thoothukkudi, Kanniyakumariumari, Viluppuram, Cuddalore, Pudukkottai, Sivaganga, Ramanathapuram, Nagapattinam, Kallakurichi, Tenkasi, Tirunelveli, Vellore, Ranipet, Tirupathur, Kancheepuram, Chengalpattu",,,,heavy rains,1,IMD
+PH11-00246,1998-05-15,1998,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00247,1998-06-28,1998,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00248,1998-07-02,1998,Kerala,"Idukki, Kasaragod, Kottayam, Malappuram, Palakkad, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00249,1998-07-12,1998,Kerala,"Ernakulam, Idukki, Malappuram, Pathanamthitta,Thrissur",,,,heavy rains,1,IMD
+PH11-00250,1998-10-10,1998,Kerala,"Kollam, Kottayam, Kozhikode, Malappuram, Pathanamthitta, Thiruvananthapuram,Wayanad",,,,severe floods,1,IMD
+PH11-00251,1998-11-01,1998,Kerala,"Idukki,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00252,1998-11-11,1998,Kerala,"Palakkad,Pathanamthitta",,,,heavy rains,1,IMD
+PH11-00253,1998-10-11,1998,Tamil Nadu,Kanniyakumariumari,,,,heavy rains,1,IMD
+PH11-00254,1998-11-01,1998,Tamil Nadu,"Thiruvallur, Chennai, Krishnagiri, Tiruvannamalai, Dharmapuri, Salem, Erode, The Nilgiris, Namakkal, Perambalur, Coimbatore, Tiruchirappalli, Ariyalur, Tiruppur, Thanjavur, Karur, Thiruvarur, Dindigul, Madurai, Theni, Virudhunagar, Thoothukkudi, Kanniyakumariumari, Viluppuram, Cuddalore, Pudukkottai, Sivaganga, Ramanathapuram, Nagapattinam, Kallakurichi, Tenkasi, Tirunelveli, Vellore, Ranipet, Tirupathur, Kancheepuram, Chengalpattu",,,,heavy rains,1,IMD
+PH11-00255,1998-12-04,1998,Tamil Nadu,"Cuddalore, Madurai, Nagapattinam,Perambalur, Thanjavur, Tiruchirappalli, Tirunelveli,Viluppuram",,,,heavy rains,1,IMD
+PH11-00256,1999-02-05,1999,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00257,1999-05-25,1999,Kerala,"Idukki,Kottayam",,,,heavy rains,1,IMD
+PH11-00258,1999-06-07,1999,Kerala,"Kasaragod, Wayanad, Kozhikode, Malappuram, Palakkad, Thrissur, Idukki, Ernakulam, Alappuzha, Kottayam, Pathanamthitta, Kollam, Thiruvananthapuram, Kannur",,,,heavy rains,1,IMD
+PH11-00259,1999-06-16,1999,Kerala,"Ernakulam, Idukki, Kasaragod, Kozhikode, Malappuram, Palakkad,Pathanamthitta",,,,heavy rains,1,IMD
+PH11-00260,1999-07-17,1999,Kerala,"Idukki, Kannur, Kasaragod, Kollam, Palakkad, Pathanamthitta, Thiruvananthapuram,Thrissur",,,,heavy rains,1,IMD
+PH11-00261,1999-08-02,1999,Kerala,"Kasaragod, Kozhikode,Malappuram",,,,heavy rains,1,IMD
+PH11-00262,1999-10-09,1999,Kerala,Kannur,,,,heavy rains,1,IMD
+PH11-00263,1999-10-18,1999,Kerala,"Kasaragod, Wayanad, Kozhikode, Malappuram, Palakkad, Thrissur, Idukki, Ernakulam, Alappuzha, Kottayam, Pathanamthitta, Kollam, Thiruvananthapuram, Kannur",,,,heavy rains,1,IMD
+PH11-00264,1999-05-05,1999,Tamil Nadu,Dindigul,,,,heavy rains,1,IMD
+PH11-00265,1999-11-21,1999,Tamil Nadu,"Karur, Nagapattinam, Perambalur, Pudukkottai, Thanjavur,Tiruchirappalli",,,,moderate flood,1,IMD
+PH11-00266,2000-04-08,2000,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00267,2000-06-08,2000,Kerala,"Alappuzha, Idukki,Kannur",,,,heavy rains,1,IMD
+PH11-00268,2000-06-17,2000,Kerala,Alappuzha,,,,heavy rains,1,IMD
+PH11-00269,2000-07-01,2000,Kerala,Kasaragod,,,,heavy rains,1,IMD
+PH11-00270,2000-07-07,2000,Kerala,"Idukki, Kollam, Pathanamthitta,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00271,2000-08-08,2000,Kerala,Kottayam,,,,heavy rains,1,IMD
+PH11-00272,2000-08-22,2000,Kerala,"Alappuzha, Idukki, Kannur, Kasaragod, Kollam, Kottayam, Kozhikode, Malappuram, Palakkad, Pathanamthitta, Thiruvananthapuram, Thrissur,Wayanad",,,,heavy rains,1,IMD
+PH11-00273,2000-02-24,2000,Tamil Nadu,"Chennai,Perambalur",,,,heavy rains,1,IMD
+PH11-00274,2000-06-08,2000,Tamil Nadu,Kanniyakumariumari,,,,heavy rains,1,IMD
+PH11-00275,2001-04-07,2001,Kerala,"Kottayam,Kozhikode",,,,heavy rains,1,IMD
+PH11-00276,2001-05-26,2001,Kerala,"Alappuzha, Kollam,Kozhikode",,,,heavy rains,1,IMD
+PH11-00277,2001-06-08,2001,Kerala,Kasaragod,,,,heavy rains,1,IMD
+PH11-00278,2001-06-15,2001,Kerala,"Alappuzha, Kollam, Kozhikode, Malappuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00279,2001-07-08,2001,Kerala,"Alappuzha, Idukki, Kollam, Kottayam, Thiruvananthapuram,Thrissur",,,,heavy rains,1,IMD
+PH11-00280,2001-09-22,2001,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00281,2001-11-10,2001,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00282,2001-07-06,2001,Uttarakhand,"Uttar Kashi Kashi, Chamoli, Dehradun, Tehri Garhwal, Rudra Prayag, Pithoragarh, Bageshwar, Haridwar, Garhwal, Almora, Nainital, Champawat, Udam Singh Nagar",,,,heavy rains,1,IMD
+PH11-00283,2001-07-16,2001,Uttarakhand,"Uttar Kashi Kashi, Chamoli, Dehradun, Tehri Garhwal, Rudra Prayag, Pithoragarh, Bageshwar, Haridwar, Garhwal, Almora, Nainital, Champawat, Udam Singh Nagar",,,,heavy rains,1,IMD
+PH11-00284,2001-07-18,2001,Uttarakhand,Rudra Prayag,,,,heavy rains,1,IMD
+PH11-00285,2001-08-04,2001,Uttarakhand,"Azamgarh,Bahraich",,,,heavy rains,1,IMD
+PH11-00286,2001-09-01,2001,Uttarakhand,East Uttar Kashi Pradesh,,,,severe floods,1,IMD
+PH11-00287,2002-06-11,2002,Kerala,"Kollam, Kozhikode,Thrissur",,,,heavy rains,1,IMD
+PH11-00288,2002-07-12,2002,Kerala,Kannur,,,,heavy rains,1,IMD
+PH11-00289,2002-08-16,2002,Kerala,"Kottayam, Kozhikode,Palakkad",,,,heavy rains,1,IMD
+PH11-00290,2002-10-12,2002,Kerala,Kasaragod,,,,heavy rains,1,IMD
+PH11-00291,2002-10-13,2002,Kerala,"Kannur, Kasaragod, Kozhikode,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00292,2002-01-31,2002,Tamil Nadu,"Cuddalore, Nagapattinam, Pudukkottai, Ramanathapuram, Thanjavur, Thiruvarur,Tirunelveli",,,,heavy rains,1,IMD
+PH11-00293,2002-10-27,2002,Tamil Nadu,Many parts,,,,heavy rains,1,IMD
+PH11-00294,2002-11-01,2002,Tamil Nadu,"Chennai, Coimbatore, Namakkal, Perambalur, Pudukkottai, Thanjavur, Theni, Thiruvallur, Tirunelveli,Tiruvannamalai",,,,heavy rains,1,IMD
+PH11-00295,2002-08-11,2002,Uttarakhand,"Tehri Garhwal,Uttar Kashi Kashi",,,,heavy rains,1,IMD
+PH11-00296,2002-09-12,2002,Uttarakhand,"Haridwar,Nainital",,,,heavy rains,1,IMD
+PH11-00297,2003-06-18,2003,Kerala,"Kannur, Kasaragod, Kozhikode,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00298,2003-07-04,2003,Kerala,Kottayam,,,,heavy rains,1,IMD
+PH11-00299,2003-07-06,2003,Kerala,"Kasaragod, Kottayam,Palakkad",,,,heavy rains,1,IMD
+PH11-00300,2003-07-15,2003,Kerala,Kasaragod,,,,heavy rains,1,IMD
+PH11-00301,2003-10-02,2003,Kerala,Thrissur,,,,heavy rains,1,IMD
+PH11-00302,2003-10-05,2003,Kerala,"Idukki, Kollam,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00303,2003-10-23,2003,Kerala,Palakkad,,,,heavy rains,1,IMD
+PH11-00304,2003-06-25,2003,Tamil Nadu,South Tripura,,,,flash flood,1,IMD
+PH11-00305,2003-07-04,2003,Uttarakhand,"Dehradun,Tehri Garhwal",,,,heavy rains,1,IMD
+PH11-00306,2003-09-21,2003,Uttarakhand,Pithoragarh,,,,heavy rains,1,IMD
+PH11-00307,2004-06-04,2004,Kerala,"Idukki, Kannur, Kollam, Kottayam, Kozhikode, Malappuram, Palakkad , Thrissur,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00308,2004-07-04,2004,Kerala,Kannur,,,,heavy rains,1,IMD
+PH11-00309,2004-07-07,2004,Kerala,"Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00310,2004-07-19,2004,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00311,2004-08-03,2004,Kerala,"Idukki, Kannur, Kasaragod, Kollam, Kozhikode, Malappuram, Palakkad,Wayanad",,,,heavy rains,1,IMD
+PH11-00312,2004-10-04,2004,Kerala,"Alappuzha, Ernakulam,Thrissur",,,,heavy rains,1,IMD
+PH11-00313,2004-09-20,2004,Tamil Nadu,Chennai,,,,heavy rains,1,IMD
+PH11-00314,2004-10-30,2004,Tamil Nadu,"Thanjavur, Thiruvarur,Viluppuram",,,,heavy rains,1,IMD
+PH11-00315,2004-11-05,2004,Tamil Nadu,Thiruvarur,,,,heavy rains,1,IMD
+PH11-00316,2004-11-09,2004,Tamil Nadu,Chennai,,,,heavy rains,1,IMD
+PH11-00317,2004-11-23,2004,Tamil Nadu,Nagapattinam,,,,heavy rains,1,IMD
+PH11-00318,2004-05-29,2004,Uttarakhand,Bageshwar,,,,flash flood(cloud burst),1,IMD
+PH11-00319,2004-06-01,2004,Uttarakhand,Almora,,,,heavy rains(cloud burst),1,IMD
+PH11-00320,2004-07-06,2004,Uttarakhand,Chamoli,,,,heavy rains(cloud burst),1,IMD
+PH11-00321,2004-07-28,2004,Uttarakhand,"Tehri Garhwal,Uttar Kashi Kashi",,,,heavy rains,1,IMD
+PH11-00322,2004-08-26,2004,Uttarakhand,Udam Singh Nagar,,,,flash flood,1,IMD
+PH11-00323,2005-02-01,2005,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00324,2005-03-15,2005,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00325,2005-04-04,2005,Kerala,Southern parts,,,,heavy rains,1,IMD
+PH11-00326,2005-04-06,2005,Kerala,"Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00327,2005-04-12,2005,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00328,2005-04-15,2005,Kerala,"Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00329,2005-05-02,2005,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00330,2005-05-17,2005,Kerala,Thiruvananthapuram,,,,moderate flood,1,IMD
+PH11-00331,2005-05-29,2005,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00332,2005-06-01,2005,Kerala,"Kollam, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00333,2005-06-15,2005,Kerala,"Alappuzha, Ernakulam, Kannur, Kasaragod, Kollam, Kottayam, Palakkad,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00334,2005-07-01,2005,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00335,2005-07-01,2005,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00336,2005-07-01,2005,Kerala,,,,,heavy rains,1,IMD
+PH11-00337,2005-07-07,2005,Kerala,"Kozhikode, Malappuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00338,2005-07-20,2005,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00339,2005-07-22,2005,Kerala,"Alappuzha, Ernakulam, Idukki, Kollam, Kottayam, Thiruvananthapuram, Thrissur,Wayanad",,,,heavy rains,1,IMD
+PH11-00340,2005-09-07,2005,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00341,2005-10-02,2005,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00342,2005-10-07,2005,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00343,2005-10-08,2005,Kerala,"Kollam, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00344,2005-10-22,2005,Kerala,"Kannur,Wayanad",,,,heavy rains,1,IMD
+PH11-00345,2005-11-08,2005,Kerala,Ernakulam ant Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00346,2005-12-08,2005,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00347,2005-04-07,2005,Tamil Nadu,"Kanniyakumariumari, Namakkal, The Nilgiris,Tiruchirappalli",,,,heavy rains,1,IMD
+PH11-00348,2005-10-13,2005,Tamil Nadu,Chennai,,,,heavy rains,1,IMD
+PH11-00349,2005-10-15,2005,Tamil Nadu,"Thiruvallur, Chennai, Krishnagiri, Tiruvannamalai, Dharmapuri, Salem, Erode, The Nilgiris, Namakkal, Perambalur, Coimbatore, Tiruchirappalli, Ariyalur, Tiruppur, Thanjavur, Karur, Thiruvarur, Dindigul, Madurai, Theni, Virudhunagar, Thoothukkudi, Kanniyakumariumari, Viluppuram, Cuddalore, Pudukkottai, Sivaganga, Ramanathapuram, Nagapattinam, Kallakurichi, Tenkasi, Tirunelveli, Vellore, Ranipet, Tirupathur, Kancheepuram, Chengalpattu",,,,severe flood,1,IMD
+PH11-00350,2005-11-09,2005,Tamil Nadu,"Chennai, Cuddalore, Kancheepuram, Nagapattinam, Pudukkottai, Tiruchirappalli, Thanjavur, Thiruvallur,Viluppuram",,,,heavy rains,1,IMD
+PH11-00351,2005-11-22,2005,Tamil Nadu,Nagapattinam,,,,flash flood,1,IMD
+PH11-00352,2005-11-24,2005,Tamil Nadu,"Thiruvallur, Chennai, Krishnagiri, Tiruvannamalai, Dharmapuri, Salem, Erode, The Nilgiris, Namakkal, Perambalur, Coimbatore, Tiruchirappalli, Ariyalur, Tiruppur, Thanjavur, Karur, Thiruvarur, Dindigul, Madurai, Theni, Virudhunagar, Thoothukkudi, Kanniyakumariumari, Viluppuram, Cuddalore, Pudukkottai, Sivaganga, Ramanathapuram, Nagapattinam, Kallakurichi, Tenkasi, Tirunelveli, Vellore, Ranipet, Tirupathur, Kancheepuram, Chengalpattu",,,,heavy rains,1,IMD
+PH11-00353,2005-12-03,2005,Tamil Nadu,"Chennai, Kancheepuram,Thiruvallur",,,,heavy rains,1,IMD
+PH11-00354,2005-12-06,2005,Tamil Nadu,Thiruvallur,,,,severe flood,1,IMD
+PH11-00355,2005-12-08,2005,Tamil Nadu,"Cuddalore, Nagapattinam, Tiruchirappalli,Thiruvarur",,,,heavy rains,1,IMD
+PH11-00356,2005-12-11,2005,Tamil Nadu,"Ramanathapuram, Thanjavur,Thiruvarur",,,,heavy rains,1,IMD
+PH11-00357,2005-06-30,2005,Uttarakhand,Chamoli,,,,heavy rains,1,IMD
+PH11-00358,2005-07-06,2005,Uttarakhand,Banda,,,,severe flood (ker),1,IMD
+PH11-00359,2005-07-14,2005,Uttarakhand,"Uttar Kashi Kashi, Chamoli, Dehradun, Tehri Garhwal, Rudra Prayag, Pithoragarh, Bageshwar, Haridwar, Garhwal, Almora
+, Nainital, Champawat, Udam Singh Nagar",,,,heavy rains,1,IMD
+PH11-00360,2005-07-21,2005,Uttarakhand,"Uttar Kashi Kashi, Chamoli, Dehradun, Tehri Garhwal, Rudra Prayag, Pithoragarh, Bageshwar, Haridwar, Garhwal, Almora
+, Nainital, Champawat, Udam Singh Nagar",,,,heavy rains,1,IMD
+PH11-00361,2005-07-22,2005,Uttarakhand,Tehri Garhwal,,,,heavy rains,1,IMD
+PH11-00362,2005-08-03,2005,Uttarakhand,Tehri Garhwal,,,,heavy rains,1,IMD
+PH11-00363,2005-08-05,2005,Uttarakhand,Pithoragarh,,,,heavy rains,1,IMD
+PH11-00364,2005-09-05,2005,Uttarakhand,Bageshwar,,,,heavy rains,1,IMD
+PH11-00365,2005-09-25,2005,Uttarakhand,"Dehradun, Haridwar, Moradabad,Muzaffarnagar,Dehradun, Haridwar,Nainital",,,,heavy rains,1,IMD
+PH11-00366,2006-03-05,2006,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00367,2006-05-23,2006,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00368,2006-05-27,2006,Kerala,"Alappuzha, Kannur, Kasaragod, Kollam, Kottayam, Kozhikode, Malappuram, Thiruvananthapuram,Thrissur,Wayanad",,,,heavy rains,1,IMD
+PH11-00369,2006-06-01,2006,Kerala,"Alappuzha, Ernakulam, Kannur, Kollam, Kozhikode, Palakkad, Thrissur,Wayanad",,,,heavy rains,1,IMD
+PH11-00370,2006-06-23,2006,Kerala,"Alappuzha, Kozhikode, Malappuram,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00371,2006-06-29,2006,Kerala,Malappuram,,,,heavy rains,1,IMD
+PH11-00372,2006-07-01,2006,Kerala,"Kannur,Wayanad",,,,heavy rains,1,IMD
+PH11-00373,2006-07-04,2006,Kerala,"Malikkeri,Wayanad",,,,heavy rains,1,IMD
+PH11-00374,2006-07-05,2006,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00375,2006-08-13,2006,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00376,2006-09-22,2006,Kerala,Thiruvananthapuram,,,,flash flood,1,IMD
+PH11-00377,2006-09-25,2006,Kerala,"Kollam, Kottayam, Palakkad, Pathanamthitta,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00378,2006-10-18,2006,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00379,2006-10-28,2006,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00380,2006-11-04,2006,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00381,2006-11-08,2006,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00382,2006-11-21,2006,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00383,2006-11-25,2006,Kerala,Kottayam,,,,heavy rains,1,IMD
+PH11-00384,2006-05-13,2006,Tamil Nadu,Salem,,,,heavy rains,1,IMD
+PH11-00385,2006-10-22,2006,Tamil Nadu,"Chennai, Madurai, Nagapattinam,Tirunelveli, Tiruvannamalai, Thoothukkudi,Viluppuram",,,,flash flood,1,IMD
+PH11-00386,2006-11-09,2006,Tamil Nadu,The Nilgiris,,,,heavy rains,1,IMD
+PH11-00387,2006-11-18,2006,Tamil Nadu,Nagapattinam,,,,flash flood,1,IMD
+PH11-00388,2006-06-07,2006,Uttarakhand,Lucknow,,,,heavy rains,1,IMD
+PH11-00389,2007-02-26,2007,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00390,2007-04-21,2007,Kerala,Wayanad,,,,moderate flood,1,IMD
+PH11-00391,2007-06-07,2007,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00392,2007-06-10,2007,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00393,2007-06-14,2007,Kerala,Kasaragod,,,,heavy rains,1,IMD
+PH11-00394,2007-06-22,2007,Kerala,"Alappuzha, Ernakulam,  Idukki, Kannur, Kasaragod, Kottayam, Kozhikode, Malappuram, Palakkad, Pathanamthitta, Thrissur, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00395,2007-06-28,2007,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00396,2007-07-01,2007,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00397,2007-07-02,2007,Kerala,"Ernakulam, Idukki, Kollam, Wayanad",,,,heavy rains,1,IMD
+PH11-00398,2007-07-04,2007,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00399,2007-07-14,2007,Kerala,"Alappuzha, Idukki, Kannur, Kottayam, Kozhikode, Malappuram, Pathanamthitta, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00400,2007-07-26,2007,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00401,2007-09-09,2007,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00402,2007-10-21,2007,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00403,2007-11-03,2007,Kerala,"Alappuzha, Malappuram, Pathanamthitta, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00404,2007-10-24,2007,Tamil Nadu,"Cuddalore,Nagapattinam",,,,heavy rains,1,IMD
+PH11-00405,2007-10-29,2007,Tamil Nadu,"Chennai, Kancheepuram, Tiruvannamalai,Viluppuram",,,,heavy rains,1,IMD
+PH11-00406,2007-11-06,2007,Tamil Nadu,Kanniyakumariumari,,,,heavy rains,1,IMD
+PH11-00407,2007-12-19,2007,Tamil Nadu,Chennai,,,,heavy rains,1,IMD
+PH11-00408,2008-03-13,2008,Kerala,"Alappuzha, Ernakulam Kannur, Kasaragod,Kollam, Kottayam, Kozhikode, Malappuram, Palakkad, Pathanamthitta, Thiruvananthapuram, Thrissur,Wayanad",,,,heavy rains,1,IMD
+PH11-00409,2008-04-08,2008,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00410,2008-04-23,2008,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00411,2008-07-11,2008,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00412,2008-07-28,2008,Kerala,"Alappuzha, Idukki, Kollam, Kottayam, Palakkad, Pathanamthitta, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00413,2008-08-10,2008,Kerala,"Palakkad,Wayanad",,,,heavy rains,1,IMD
+PH11-00414,2008-08-31,2008,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00415,2008-09-01,2008,Kerala,"Malappuram, Pathanamthitta, Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00416,2008-09-07,2008,Kerala,"Idukki, Kasaragod,Kottayam",,,,flash flood,1,IMD
+PH11-00417,2008-10-19,2008,Kerala,"Alappuzha, Kottayam, Kozhikode, Malappuram, Palakkad, Thiruvananthapuram, Thrissur,Wayanad",,,,heavy rains,1,IMD
+PH11-00418,2008-03-13,2008,Tamil Nadu,Cuddalore,,,,heavy rains,1,IMD
+PH11-00419,2008-05-25,2008,Tamil Nadu,Coimbatore,,,,flash flood,1,IMD
+PH11-00420,2008-11-26,2008,Tamil Nadu,"Ariyalur, Chennai, Cuddalore, Dindigul, Nagapattinam,Thanjavur, Thiruvarur, Thoothukkudi, Tiruchirappalli,Viluppuram",,,,flood,1,IMD
+PH11-00421,2008-07-17,2008,Uttarakhand,Champawat,,,,heavy rains,1,IMD
+PH11-00422,2009-05-26,2009,Kerala,"Alappuzha, Kollam, Kottayam,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00423,2009-07-05,2009,Kerala,"Kozhikode, Thrissur,Wayanad",,,,heavy rains,1,IMD
+PH11-00424,2009-07-11,2009,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00425,2009-07-15,2009,Kerala,"Alappuzha, Ernakulam, Idukki, Kannur, Kasaragod, Kollam, Kozhikode, Pathanamthitta, Thrissur,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00426,2009-07-20,2009,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00427,2009-09-18,2009,Kerala,Kottayam,,,,heavy rains,1,IMD
+PH11-00428,2009-10-03,2009,Kerala,"Alappuzha, Ernakulam, Kollam, Kozhikode, Malappuram, Pathanamthitta, Thrissur,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00429,2009-11-07,2009,Kerala,"Idukki, Palakkad,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00430,2009-12-27,2009,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00431,2009-09-16,2009,Tamil Nadu,Vellore,,,,heavy rains,1,IMD
+PH11-00432,2009-09-25,2009,Tamil Nadu,Tiruvannamalai,,,,heavy rains,1,IMD
+PH11-00433,2009-11-06,2009,Tamil Nadu,"The Nilgiris,Kanniyakumariumari,Thiruvallur, Thiruvarur,Tirunelveli",,,,heavy rains,1,IMD
+PH11-00434,2009-11-16,2009,Tamil Nadu,"Dharmapuri, Kanniyakumariumari, The Nilgiris,Thiruvallur",,,,heavy rains,1,IMD
+PH11-00435,2009-07-28,2009,Uttarakhand,Garhwal,,,,heavy rains,1,IMD
+PH11-00436,2009-08-08,2009,Uttarakhand,Pithoragarh,,,,severe flood (cloud burst),1,IMD
+PH11-00437,2010-05-03,2010,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00438,2010-05-29,2010,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00439,2010-06-08,2010,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00440,2010-06-11,2010,Kerala,"Alappuzha, Ernakulam, Idukki, Kasaragod, Kochi,Kottayam, Kozhikode, Malappuram, Palakkad, Pathanamthitta,Thrissur,Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00441,2010-07-19,2010,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00442,2010-09-17,2010,Kerala,"Alappuzha, Ernakulam,Kozhikode",,,,heavy rains,1,IMD
+PH11-00443,2010-09-24,2010,Kerala,Kottayam,,,,heavy rains,1,IMD
+PH11-00444,2010-10-03,2010,Kerala,"Alappuzha, Kollam Kozhikode, Malappuram,Thrissur, Thiruvananthapuram,Wayanad",,,,"flood (karamana, neyyak,vamanapuram)",1,IMD
+PH11-00445,2010-10-18,2010,Kerala,"Alappuzha, Kottayam, Pathanamthitta,Thiruvananthapuram,Thrissur",,,,heavy rains,1,IMD
+PH11-00446,2010-10-22,2010,Kerala,"Kannur, Kasaragod, Kozhikode, Malappuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00447,2010-10-27,2010,Kerala,"Idukki,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00448,2010-11-08,2010,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00449,2010-11-16,2010,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00450,2010-11-20,2010,Kerala,"Kozhikode, Palakkad, Pathanamthitta, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00451,2010-11-27,2010,Kerala,"Pathanamthitta,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00452,2010-12-08,2010,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00453,2010-05-01,2010,Tamil Nadu,"Kanniyakumariumari, Salem,  Tiruchirappalli,Thoothukkudi",,,,heavy rains,1,IMD
+PH11-00454,2010-05-18,2010,Tamil Nadu,"Karur, Tiruchirappalli",,,,heavy rains,1,IMD
+PH11-00455,2010-07-09,2010,Tamil Nadu,Kancheepuram,,,,heavy rains,1,IMD
+PH11-00456,2010-08-08,2010,Tamil Nadu,"Cuddalore,Kancheepuram",,,,heavy rains,1,IMD
+PH11-00457,2010-08-23,2010,Tamil Nadu,"Cuddalore,Erode",,,,heavy rains,1,IMD
+PH11-00458,2010-09-23,2010,Tamil Nadu,Coimbatore,,,,heavy rains,1,IMD
+PH11-00459,2010-11-07,2010,Tamil Nadu,"Chennai, Cuddalore, Tiruchirappalli,Tiruvannamalai, Vellore,Viluppuram",,,,heavy rains,1,IMD
+PH11-00460,2010-11-22,2010,Tamil Nadu,Many districts of Tamil Nadu.,,,,heavy rains,1,IMD
+PH11-00461,2010-11-25,2010,Tamil Nadu,"Ariyalur, Madurai, Nagapattinam, Ramanathapuram, Thanjavur, Thoothukkudi,Viluppuram",,,,heavy rains,1,IMD
+PH11-00462,2010-11-30,2010,Tamil Nadu,Many districts of Tamil Nadu.,,,,heavy rains,1,IMD
+PH11-00463,2010-12-01,2010,Tamil Nadu,"Ariyalur, Ramanathapuram, Thanjavur,Thoothukkudi",,,,heavy rains,1,IMD
+PH11-00464,2010-12-09,2010,Tamil Nadu,"Kanniyakumariumari,Tirunelveli",,,,heavy rains,1,IMD
+PH11-00465,2010-12-16,2010,Tamil Nadu,Tiruppur,,,,heavy rains,1,IMD
+PH11-00466,2010-07-05,2010,Uttarakhand,Mathura,,,,heavy rains,1,IMD
+PH11-00467,2010-08-18,2010,Uttarakhand,Bageshwar,,,,heavy rains,1,IMD
+PH11-00468,2010-09-18,2010,Uttarakhand,"Almora, Dehradun,Nainital",,,,heavy rains,1,IMD
+PH11-00469,2011-04-14,2011,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00470,2011-04-21,2011,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00471,2011-04-25,2011,Kerala,Alappuzha,,,,heavy rains,1,IMD
+PH11-00472,2011-04-28,2011,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00473,2011-06-01,2011,Kerala,"Alappuzha, Idukki, Kollam, Kottayam, Kozhikode, Malappuram, Pathanamthitta, Thrissur, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00474,2011-06-05,2011,Kerala,"Alappuzha, Ernakulam, Idukki, Kottayam, Malappuram, Pathanamthitta, Thiruvananthapuram,Thrissur",,,,heavy rains,1,IMD
+PH11-00475,2011-06-17,2011,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00476,2011-06-29,2011,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00477,2011-07-16,2011,Kerala,"Malappuram, Kasaragod, Kozhikode,Wayanad",,,,heavy rains,1,IMD
+PH11-00478,2011-08-06,2011,Kerala,"Idukki, Kannur, Kottayam, Pathanamthitta,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00479,2011-08-28,2011,Kerala,"Kozhikode, Malappuram, Palakkad, Thiruvananthapuram, Thrissur,Wayanad",,,,heavy rains,1,IMD
+PH11-00480,2011-10-10,2011,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00481,2011-10-14,2011,Kerala,"Idukki,Wayanad",,,,heavy rains,1,IMD
+PH11-00482,2011-10-21,2011,Kerala,"Malappuram,Thrissur",,,,heavy rains,1,IMD
+PH11-00483,2011-10-31,2011,Kerala,"Kannur, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00484,2011-11-26,2011,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00485,2011-12-31,2011,Kerala,"Alappuzha, Kollam,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00486,2011-04-21,2011,Tamil Nadu,The Nilgiris,,,,heavy rains,1,IMD
+PH11-00487,2011-09-16,2011,Tamil Nadu,Kancheepuram,,,,heavy rains,1,IMD
+PH11-00488,2011-10-16,2011,Tamil Nadu,Coimbatore,,,,heavy rains,1,IMD
+PH11-00489,2011-10-20,2011,Tamil Nadu,Cuddalore,,,,heavy rains,1,IMD
+PH11-00490,2011-10-30,2011,Tamil Nadu,Cuddalore,,,,heavy rains,1,IMD
+PH11-00491,2011-11-01,2011,Tamil Nadu,"Districts of Cauvery delta zone, Chennai,Dindigul",,,,heavy rains,1,IMD
+PH11-00492,2011-11-24,2011,Tamil Nadu,Districts of Cauvery delta,,,,heavy rains,1,IMD
+PH11-00493,2011-07-21,2011,Uttarakhand,Almora,,,,heavy rains,1,IMD
+PH11-00494,2011-08-23,2011,Uttarakhand,Parts of Uttar Kashiakhand,,,,heavy rains,1,IMD
+PH11-00495,2012-04-07,2012,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00496,2012-04-09,2012,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00497,2012-04-23,2012,Kerala,Pathanamthitta,,,,heavy rains,1,IMD
+PH11-00498,2012-04-24,2012,Kerala,Thrissur,,,,heavy rains,1,IMD
+PH11-00499,2012-06-06,2012,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00500,2012-06-12,2012,Kerala,Kottayam,,,,heavy rains,1,IMD
+PH11-00501,2012-07-02,2012,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00502,2012-07-28,2012,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00503,2012-08-04,2012,Kerala,"Kannur, Kozhikode,Wayanad",,,,heavy rains,1,IMD
+PH11-00504,2012-11-17,2012,Kerala,"Ernakulam, Idukki, Kottayam, Pathanamthitta,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00505,2012-09-04,2012,Kerala,Kollam,,,,heavy rains,1,IMD
+PH11-00506,2012-11-01,2012,Kerala,"Ernakulam, Kollam,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00507,2012-11-11,2012,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00508,2012-10-20,2012,Tamil Nadu,Many parts of Tamil Nadu.,,,,heavy rains,1,IMD
+PH11-00509,2012-11-01,2012,Tamil Nadu,"Chennai, Thiruvarur,Vellore",,,,heavy rains,1,IMD
+PH11-00510,2012-08-04,2012,Uttarakhand,Chamoli,,,,heavy rains (cloud burst),1,IMD
+PH11-00511,2012-09-13,2012,Uttarakhand,Rudra Prayag,,,,heavy rains (cloud burst),1,IMD
+PH11-00512,2013-03-09,2013,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00513,2013-03-12,2013,Kerala,Kannur,,,,heavy rains,1,IMD
+PH11-00514,2013-03-26,2013,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00515,2013-03-29,2013,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00516,2013-04-26,2013,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00517,2013-05-03,2013,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00518,2013-05-05,2013,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00519,2013-06-02,2013,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00520,2013-06-08,2013,Kerala,"Thiruvananthapuram,Thrissur",,,,heavy rains,1,IMD
+PH11-00521,2013-06-08,2013,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00522,2013-06-11,2013,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00523,2013-06-17,2013,Kerala,Kasaragod,,,,heavy rains,1,IMD
+PH11-00524,2013-06-24,2013,Kerala,Kasaragod,,,,heavy rains,1,IMD
+PH11-00525,2013-06-25,2013,Kerala,"Idukki, Ernakulam, Kollam, Kozhikode, Palakkad,Pathanamthitta",,,,heavy rains,1,IMD
+PH11-00526,2013-06-27,2013,Kerala,Alappuzha,,,,heavy rains,1,IMD
+PH11-00527,2013-07-01,2013,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00528,2013-07-05,2013,Kerala,"Idukki,Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00529,2013-07-11,2013,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00530,2013-07-11,2013,Kerala,"Alappuzha, Ernakulam, Kollam,Kottayam",,,,heavy rains,1,IMD
+PH11-00531,2013-07-19,2013,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00532,2013-07-23,2013,Kerala,Ernakulam,,,,heavy rains,1,IMD
+PH11-00533,2013-07-29,2013,Kerala,Pathanamthitta,,,,heavy rains,1,IMD
+PH11-00534,2013-08-01,2013,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00535,2013-08-02,2013,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00536,2013-08-04,2013,Kerala,"Alappuzha, Ernakulam,Idukki,",,,,heavy rains,1,IMD
+PH11-00537,2013-08-10,2013,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00538,2013-09-01,2013,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00539,2013-09-12,2013,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00540,2013-09-17,2013,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00541,2013-09-11,2013,Tamil Nadu,"Chennai,Tiruvannamalai",,,,heavy rains,1,IMD
+PH11-00542,2013-10-15,2013,Tamil Nadu,"Coimbatore,Cuddalore",,,,heavy rains,1,IMD
+PH11-00543,2013-10-20,2013,Tamil Nadu,"Coimbatore,Tiruvannamalai",,,,heavy rains,1,IMD
+PH11-00544,2013-11-16,2013,Tamil Nadu,"Cuddalore, Dharmapuri,Kanniyakumariumari, Nagapattinam, Thanjavur, Thiruvarur,Viluppuram",,,,heavy rains,1,IMD
+PH11-00545,2013-11-25,2013,Tamil Nadu,Pudukkottai,,,,heavy rains,1,IMD
+PH11-00546,2013-12-13,2013,Tamil Nadu,Nagapattinam,,,,heavy rains,1,IMD
+PH11-00547,2013-06-14,2013,Uttarakhand,"Chamoli, Pithoragarh, Rudra Prayag,Uttar Kashi Kashi",,,,"heavy to very rainfall/flash floods (saraswati,mandakini rivers,its tributaries triggered by very heavy rainfall,lake burst), cloudburst on jun16 &17 jun, massive landslides,avalanches reported at multiple places.",1,IMD
+PH11-00548,2014-03-07,2014,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00549,2014-03-25,2014,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00550,2014-04-10,2014,Kerala,"Alappuzha, Kasaragod, Kozhikode, Thiruvananthapuram, Thrissur,Wayanad",,,,heavy rains,1,IMD
+PH11-00551,2014-04-19,2014,Kerala,"Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00552,2014-05-03,2014,Kerala,"Alappuzha, Ernakulam, Kozhikode, Malappuram, Thrissur, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00553,2014-06-06,2014,Kerala,Wayanad,,,,heavy rains,1,IMD
+PH11-00554,2014-06-12,2014,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00555,2014-06-21,2014,Kerala,Idukki,,,,heavy rains,1,IMD
+PH11-00556,2014-07-12,2014,Kerala,"Kannur, Kasaragod, Kozhikode, Malappuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00557,2014-08-01,2014,Kerala,"Alappuzha, Kannur, Kasaragod, Kozhikode, Kottayam, Malappuram, Palakkad, Pathanamthitta, Thrissur, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00558,2014-08-22,2014,Kerala,"Kottayam, Pathanamthitta, Thiruvananthapuram,Wayanad",,,,heavy rains,1,IMD
+PH11-00559,2014-09-01,2014,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00560,2014-09-26,2014,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00561,2014-03-08,2014,Tamil Nadu,Coimbatore,,,,heavy rains,1,IMD
+PH11-00562,2014-05-06,2014,Tamil Nadu,"Kanniyakumariumari, Madurai, The Nilgiris,Theni",,,,heavy rains,1,IMD
+PH11-00563,2014-05-21,2014,Tamil Nadu,"Coimbatore,Krishnagiri",,,,heavy rains,1,IMD
+PH11-00564,2014-08-22,2014,Tamil Nadu,Erode,,,,heavy rains,1,IMD
+PH11-00565,2014-09-23,2014,Tamil Nadu,"Dindigul, Erode,Virudhunagar",,,,heavy rains,1,IMD
+PH11-00566,2014-07-27,2014,Uttarakhand,Pithoragarh,,,,heavy rains,1,IMD
+PH11-00567,2014-07-31,2014,Uttarakhand,Tehri Garhwal,,,,heavy rains,1,IMD
+PH11-00568,2014-08-11,2014,Uttarakhand,Parts of Uttar Kashiakhand,,,,heavy rains,1,IMD
+PH11-00569,2015-03-03,2015,Kerala,"Alappuzha, Ernakulam, Kottayam, Malappuram, Thrissur, Pathanamthitta",,,,heavy rains,1,IMD
+PH11-00570,2015-03-13,2015,Kerala,"Alappuzha, Kottayam, Thrissur, Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00571,2015-03-27,2015,Kerala,"Alappuzha, Pathanamthitta",,,,heavy rains,1,IMD
+PH11-00572,2015-04-06,2015,Kerala,"Alappuzha, Ernakulam, Palakkad, Idukki, Kollam",,,,heavy rains,1,IMD
+PH11-00573,2015-04-11,2015,Kerala,"Ernakulam, Idukki, Kollam, Kozhikode, Malappuram, Pathanamthitta, Thiruvananthapuram, Wayanad",,,,heavy rains,1,IMD
+PH11-00574,2015-04-19,2015,Kerala,"Alappuzha, Idukki, Kasaragod, Kannur, Malappuram, Palakkad, Pathanamthitta, Thiruvananthapuram",,,,flood,1,IMD
+PH11-00575,2015-04-26,2015,Kerala,"Alappuzha, Ernakulam, Kannur, Kottayam, Malappuram, Pathanamthitta, Thiruvananthapuram, Wayanad",,,,flood,1,IMD
+PH11-00576,2015-05-03,2015,Kerala,"Ernakulam, Idukki, Kannur, Palakkad, Thrissur, Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00577,2015-05-07,2015,Kerala,"Kottayam, Palakkad, Thrissur",,,,heavy rains,1,IMD
+PH11-00578,2015-05-10,2015,Kerala,"Ernakulam, Idukki, Kannur, Kasaragod, Kollam, Kozhikode, Malappuram, Palakkad, Thrissur, Wayanad",,,,heavy rains,1,IMD
+PH11-00579,2015-05-15,2015,Kerala,"Kasaragod, Kollam, Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00580,2015-06-08,2015,Kerala,"Alappuzha, Kannur, Kollam, Thrissur, Thiruvananthapuram",,,,flood,1,IMD
+PH11-00581,2015-06-19,2015,Kerala,"Alappuzha, Ernakulam, Idukki, Kasaragod, Kottayam, Palakkad, Pathanamthitta, Thrissur, Thiruvananthapuram, Wayanad",,,,heavy rains,1,IMD
+PH11-00582,2015-07-18,2015,Kerala,Kannur,,,,heavy rains,1,IMD
+PH11-00583,2015-08-12,2015,Kerala,Kannur,,,,heavy rains,1,IMD
+PH11-00584,2015-09-05,2015,Kerala,"Pathanamthitta, Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00585,2015-09-27,2015,Kerala,"Kannur, Wayanad",,,,heavy rains,1,IMD
+PH11-00586,2015-10-08,2015,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00587,2015-10-30,2015,Kerala,Thiruvananthapuram,,,,heavy rains,1,IMD
+PH11-00588,2015-11-01,2015,Kerala,"Ernakulam, Malappuram, Pathanamthitta, Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00589,2015-12-08,2015,Kerala,"Alappuzha, Thiruvananthapuram",,,,heavy rains,1,IMD
+PH11-00590,2015-04-12,2015,Tamil Nadu,Virudhunagar,,,,heavy rains,1,IMD
+PH11-00591,2015-04-21,2015,Tamil Nadu,Thiruvarur,,,,heavy rains,1,IMD
+PH11-00592,2015-04-25,2015,Tamil Nadu,Vellore,,,,heavy rains,1,IMD
+PH11-00593,2015-05-14,2015,Tamil Nadu,"Coimbatore,Pudukkottai",,,,heavy rains,1,IMD
+PH11-00594,2015-05-17,2015,Tamil Nadu,"Thiruvallur, Virudhunagar",,,,heavy rains,1,IMD
+PH11-00595,2015-06-17,2015,Tamil Nadu,Chennai,,,,heavy rains,1,IMD
+PH11-00596,2015-06-21,2015,Tamil Nadu,The Nilgiris,,,,heavy rains,1,IMD
+PH11-00597,2015-07-17,2015,Tamil Nadu,Chennai,,,,heavy rains,1,IMD
+PH11-00598,2015-11-09,2015,Tamil Nadu,"Thiruvallur, Chennai, Krishnagiri, Tiruvannamalai, Dharmapuri, Salem, Erode, The Nilgiris, Namakkal, Perambalur, Coimbatore, Tiruchirappalli, Ariyalur, Tiruppur, Thanjavur, Karur, Thiruvarur, Dindigul, Madurai, Theni, Virudhunagar, Thoothukkudi, Kanniyakumari",,,,heavy rains,1,IMD
+PH11-00599,2015-11-11,2015,Tamil Nadu,"Chennai, Cuddalore, Dharmapuri, Erode, The Nilgiris, Thiruvallur, Thoothukkudi, Viluppuram",,,,heavy rains,1,IMD
+PH11-00600,2015-11-18,2015,Tamil Nadu,"Chennai, Cuddalore, Kancheepuram, Kanniyakumariumari, Krishnagiri, Nagapattinam, Pudukkottai, Tirunelveli, Tiruvannamalai, Thiruvarur, Thoothukkudi, Viluppuram",,,,heavy rains,1,IMD
+PH11-00601,2015-11-23,2015,Tamil Nadu,"Thiruvallur, Chennai, Krishnagiri, Tiruvannamalai, Dharmapuri, Salem, Erode, The Nilgiris, Namakkal, Perambalur, Coimbatore, Tiruchirappalli, Ariyalur, Tiruppur, Thanjavur, Karur, Thiruvarur, Dindigul, Madurai, Theni, Virudhunagar, Thoothukkudi, Kanniyakumari",,,,heavy rains,1,IMD
+PH11-00602,2015-11-28,2015,Tamil Nadu,"Chennai, Viluppuram",,,,heavy rains,1,IMD
+PH11-00603,2015-12-01,2015,Tamil Nadu,"Thiruvallur, Chennai, Krishnagiri, Tiruvannamalai, Dharmapuri, Salem, Erode, The Nilgiris, Namakkal, Perambalur, Coimbatore, Tiruchirappalli, Ariyalur, Tiruppur, Thanjavur, Karur, Thiruvarur, Dindigul, Madurai, Theni, Virudhunagar, Thoothukkudi, Kanniyakumari",,,,heavy rains,1,IMD
+PH11-00604,2015-12-08,2015,Tamil Nadu,"Thiruvallur, Chennai, Krishnagiri, Tiruvannamalai, Dharmapuri, Salem, Erode, The Nilgiris, Namakkal, Perambalur, Coimbatore, Tiruchirappalli, Ariyalur, Tiruppur, Thanjavur, Karur, Thiruvarur, Dindigul, Madurai, Theni, Virudhunagar, Thoothukkudi, Kanniyakumari",,,,heavy rains,1,IMD
+PH11-00605,2015-07-26,2015,Uttarakhand,Parts of Uttar Kashiakhand,,,,heavy rains,1,IMD
+PH11-00606,2016-04-14,2016,Kerala,Kannur,,,,heavy rains,1,IMD
+PH11-00607,2016-05-31,2016,Kerala,Kozhikode,,,,heavy rains,1,IMD
+PH11-00608,2016-06-07,2016,Kerala,"Idukki, Kottayam, Thiruvananthapuram, Wayanad",,,,"heavy rains, flood & landslides",1,IMD
+PH11-00609,2016-06-10,2016,Kerala,"Idukki, Kannur, Kollam, Pathanamthitta, Thiruvananthapuram, Wayanad",,,,heavy rain,1,IMD
+PH11-00610,2016-06-16,2016,Kerala,"Alappuzha, Ernakulam, Idukki, Kollam, Kottayam, Malappuram, Thrissur, Thiruvananthapuram, Wayanad",,,,heavy rain,1,IMD
+PH11-00611,2016-06-26,2016,Kerala,"Kasaragod, Malappuram, Wayanad",,,,heavy rain,1,IMD
+PH11-00612,2016-07-02,2016,Kerala,Wayanad,,,,heavy rain,1,IMD
+PH11-00613,2016-07-10,2016,Kerala,"Idukki, Kasaragod, Wayanad",,,,heavy rain,1,IMD
+PH11-00614,2016-09-18,2016,Kerala,Kozhikode,,,,heavy rain,1,IMD
+PH11-00615,2016-06-11,2016,Tamil Nadu,Kanniyakumariumari,,,,"flood(kuzhithurai ,sitraru rivers)",1,IMD
+PH11-00616,2016-07-26,2016,Tamil Nadu,Krishnagiri,,,,heavy rains,1,IMD
+PH11-00617,2016-05-08,2016,Uttarakhand,Chamoli,,,,landslide,1,IMD
+PH11-00618,2016-05-22,2016,Uttarakhand,Dehradun,,,,landslide,1,IMD
+PH11-00619,2016-05-28,2016,Uttarakhand,"Tehri Garhwal,Uttar Kashi Kashi",,,,cloud burst,1,IMD
+PH11-00620,2016-07-03,2016,Uttarakhand,"Chamoli, Pithoragarh",,,,cloud burst,1,IMD
+PH11-00621,2016-07-16,2016,Uttarakhand,"Dehradun, Nainital, Tehri Garhwal, Uttar Kashi Kashi",,,,heavy rains & heavy rains &,1,IMD
+PH11-00622,2016-07-21,2016,Uttarakhand,Dehradun,,,,landslide,1,IMD
+PH11-00623,2017-03-15,2017,Kerala,Alappuzha,,,,Heavy Rains,1,IMD
+PH11-00624,2017-03-06,2017,Kerala,Thiruvananthapuram,,,,Heavy Rains,1,IMD
+PH11-00625,2017-05-06,2017,Kerala,Thiruvananthapuram,,,,Landslide,1,IMD
+PH11-00626,2017-04-08,2017,Kerala,Pathanamthitta,,,,Heavy Rains,1,IMD
+PH11-00627,2017-06-08,2017,Kerala,Idukki,,,,Heavy Rains,1,IMD
+PH11-00628,2017-08-28,2017,Kerala,Wayanad,,,,Heavy Rains,1,IMD
+PH11-00629,2017-05-09,2017,Kerala,"Thiruvananthapuram, Wayanad",,,,Heavy Rains,1,IMD
+PH11-00630,2017-08-09,2017,Kerala,"Idukki, Kozhikode,  Thiruvananthapuram",,,,Heavy Rains,1,IMD
+PH11-00631,2017-09-17,2017,Kerala,"Idukki, Kottayam,  Thiruvananthapuram",,,,Heavy rains & landslide,1,IMD
+PH11-00632,2017-09-18,2017,Kerala,"Idukki, Kottayam, Kozhikode,  Thiruvananthapuram, Thrissur, Wayanad",,,,Heavy rains & landslide,1,IMD
+PH11-00633,2017-10-22,2017,Kerala,Thiruvananthapuram,,,,Heavy Rains,1,IMD
+PH11-00634,2017-02-11,2017,Kerala,Thiruvananthapuram,,,,Heavy Rains,1,IMD
+PH11-00635,2017-05-11,2017,Kerala,"Kozhikode,  Thiruvananthapuram",,,,Heavy Rains,1,IMD
+PH11-00636,2017-05-28,2017,Tamil Nadu,Vellore,,,,Heavy Rains,1,IMD
+PH11-00637,2017-01-09,2017,Tamil Nadu,Thiruvallur,,,,Heavy Rains,1,IMD
+PH11-00638,2017-06-09,2017,Tamil Nadu,"Coimbatore, Nagapattinam, Tiruppur",,,,Floods & Heavy Rains,1,IMD
+PH11-00639,2017-04-10,2017,Tamil Nadu,Krishnagiri,,,,Heavy Rains,1,IMD
+PH11-00640,2017-12-10,2017,Tamil Nadu,Vellore,,,,Heavy rains & Flood in Palar river,1,IMD
+PH11-00641,2017-02-11,2017,Tamil Nadu,"Chennai, Cuddalore, Kanniyakumariumari, Karaikal, Nagarkoil, Tirunelveli",,,,Heavy Rains,1,IMD
+PH11-00642,2017-05-20,2017,Uttarakhand,Chamoli,,,,Landslide,1,IMD
+PH11-00643,2017-08-13,2017,Uttarakhand,Pithoragarh,,,,Landslide,1,IMD
+PH11-00644,2018-03-18,2018,Kerala,Thiruvananthapuram,,,,Heavy rains,1,IMD
+PH11-00645,2018-04-22,2018,Kerala,Wayanad,,,,Heavy rains,1,IMD
+PH11-00646,2018-05-13,2018,Kerala,Thiruvananthapuram,,,,Heavy rains,1,IMD
+PH11-00647,2018-05-16,2018,Kerala,Thiruvananthapuram,,,,Heavy rains,1,IMD
+PH11-00648,2018-05-21,2018,Kerala,Thiruvananthapuram,,,,Heavy rains / Floods,1,IMD
+PH11-00649,2018-05-29,2018,Kerala,"Alappuzha, Ernakulam, Idukki, Kannur, Kasaragod, Kollam, Kottayam, Kozhikode, Malappuram, Palakkad, Pathanamthitta, Thrissur, Thiruvananthapuram, Wayanad",,,,Heavy rains / Floods,1,IMD
+PH11-00650,2018-01-08,2018,Kerala,"Alappuzha, Ernakulam, Idukki, Kannur, Kasaragod, Kollam, Kottayam, Kozhikode, Malappuram, Palakkad, Pathanamthitta, Thrissur, Thiruvananthapuram, Wayanad",,,,Heavy rains / Floods,1,IMD
+PH11-00651,2018-10-21,2018,Kerala,Malappuram,,,,Heavy rains,1,IMD
+PH11-00652,2018-11-16,2018,Kerala,"Alappuzha, Idukki",,,,Heavy rains,1,IMD
+PH11-00653,2018-11-17,2018,Kerala,Alappuzha,,,,Heavy rains,1,IMD
+PH11-00654,2018-12-28,2018,Kerala,Wayanad,,,,Heavy rains,1,IMD
+PH11-00655,2018-03-14,2018,Tamil Nadu,"Chennai, Thoothukkudi",,,,Heavy rain,1,IMD
+PH11-00656,2018-05-20,2018,Tamil Nadu,Salem,,,,Heavy rain,1,IMD
+PH11-00657,2018-09-15,2018,Tamil Nadu,Sivaganga,,,,Heavy rain,1,IMD
+PH11-00658,2018-11-22,2018,Tamil Nadu,Viluppuram,,,,Heavy rain,1,IMD
+PH11-00659,2018-11-24,2018,Tamil Nadu,Thanjavur,,,,Heavy rain,1,IMD
+PH11-00660,2018-11-07,2018,Uttarakhand,Dehradun,,,,Heavy Rains,1,IMD
+PH11-00661,2018-08-30,2018,Uttarakhand,Tehri Garhwal,,,,Landslide,1,IMD
+PH11-00662,2019-04-19,2019,Kerala,Wayanad,,,,Heavy Rain,1,IMD
+PH11-00663,2019-04-24,2019,Kerala,"Malappuram, Thiruvananthapuram, Wayanad",,,,Heavy Rain,1,IMD
+PH11-00664,2019-04-28,2019,Kerala,"Thiruvananthapuram, Wayanad",,,,Heavy Rain,1,IMD
+PH11-00665,2019-05-16,2019,Kerala,Wayanad,,,,Heavy Rain,1,IMD
+PH11-00666,2019-05-19,2019,Kerala,Wayanad,,,,Heavy Rain,1,IMD
+PH11-00667,2019-05-24,2019,Kerala,Thiruvananthapuram,,,,Heavy Rain,1,IMD
+PH11-00668,2019-09-06,2019,Kerala,Thiruvananthapuram,,,,Heavy Rain,1,IMD
+PH11-00669,2019-12-06,2019,Kerala,"Ernakulam, Malappuram",,,,Heavy Rain,1,IMD
+PH11-00670,2019-06-14,2019,Kerala,"Malappuram , Wayanad",,,,Heavy Rain,1,IMD
+PH11-00671,2019-06-20,2019,Kerala,"Kannur, Kasaragod",,,,Heavy Rain,1,IMD
+PH11-00672,2019-10-07,2019,Kerala,Kottayam,,,,Landslide,1,IMD
+PH11-00673,2019-07-18,2019,Kerala,"Alappuzha , Ernakulam, Idukki, Kannur, Kasaragod, Kollam, Kottayam, Kozhikode, Pathanamthitta, Thrissur, Thiruvananthapuram, Wayanad",,,,Heavy rains,1,IMD
+PH11-00674,2019-07-28,2019,Kerala,Idukki,,,,Landslip,1,IMD
+PH11-00675,2019-04-08,2019,Kerala,Wayanad,,,,Heavy rains & Landslip,1,IMD
+PH11-00676,2019-07-08,2019,Kerala,Thiruvananthapuram,,,,Heavy rains,1,IMD
+PH11-00677,2019-08-08,2019,Kerala,"Ernakulam, Idukki, Kannur, Kasaragod, Kozhikode, Malappuram, Palakkad, Thiruvananthapuram, Thrissur, Wayanad",,,,"Heavy rains, Floods (Muvattupuzha & Kabani river) & Landslip",1,IMD
+PH11-00678,2019-09-08,2019,Kerala,"Ernakulam, Idukki, Kannur, Malappuram, Palakkad, Thiruvananthapuram, Thrissur, Wayanad",,,,Heavy rains & Landslide,1,IMD
+PH11-00679,2019-10-08,2019,Kerala,"Alappuzha, Ernakulam, Idukki, Kannur, Kasaragod, Kollam, Kottayam, Kozhikode, Malappuram, Palakkad, Pathanamthitta, Thiruvananthapuram, Thrissur, Wayanad",,,,"Heavy rains, Floods & Landslide",1,IMD
+PH11-00680,2019-11-08,2019,Kerala,"Alappuzha, Idukki, Kollam, Malappuram, Thiruvananthapuram, Wayanad",,,,Heavy rains & Landslide,1,IMD
+PH11-00681,2019-08-19,2019,Kerala,"Alappuzha, Thiruvananthapuram, Wayanad",,,,Heavy rains,1,IMD
+PH11-00682,2019-08-22,2019,Kerala,Wayanad,,,,Heavy rains,1,IMD
+PH11-00683,2019-03-09,2019,Kerala,Wayanad,,,,Heavy rains,1,IMD
+PH11-00684,2019-12-09,2019,Kerala,Malappuram,,,,Heavy rains & Landslide,1,IMD
+PH11-00685,2019-09-26,2019,Kerala,Thiruvananthapuram,,,,Heavy rains,1,IMD
+PH11-00686,2019-10-17,2019,Kerala,Thiruvananthapuram,,,,Heavy rains & Landslide,1,IMD
+PH11-00687,2019-10-21,2019,Kerala,"Alappuzha, Ernakulam, Idukki, Kannur, Kasaragod, Kollam, Kottayam, Kozhikode, Malappuram, Palakkad, Pathanamthitta, Thiruvananthapuram, Thrissur, Wayanad",,,,Heavy rains & Landslide,1,IMD
+PH11-00688,2019-10-22,2019,Kerala,Thiruvananthapuram,,,,Heavy rains,1,IMD
+PH11-00689,2019-10-30,2019,Kerala,Thiruvananthapuram,,,,Heavy rains,1,IMD
+PH11-00690,2019-01-11,2019,Kerala,"Alappuzha, Idukki, Thiruvananthapuram",,,,Heavy rains,1,IMD
+PH11-00691,2019-10-11,2019,Kerala,Wayanad,,,,Heavy rains,1,IMD
+PH11-00692,2019-11-11,2019,Kerala,Thiruvananthapuram,,,,Heavy rains,1,IMD
+PH11-00693,2019-11-20,2019,Kerala,"Kannur, Malappuram, Thiruvananthapuram",,,,Heavy rains,1,IMD
+PH11-00694,2019-03-12,2019,Kerala,Wayanad,,,,Heavy rains,1,IMD
+PH11-00695,2019-01-05,2019,Tamil Nadu,Coimbatore,,,,Heavy rain,1,IMD
+PH11-00696,2019-11-30,2019,Tamil Nadu,Thanjavur,,,,Heavy rain,1,IMD
+PH11-00697,2019-01-12,2019,Tamil Nadu,Tirunelveli,,,,Heavy rain,1,IMD
+PH11-00698,2019-02-12,2019,Tamil Nadu,"Chennai, Coimbatore, Cuddalore, Thoothukkudi, Tirunelveli",,,,Heavy rains & Flood,1,IMD
+PH11-00699,2019-02-06,2019,Uttarakhand,"Almora, Chamoli",,,,Flash floods,1,IMD
+PH11-00700,2019-06-21,2019,Uttarakhand,Uttar Kashi Kashi,,,,Heavy rains & flash flood as a result of cloud burst,1,IMD
+PH11-00701,2019-06-23,2019,Uttarakhand,Garhwal,,,,Floods in Binnu river,1,IMD
+PH11-00702,2019-04-07,2019,Uttarakhand,Rudra Prayag,,,,Heavy rains,1,IMD
+PH11-00703,2019-06-08,2019,Uttarakhand,"Chamoli, Garhwal, Uttar Kashi Kashi",,,,Heavy rains & flash flood as a result of cloud burst,1,IMD
+PH11-00704,2019-08-08,2019,Uttarakhand,"Chamoli, Garhwal, Rudra Prayag, Tehri Garhwal",,,,"Heavy rains, flash flood as a result of cloud burst",1,IMD
+PH11-00705,2019-12-08,2019,Uttarakhand,"Bageshwar, Chamoli",,,,"Heavy rains, flash floods & Landslide",1,IMD
+PH11-00706,2019-08-18,2019,Uttarakhand,"Dehradun, Garhwal, Tehri Garhwal, Uttar Kashi Kashi",,,,"Heavy rains & flash floods (in Tons, Pabbar River) & Landslide",1,IMD
+PH11-00707,2019-02-09,2019,Uttarakhand,Almora,,,,Cloud Burst,1,IMD
+PH11-00708,2019-06-09,2019,Uttarakhand,"Chamoli, Pithoragarh",,,,Heavy rains & flash flood as a result of cloud burst,1,IMD
+PH11-00709,2019-09-27,2019,Uttarakhand,Dehradun,,,,Heavy rains & flash flood,1,IMD
+PH11-00710,2020-02-01,2020,Kerala,"Malappuram, Thiruvananthapuram",,,,Heavy Rains,1,IMD
+PH11-00711,2020-04-24,2020,Kerala,Thiruvananthapuram,,,,Heavy Rains,1,IMD
+PH11-00712,2020-03-05,2020,Kerala,Pathanamthitta,,,,Heavy Rains,1,IMD
+PH11-00713,2020-07-05,2020,Kerala,Thiruvananthapuram,,,,Heavy Rains,1,IMD
+PH11-00714,2020-05-16,2020,Kerala,Thiruvananthapuram,,,,Heavy Rains,1,IMD
+PH11-00715,2020-05-22,2020,Kerala,Thiruvananthapuram,,,,"Heavy Rains & Floods (Killi,Karamana rivers)",1,IMD
+PH11-00716,2020-02-06,2020,Kerala,Thiruvananthapuram,,,,Heavy Rains & Floods,1,IMD
+PH11-00717,2020-03-07,2020,Kerala,Kozhikode,,,,Flash flood,1,IMD
+PH11-00718,2020-05-08,2020,Kerala,Wayanad,,,,Heavy Rains & Floods,1,IMD
+PH11-00719,2020-06-08,2020,Kerala,Idukki,,,,Landslide,1,IMD
+PH11-00720,2020-06-08,2020,Kerala,Wayanad,,,,Heavy Rains & Landslide,1,IMD
+PH11-00721,2020-07-08,2020,Kerala,Alappuzha,,,,Heavy Rains & Floods,1,IMD
+PH11-00722,2020-08-08,2020,Kerala,"Thiruvananthapuram, Wayanad",,,,Heavy Rains & Floods,1,IMD
+PH11-00723,2020-09-08,2020,Kerala,"Alappuzha, Ernakulam, Kollam, Kottayam",,,,Heavy Rains & Floods,1,IMD
+PH11-00724,2020-10-08,2020,Kerala,"Pathanamthitta, Wayanad",,,,Heavy Rains & Floods,1,IMD
+PH11-00725,2020-11-08,2020,Kerala,Kozhikode,,,,Heavy Rains & Floods,1,IMD
+PH11-00726,2020-12-08,2020,Kerala,"Alappuzha, Kottayam, Pathanamthitta",,,,Heavy Rains & Floods,1,IMD
+PH11-00727,2020-06-09,2020,Kerala,Alappuzha,,,,Heavy Rains,1,IMD
+PH11-00728,2020-06-09,2020,Kerala,Thiruvananthapuram,,,,Heavy Rains & Flood,1,IMD
+PH11-00729,2020-11-09,2020,Kerala,"Malappuram, Thiruvananthapuram",,,,Heavy Rains & Flood,1,IMD
+PH11-00730,2020-09-20,2020,Kerala,"Ernakulam, Kannur, Thrissur, Wayanad",,,,Heavy Rains & Flood,1,IMD
+PH11-00731,2020-09-21,2020,Kerala,"Kannur, Kasaragod, Palakkad",,,,Heavy Rains & Flood,1,IMD
+PH11-00732,2020-09-22,2020,Kerala,"Kollam, Thiruvananthapuram",,,,Heavy Rains & Flood,1,IMD
+PH11-00733,2020-09-23,2020,Kerala,Thiruvananthapuram,,,,Heavy Rains & Flood,1,IMD
+PH11-00734,2020-09-10,2020,Kerala,Thiruvananthapuram,,,,Heavy Rains & Flood,1,IMD
+PH11-00735,2020-10-29,2020,Kerala,Thiruvananthapuram,,,,Heavy Rains,1,IMD
+PH11-00736,2020-07-15,2020,Uttarakhand,Dehradun,,,,Heavy Rains,1,IMD
+PH11-00737,2020-07-18,2020,Uttarakhand,Pithoragarh,,,,Heavy Rains & Cloud Burst,1,IMD
+PH11-00738,2020-08-25,2020,Uttarakhand,Chamoli,,,,Heavy Rains & Cloud Burst,1,IMD
+PH11-00739,2021-01-03,2021,Kerala,Kasaragod,,,,Heavy   Rains,1,IMD
+PH11-00740,2021-01-10,2021,Kerala,Wayanad,,,,Heavy   Rains,1,IMD
+PH11-00741,2021-04-02,2021,Kerala,Thiruvananthapuram,,,,Heavy   Rains & Mudslide,1,IMD
+PH11-00742,2021-04-10,2021,Kerala,Kozhikode,,,,Heavy   Rains,1,IMD
+PH11-00743,2021-04-11,2021,Kerala,Thiruvananthapuram,,,,Heavy   Rains,1,IMD
+PH11-00744,2021-04-13,2021,Kerala,Ernakulam,,,,Heavy   Rains,1,IMD
+PH11-00745,2021-04-18,2021,Kerala,Wayanad,,,,Heavy   Rains,1,IMD
+PH11-00746,2021-04-19,2021,Kerala,Kozhikode,,,,Heavy   Rains,1,IMD
+PH11-00747,2021-04-20,2021,Kerala,Wayanad,,,,Heavy   Rains,1,IMD
+PH11-00748,2021-04-22,2021,Kerala,Palakkad,,,,Heavy   Rains,1,IMD
+PH11-00749,2021-05-12,2021,Kerala,Thiruvananthapuram,,,,Heavy rains & Flood,1,IMD
+PH11-00750,2021-05-18,2021,Kerala,Thiruvananthapuram,,,,Heavy rains & Flood,1,IMD
+PH11-00751,2021-05-20,2021,Kerala,Idukki,,,,Heavy rains & Flood,1,IMD
+PH11-00752,2021-05-23,2021,Kerala,Thiruvananthapuram,,,,"Heavy rains, Flood & Mudslide",1,IMD
+PH11-00753,2021-06-05,2021,Kerala,Thiruvananthapuram,,,,Landslides,1,IMD
+PH11-00754,2021-06-16,2021,Kerala,Wayanad,,,,Heavy rains,1,IMD
+PH11-00755,2021-06-21,2021,Kerala,Wayanad,,,,Heavy rains,1,IMD
+PH11-00756,2021-07-14,2021,Kerala,Wayanad,,,,Heavy rains,1,IMD
+PH11-00757,2021-07-17,2021,Kerala,Wayanad,,,,Heavy rains & Landslide,1,IMD
+PH11-00758,2021-07-21,2021,Kerala,Wayanad,,,,Heavy rains,1,IMD
+PH11-00759,2021-08-03,2021,Kerala,Idukki,,,,Heavy rains,1,IMD
+PH11-00760,2021-09-27,2021,Kerala,"Idukki, Thiruvananthapuram",,,,Heavy rains,1,IMD
+PH11-00761,2021-10-02,2021,Kerala,Thrissur,,,,Heavy rains,1,IMD
+PH11-00762,2021-10-05,2021,Kerala,Thiruvananthapuram,,,,Heavy rains & Landslips,1,IMD
+PH11-00763,2021-10-09,2021,Kerala,"Alappuzha, Thiruvananthapuram",,,,Heavy rains,1,IMD
+PH11-00764,2021-10-11,2021,Kerala,Kollam,,,,Heavy Rains & Mudslide,1,IMD
+PH11-00765,2021-10-11,2021,Kerala,Malappuram,,,,Heavy Rains & Mudslide,1,IMD
+PH11-00766,2021-10-12,2021,Kerala,"Ernakulam, Kannur, Kottayam, Kozhikode, Palakkad, Pathanamthitta, Thiruvananthapuram, Thrissur",,,,"Heavy Rains, Floods & Landslides",1,IMD
+PH11-00767,2021-10-12,2021,Kerala,Ernakulam,,,,"Heavy Rains, Floods & Landslides",1,IMD
+PH11-00768,2021-10-12,2021,Kerala,Kannur,,,,"Heavy Rains, Floods & Landslides",1,IMD
+PH11-00769,2021-10-12,2021,Kerala,Kottayam,,,,"Heavy Rains, Floods & Landslides",1,IMD
+PH11-00770,2021-10-12,2021,Kerala,Kozhikode,,,,"Heavy Rains, Floods & Landslides",1,IMD
+PH11-00771,2021-10-12,2021,Kerala,Palakkad,,,,"Heavy Rains, Floods & Landslides",1,IMD
+PH11-00772,2021-10-12,2021,Kerala,Pathanamthitta,,,,"Heavy Rains, Floods & Landslides",1,IMD
+PH11-00773,2021-10-12,2021,Kerala,Thiruvananthapuram,,,,"Heavy Rains, Floods & Landslides",1,IMD
+PH11-00774,2021-10-12,2021,Kerala,Thrissur,,,,"Heavy Rains, Floods & Landslides",1,IMD
+PH11-00775,2021-10-16,2021,Kerala,"Alappuzha, Ernakulam, Idukki, Kollam, Kottayam, Palakkad, Thiruvananthapuram",,,,"Heavy Rains, Floods & Landslips",1,IMD
+PH11-00776,2021-10-16,2021,Kerala,Alappuzha,,,,"Heavy Rains, Floods & Landslips",1,IMD
+PH11-00777,2021-10-16,2021,Kerala,Ernakulam,,,,"Heavy Rains, Floods & Landslips",1,IMD
+PH11-00778,2021-10-16,2021,Kerala,Idukki,,,,"Heavy Rains, Floods & Landslips",1,IMD
+PH11-00779,2021-10-16,2021,Kerala,Kollam,,,,"Heavy Rains, Floods & Landslips",1,IMD
+PH11-00780,2021-10-16,2021,Kerala,Kottayam,,,,"Heavy Rains, Floods & Landslips",1,IMD
+PH11-00781,2021-10-16,2021,Kerala,Palakkad,,,,"Heavy Rains, Floods & Landslips",1,IMD
+PH11-00782,2021-10-16,2021,Kerala,Thiruvananthapuram,,,,"Heavy Rains, Floods & Landslips",1,IMD
+PH11-00783,2021-10-17,2021,Kerala,Thrissur,,,,Heavy Rains & Floods,1,IMD
+PH11-00784,2021-10-18,2021,Kerala,Thiruvananthapuram,,,,Heavy Rains & Floods (Kallar river),1,IMD
+PH11-00785,2021-10-11,2021,Kerala,"Alappuzha, Idukki, Ernakulam, Kannur, Kottayam, Kollam, Kozhikode, Malappuram, Palakkad,  Pathanamthitta, Thrissur, Thiruvananthapuram",,,,"Heavy rains, Floods & Landslides",1,IMD
+PH11-00786,2021-10-11,2021,Kerala,Alappuzha,,,,"Heavy rains, Floods & Landslides",1,IMD
+PH11-00787,2021-10-11,2021,Kerala,Kannur,,,,"Heavy rains, Floods & Landslides",1,IMD
+PH11-00788,2021-10-11,2021,Kerala,Thrissur,,,,"Heavy rains, Floods & Landslides",1,IMD
+PH11-00789,2021-10-20,2021,Kerala,Malappuram,,,,Heavy Rains & Floods,1,IMD
+PH11-00790,2021-10-20,2021,Kerala,Palakkad,,,,Heavy Rains & Floods,1,IMD
+PH11-00791,2021-10-20,2021,Kerala,Thiruvananthapuram,,,,Heavy Rains & Floods,1,IMD
+PH11-00792,2021-10-23,2021,Kerala,Kottayam,,,,Heavy Rains & Landslips,1,IMD
+PH11-00793,2021-10-23,2021,Kerala,Pathanamthitta,,,,Heavy Rains & Landslips,1,IMD
+PH11-00794,2021-11-02,2021,Kerala,Kozhikode,,,,Landslip,1,IMD
+PH11-00795,2021-11-05,2021,Kerala,"Alappuzha, Kottayam",,,,Heavy Rains & Floods,1,IMD
+PH11-00796,2021-11-13,2021,Kerala,"Alappuzha, Thiruvananthapuram",,,,Heavy Rains & Landslip,1,IMD
+PH11-00797,2021-11-14,2021,Kerala,Kannur,,,,Heavy Rains & Floods,1,IMD
+PH11-00798,2021-11-14,2021,Kerala,Thiruvananthapuram,,,,Heavy Rains & Floods,1,IMD
+PH11-00799,2021-11-14,2021,Kerala,Thrissur,,,,Heavy Rains & Floods,1,IMD
+PH11-00800,2021-11-10,2021,Kerala,"Ernakulam, Kannur, Kollam, Kottayam, Thiruvananthapuram, Thrissur",,,,Heavy Rains,1,IMD
+PH11-00801,2021-11-10,2021,Kerala,Ernakulam,,,,Heavy Rains,1,IMD
+PH11-00802,2021-11-15,2021,Kerala,"Alappuzha, Thiruvananthapuram, Thrissur",,,,Heavy Rains & Floods,1,IMD
+PH11-00803,2021-11-15,2021,Kerala,Thiruvananthapuram,,,,Heavy Rains & Floods,1,IMD
+PH11-00804,2021-11-17,2021,Kerala,Thiruvananthapuram,,,,Heavy Rains & Floods,1,IMD
+PH11-00805,2021-11-17,2021,Kerala,Thrissur,,,,Heavy Rains & Floods,1,IMD
+PH11-00806,2021-11-30,2021,Kerala,Thiruvananthapuram,,,,Heavy rains,1,IMD
+PH11-00807,2021-07-17,2021,Tamil Nadu,Tiruvannamalai,,,,Heavy Rains,1,IMD
+PH11-00808,2021-09-17,2021,Tamil Nadu,Pudukkottai,,,,Heavy Rains,1,IMD
+PH11-00809,2021-11-06,2021,Tamil Nadu,Chennai,,,,Heavy rains & Floods,1,IMD
+PH11-00810,2021-11-06,2021,Tamil Nadu,Kallakurichi,,,,Heavy rains & Floods,1,IMD
+PH11-00811,2021-11-06,2021,Tamil Nadu,Krishnagiri,,,,Heavy rains & Floods,1,IMD
+PH11-00812,2021-11-06,2021,Tamil Nadu,Madurai,,,,Heavy rains & Floods,1,IMD
+PH11-00813,2021-11-06,2021,Tamil Nadu,Thanjavur,,,,Heavy rains & Floods,1,IMD
+PH11-00814,2021-11-06,2021,Tamil Nadu,Theni,,,,Heavy rains & Floods,1,IMD
+PH11-00815,2021-11-06,2021,Tamil Nadu,Tiruvannamalai,,,,Heavy rains & Floods,1,IMD
+PH11-00816,2021-11-06,2021,Tamil Nadu,Vellore,,,,Heavy rains & Floods,1,IMD
+PH11-00817,2021-11-06,2021,Tamil Nadu,Viluppuram,,,,Heavy rains & Floods,1,IMD
+PH11-00818,2021-11-07,2021,Tamil Nadu,Chennai,,,,Heavy Rains,1,IMD
+PH11-00819,2021-11-10,2021,Tamil Nadu,Thanjavur,,,,Heavy Rains,1,IMD
+PH11-00820,2021-11-18,2021,Tamil Nadu,Vellore,,,,Heavy Rains,1,IMD
+PH11-00821,2021-11-19,2021,Tamil Nadu,Viluppuram,,,,Heavy Rains,1,IMD
+PH11-00822,2021-11-19,2021,Tamil Nadu,"Krishnagiri, Tiruvannamalai",,,,Heavy Rains,1,IMD
+PH11-00823,2021-11-19,2021,Tamil Nadu,"Krishnagiri, Tiruvannamalai",,,,Heavy Rains,1,IMD
+PH11-00824,2021-11-21,2021,Tamil Nadu,Kallakurichi,,,,Heavy Rains,1,IMD
+PH11-00825,2021-12-30,2021,Tamil Nadu,Chennai,,,,Heavy Rains,1,IMD
+PH11-00826,2021-02-07,2021,Uttarakhand,Chamoli,,,,Nandadevi Glacier breaks off at Joshimath,1,IMD
+PH11-00827,2021-05-29,2021,Uttarakhand,Uttar Kashi Kashi,,,,Landslide,1,IMD
+PH11-00828,2021-07-11,2021,Uttarakhand,Bageshwar,,,,Landslide,1,IMD
+PH11-00829,2021-07-11,2021,Uttarakhand,Chamoli,,,,Landslide,1,IMD
+PH11-00830,2021-07-19,2021,Uttarakhand,Uttar Kashi Kashi,,,,Heavy Rains,1,IMD
+PH11-00831,2021-08-29,2021,Uttarakhand,Pithoragarh,,,,Heavy Rains,1,IMD
+PH11-00832,2021-10-16,2021,Uttarakhand,"Almora, Bageshwar, Chamoli, Champawat, Nainital, Garhwal, Pithoragarh, Udam Singh Nagar",,,,"Heavy Rain, Landslides & Floods",1,IMD
+PH11-00833,2022-03-23,2022,Kerala,Palakkad,,,,Heavy rains,1,IMD
+PH11-00834,2022-03-24,2022,Kerala,Kannur,,,,Heavy rains,1,IMD
+PH11-00835,2022-03-24,2022,Kerala,Kasaragod,,,,Heavy rains,1,IMD
+PH11-00836,2022-03-27,2022,Kerala,Kottayam,,,,Heavy rains,1,IMD
+PH11-00837,2022-05-17,2022,Kerala,Thrissur,,,,Heavy Rains,1,IMD
+PH11-00838,2022-05-18,2022,Kerala,Ernakulam,,,,Heavy Rains,1,IMD
+PH11-00839,2022-05-18,2022,Kerala,Kozhikode,,,,Heavy Rains,1,IMD
+PH11-00840,2022-05-20,2022,Kerala,Idukki,,,,Heavy rains,1,IMD
+PH11-00841,2022-05-20,2022,Kerala,Thrissur,,,,Heavy rains,1,IMD
+PH11-00842,2022-06-16,2022,Kerala,Wayanad,,,,Mud slip,1,IMD
+PH11-00843,2022-07-01,2022,Kerala,Kannur,,,,Heavy rains,1,IMD
+PH11-00844,2022-07-02,2022,Kerala,Kannur,,,,Heavy rains,1,IMD
+PH11-00845,2022-07-04,2022,Kerala,Idukki,,,,Landslide,1,IMD
+PH11-00846,2022-07-05,2022,Kerala,Idukki,,,,Heavy rains,1,IMD
+PH11-00847,2022-07-07,2022,Kerala,Kannur,,,,Heavy rains,1,IMD
+PH11-00848,2022-07-10,2022,Kerala,Ernakulam,,,,Heavy rains,1,IMD
+PH11-00849,2022-07-15,2022,Kerala,Idukki,,,,Landslide,1,IMD
+PH11-00850,2022-07-16,2022,Kerala,"Kasaragod, Wayanad, Kozhikode, Malappuram, Palakkad, Thrissur, Idukki, Ernakulam, Alappuzha, Kottayam, Pathanamthitta, Kollam, Thiruvananthapuram, Kannur",,,,Heavy Rains & Floods,1,IMD
+PH11-00851,2022-07-16,2022,Kerala,Palakkad,,,,Heavy Rains & Floods,1,IMD
+PH11-00852,2022-07-16,2022,Kerala,Thrissur,,,,Heavy Rains & Floods,1,IMD
+PH11-00853,2022-07-19,2022,Kerala,Malappuram,,,,Heavy Rains & Floods,1,IMD
+PH11-00854,2022-07-20,2022,Kerala,Malappuram,,,,Heavy Rains & Floods,1,IMD
+PH11-00855,2022-07-28,2022,Kerala,Ernakulam,,,,Heavy Rains,1,IMD
+PH11-00856,2022-08-01,2022,Kerala,Kollam,,,,Heavy Rains & Floods,1,IMD
+PH11-00857,2022-08-01,2022,Kerala,Kottayam,,,,Heavy Rains & Floods,1,IMD
+PH11-00858,2022-08-01,2022,Kerala,Malappuram,,,,Heavy Rains & Floods,1,IMD
+PH11-00859,2022-08-01,2022,Kerala,Pathanamthitta,,,,Heavy Rains & Floods,1,IMD
+PH11-00860,2022-08-01,2022,Kerala,Thiruvananthapuram,,,,Heavy Rains & Floods,1,IMD
+PH11-00861,2022-08-01,2022,Kerala,Kottayam,,,,Landslide,1,IMD
+PH11-00862,2022-08-01,2022,Kerala,Kannur,,,,Landslide,1,IMD
+PH11-00863,2022-08-02,2022,Kerala,Alappuzha,,,,Heavy Rains & Floods,1,IMD
+PH11-00864,2022-08-02,2022,Kerala,Ernakulam,,,,Heavy Rains & Floods,1,IMD
+PH11-00865,2022-08-02,2022,Kerala,,,,,Heavy Rains & Floods,1,IMD
+PH11-00866,2022-08-02,2022,Kerala,Kannur,,,,Heavy Rains & Floods,1,IMD
+PH11-00867,2022-08-02,2022,Kerala,Kollam,,,,Heavy Rains & Floods,1,IMD
+PH11-00868,2022-08-02,2022,Kerala,Kottayam,,,,Heavy Rains & Floods,1,IMD
+PH11-00869,2022-08-02,2022,Kerala,Malappuram,,,,Heavy Rains & Floods,1,IMD
+PH11-00870,2022-08-02,2022,Kerala,Pathanamthitta,,,,Heavy Rains & Floods,1,IMD
+PH11-00871,2022-08-02,2022,Kerala,Thiruvananthapuram,,,,Heavy Rains & Floods,1,IMD
+PH11-00872,2022-08-02,2022,Kerala,Thrissur,,,,Heavy Rains & Floods,1,IMD
+PH11-00873,2022-08-02,2022,Kerala,Wayanad,,,,Heavy Rains & Floods,1,IMD
+PH11-00874,2022-08-29,2022,Kerala,Idukki,,,,Landslide,1,IMD
+PH11-00875,2022-09-04,2022,Kerala,Thiruvananthapuram,,,,Heavy Rains,1,IMD
+PH11-00876,2022-10-21,2022,Tamil Nadu,Erode,,,,Heavy Rains & Floods,1,IMD
+PH11-00877,2022-11-01,2022,Tamil Nadu,Chennai,,,,Heavy Rains,1,IMD
+PH11-00878,2022-11-01,2022,Tamil Nadu,Ranipet,,,,Heavy Rains,1,IMD
+PH11-00879,2022-11-01,2022,Tamil Nadu,Tiruvannamalai,,,,Heavy Rains,1,IMD
+PH11-00880,2022-07-19,2022,Uttarakhand,Rudra Prayag,,,,Heavy rains,1,IMD
+PH11-00881,2022-08-19,2022,Uttarakhand,"Dehradun,",,,,Cloudburst,1,IMD
+PH11-00882,2022-08-19,2022,Uttarakhand,Garhwal,,,,Cloudburst,1,IMD
+PH11-00883,2022-08-19,2022,Uttarakhand,Tehri Garhwal,,,,Cloudburst,1,IMD
+PH11-00884,2022-08-28,2022,Uttarakhand,Dehradun,,,,Heavy Rains,1,IMD
+PH11-00885,2022-09-22,2022,Uttarakhand,"Dehradun,",,,,Landslides triggered by Heavy Rains,1,IMD
+PH11-00886,2022-09-22,2022,Uttarakhand,Uttar Kashi Kashi,,,,Landslides triggered by Heavy Rains,1,IMD
+PH11-00887,2023-07-03,2023,Kerala,Alappuzha,,,,Heavy Rains & Floods,1,IMD
+PH11-00888,2023-07-03,2023,Kerala,Kannur,,,,Heavy Rains & Floods,1,IMD
+PH11-00889,2023-07-03,2023,Kerala,Kottayam,,,,Heavy Rains & Floods,1,IMD
+PH11-00890,2023-07-03,2023,Kerala,Kozhikode,,,,Heavy Rains & Floods,1,IMD
+PH11-00891,2023-07-03,2023,Kerala,Pathanamthitta,,,,Heavy Rains & Floods,1,IMD
+PH11-00892,2023-07-03,2023,Kerala,,,,,Heavy Rains & Floods,1,IMD
+PH11-00893,2023-07-10,2023,Kerala,Malappuram,,,,Heavy Rains & Floods (Nilambur River),1,IMD
+PH11-00894,2023-07-23,2023,Kerala,Thrissur,,,,Heavy Rains & Floods,1,IMD
+PH11-00895,2023-07-23,2023,Kerala,Wayanad,,,,Heavy Rains & Floods,1,IMD
+PH11-00896,2023-06-25,2023,Uttarakhand,Rudra Prayag,,,,Heavy rains,1,IMD
+PH11-00897,2023-06-25,2023,Uttarakhand,Uttar Kashi Kashi,,,,Heavy rains,1,IMD
+PH11-00898,2023-07-09,2023,Uttarakhand,Dehradun,,,,Landslide,1,IMD
+PH11-00899,2023-07-09,2023,Uttarakhand,Udam Singh Nagar,,,,Heavy rains,1,IMD
+PH11-00900,2023-07-10,2023,Uttarakhand,Uttar Kashi Kashi,,,,Heavy rains,1,IMD
+PH11-00901,2023-07-11,2023,Uttarakhand,Pithoragarh,,,,Heavy rains & Landslides,1,IMD
+PH11-00902,2023-07-11,2023,Uttarakhand,Rudra Prayag,,,,Heavy rains & Landslides,1,IMD
+PH11-00903,2023-07-16,2023,Uttarakhand,Chamoli,,,,Heavy rains & Floods,1,IMD
+PH11-00904,2023-07-16,2023,Uttarakhand,Rudra Prayag,,,,Heavy rains & Floods,1,IMD
+PH11-00905,2023-07-17,2023,Uttarakhand,Rudra Prayag,,,,Heavy Rains & Floods,1,IMD
+PH11-00906,2023-08-04,2023,Uttarakhand,Rudra Prayag,,,,Massive Landslide,1,IMD
+PH11-00907,2023-08-06,2023,Uttarakhand,Tehri Garhwal,,,,Heavy Rains,1,IMD
+PH11-00908,2023-08-07,2023,Uttarakhand,Rudra Prayag,,,,Landslide,1,IMD
+PH11-00909,2023-08-09,2023,Uttarakhand,Rudra Prayag,,,,Landslides,1,IMD
+PH11-00910,2023-08-10,2023,Uttarakhand,Garhwal,,,,Heavy Rains,1,IMD
+PH11-00911,2023-08-10,2023,Uttarakhand,Rudra Prayag,,,,Landslide,1,IMD
+PH11-00912,2023-08-14,2023,Uttarakhand,Dehradun,,,,Torrential rains & Landslides,1,IMD
+PH11-00913,2023-08-14,2023,Uttarakhand,Tehri Garhwal,,,,Landslide,1,IMD
+PH11-00914,2023-08-15,2023,Uttarakhand,Chamoli,,,,Heavy Rains,1,IMD
+PH11-00915,2023-08-21,2023,Uttarakhand,Tehri Garhwal,,,,Landslide,1,IMD
+PH11-00916,2023-08-23,2023,Uttarakhand,Garhwal,,,,Heavy Rains,1,IMD
+PH11-00917,2023-08-26,2023,Uttarakhand,Chamoli,,,,Heavy Rains & Floods,1,IMD
