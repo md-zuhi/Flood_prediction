@@ -1,0 +1,304 @@
+/* ─── Reset & Base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #0f1117;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+/* ─── App Shell ─────────────────────────────────────────────── */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+/* ─── Header ────────────────────────────────────────────────── */
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+  padding: 28px 20px 20px;
+  background: linear-gradient(135deg, #1a1f2e 0%, #141922 100%);
+  border: 1px solid #2a3040;
+  border-radius: 12px;
+}
+.header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #7eb3ff;
+  letter-spacing: -0.02em;
+}
+.header p {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #7a8499;
+}
+
+/* ─── Input Form ────────────────────────────────────────────── */
+.input-form {
+  background: #1a1f2e;
+  border: 1px solid #2a3040;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: #8a96aa;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.form-grid input {
+  background: #0f1117;
+  border: 1px solid #2a3040;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 0.92rem;
+  color: #e0e0e0;
+  transition: border-color 0.2s;
+}
+.form-grid input:focus {
+  outline: none;
+  border-color: #4a7cdc;
+}
+.fetch-btn {
+  background: #4a7cdc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+.fetch-btn:hover  { background: #5a8cec; }
+.fetch-btn:disabled { opacity: 0.55; cursor: not-allowed; }
+
+/* ─── Error / Loading ───────────────────────────────────────── */
+.error-box {
+  background: #2a1515;
+  border: 1px solid #6b2020;
+  color: #ff8080;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+.loading {
+  text-align: center;
+  color: #7a8499;
+  padding: 32px;
+  font-size: 1rem;
+}
+
+/* ─── Summary Bar ───────────────────────────────────────────── */
+.summary-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.sum-item {
+  background: #1a1f2e;
+  border: 1px solid #2a3040;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sum-label { font-size: 0.72rem; color: #7a8499; text-transform: uppercase; letter-spacing: 0.05em; }
+.sum-value { font-size: 0.95rem; font-weight: 600; color: #c0cce0; }
+.sum-big   { font-size: 1.3rem; color: #7eb3ff; }
+
+.missing-bar {
+  background: #1a1510;
+  border: 1px solid #3a2a10;
+  color: #c09040;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.84rem;
+  margin-bottom: 16px;
+}
+
+/* ─── Cards Grid ────────────────────────────────────────────── */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* ─── Card ──────────────────────────────────────────────────── */
+.card {
+  background: #1a1f2e;
+  border: 1px solid #2a3040;
+  border-radius: 12px;
+  padding: 18px;
+}
+.card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #9ab4e0;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #252b3d;
+}
+.card-health  { margin-bottom: 16px; }
+.card-warnings{ margin-bottom: 16px; }
+.card-raw     { margin-bottom: 16px; }
+
+/* ─── Row ───────────────────────────────────────────────────── */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px 0;
+  border-bottom: 1px solid #1e2535;
+  gap: 8px;
+}
+.row:last-of-type { border-bottom: none; }
+.row-label { font-size: 0.8rem; color: #7a8499; min-width: 130px; }
+.row-value { font-size: 0.88rem; color: #d0daf0; text-align: right; word-break: break-word; }
+
+/* ─── Freshness Bar ─────────────────────────────────────────── */
+.freshness-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  padding: 6px 8px;
+  background: #141922;
+  border-radius: 6px;
+}
+.sh-age  { font-size: 0.78rem; color: #7a8499; }
+.sh-flag { font-size: 0.78rem; color: #b07040; }
+
+/* ─── Source Health ─────────────────────────────────────────── */
+.sh-grid { display: flex; flex-direction: column; gap: 8px; }
+.sh-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 8px;
+  background: #141922;
+  border-radius: 8px;
+}
+.sh-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #9ab4e0;
+  min-width: 160px;
+}
+
+/* ─── Sub Section ───────────────────────────────────────────── */
+.sub-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #252b3d;
+}
+.sub-section h3 {
+  font-size: 0.82rem;
+  color: #7a8499;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+/* ─── Disclaimer ────────────────────────────────────────────── */
+.disclaimer {
+  background: #1a1510;
+  border: 1px solid #3a2a10;
+  color: #c09040;
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 0.78rem;
+  margin-bottom: 10px;
+}
+
+/* ─── IoT ───────────────────────────────────────────────────── */
+.iot-status { margin-bottom: 10px; }
+
+/* ─── Warnings ──────────────────────────────────────────────── */
+.no-warnings { color: #4a9e6a; font-size: 0.88rem; }
+.warn-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.warn-list li {
+  background: #1e1a10;
+  border: 1px solid #3a3010;
+  color: #d0a050;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.86rem;
+}
+
+/* ─── Raw JSON ──────────────────────────────────────────────── */
+.raw-toggle {
+  background: none;
+  border: 1px solid #2a3040;
+  color: #6a8aaa;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: border-color 0.2s, color 0.2s;
+}
+.raw-toggle:hover { border-color: #4a7cdc; color: #7eb3ff; }
+.raw-json {
+  background: #0a0d14;
+  border: 1px solid #1e2535;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 0.78rem;
+  color: #a0b4cc;
+  overflow-x: auto;
+  white-space: pre;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* ─── Badges ────────────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.badge-success     { background: #0f2e1a; color: #4ace7a; border: 1px solid #1e5030; }
+.badge-failed      { background: #2a1010; color: #e06060; border: 1px solid #5a2020; }
+.badge-unavail     { background: #20202e; color: #8890aa; border: 1px solid #2a3040; }
+.badge-fresh       { background: #0a2a18; color: #40c870; border: 1px solid #1a5030; }
+.badge-acceptable  { background: #1a2010; color: #a0c840; border: 1px solid #304010; }
+.badge-stale       { background: #2a1a08; color: #e08030; border: 1px solid #503010; }
+.badge-static      { background: #102030; color: #5090c0; border: 1px solid #204060; }
+.badge-historical  { background: #18102a; color: #9060d0; border: 1px solid #382060; }
+.badge-high        { background: #0a2a18; color: #40c870; border: 1px solid #1a5030; }
+.badge-moderate    { background: #1a2010; color: #c0c040; border: 1px solid #404010; }
+.badge-low         { background: #2a1010; color: #e06060; border: 1px solid #5a2020; }
+.badge-valid       { background: #0a2020; color: #40b0c0; border: 1px solid #1a4050; }
+.badge-poor        { background: #2a1a08; color: #e08030; border: 1px solid #503010; }
+.badge-invalid     { background: #2a1010; color: #e06060; border: 1px solid #5a2020; }
+.badge-default     { background: #1a1f2e; color: #8890aa; border: 1px solid #2a3040; }

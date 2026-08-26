@@ -1,0 +1,55 @@
+Phase 11 -- Historical Feature Retrieval Test Report
+============================================================
+
+Events attempted       : 5
+Successful retrievals  : 5
+Failed retrievals      : 0
+
+Variables obtained:
+  rain_1h_mm
+  rain_3h_mm
+  rain_6h_mm
+  rain_12h_mm
+  rain_24h_mm
+  temperature_c
+  humidity_percent
+  soil_moisture_m3m3
+Variables not obtained (all None):
+  (none -- all variables retrieved)
+
+Data source:
+  ERA5-Land reanalysis via Open-Meteo Historical Archive API
+  URL: https://archive-api.open-meteo.com/v1/archive
+  Variables: temperature_2m, precipitation, relative_humidity_2m, soil_moisture_0_to_7cm
+
+Temporal handling:
+  temporal_precision = 'date'
+  Event time is unknown (only event date available).
+  Antecedent window = full calendar day BEFORE the event date (UTC).
+  rain_1h_mm  = hour 23 of antecedent day
+  rain_3h_mm  = hours 21-23 of antecedent day
+  rain_6h_mm  = hours 18-23 of antecedent day
+  rain_12h_mm = hours 12-23 of antecedent day
+  rain_24h_mm = hours 0-23 of antecedent day (full day)
+  temperature_c / humidity_percent / soil_moisture_m3m3 = daily mean
+
+Coordinate precision:
+  coordinate_precision = 'district' for all 5 events.
+  Coordinates are district centroids, not exact flood locations.
+
+Limitations:
+  1. ERA5-Land is a reanalysis product (~0.1-degree grid ~11km).
+     It may not capture highly localised convective rainfall.
+  2. Only the antecedent day is used (no event-day rainfall included).
+  3. No event-hour precision -- temporal_precision = 'date'.
+  4. Soil moisture is 0-7cm layer only (top layer).
+
+Errors:
+  None
+
+Results summary:
+  PH11-00419 | Tamil Nadu | 2008-05-25 | status=success | rain_24h=0.6 mm | temp=26.7833 C | rh=70.5833% | sm=0.1614
+  PH11-00471 | Kerala | 2011-04-25 | status=success | rain_24h=11.3 mm | temp=25.6708 C | rh=90.3333% | sm=0.3615
+  PH11-00617 | Uttarakhand | 2016-05-08 | status=success | rain_24h=7.5 mm | temp=14.1125 C | rh=86.4583% | sm=0.3314
+  PH11-00879 | Tamil Nadu | 2022-11-01 | status=success | rain_24h=7.9 mm | temp=23.2792 C | rh=84.7917% | sm=0.288
+  PH11-00895 | Kerala | 2023-07-23 | status=success | rain_24h=31.2 mm | temp=21.1917 C | rh=95.5833% | sm=0.5117

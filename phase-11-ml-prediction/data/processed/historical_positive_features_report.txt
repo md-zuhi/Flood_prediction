@@ -1,0 +1,41 @@
+Phase 11 -- Full Historical Feature Retrieval Report
+============================================================
+
+Input file             : three_state_flood_events_geocoded.csv
+Total events in CSV    : 917
+Eligible (coords+date) : 909
+Successful retrievals  : 909
+Failed retrievals      : 0
+Success rate           : 100.0%
+
+Rows per state (successful):
+  Kerala: 602
+  Tamil Nadu: 187
+  Uttarakhand: 120
+
+Date range             : 1968-07-01 to 2023-08-26
+
+Missing values per feature (success rows only):
+  rain_1h_mm               : 0 missing
+  rain_3h_mm               : 0 missing
+  rain_6h_mm               : 0 missing
+  rain_12h_mm              : 0 missing
+  rain_24h_mm              : 0 missing
+  temperature_c            : 0 missing
+  humidity_percent         : 0 missing
+  soil_moisture_m3m3       : 0 missing
+
+Data source            : ERA5-Land via Open-Meteo Historical API
+API URL                : https://archive-api.open-meteo.com/v1/archive
+Authentication         : None (free API)
+
+Temporal handling      : temporal_precision = 'date'
+                         antecedent_day = event_date - 1
+                         rain windows end at 23:00 UTC of antecedent_day
+
+Coordinate precision   : 'district' for all rows
+                         Coordinates are district centroids.
+
+Flood label            : flood_occurred = 1 (all positive samples)
+Negative samples       : NOT created in this step
+ML training            : NOT performed
