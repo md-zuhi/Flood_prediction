@@ -1,0 +1,5 @@
+requests
+tqdm
+h5py
+numpy
+pandas

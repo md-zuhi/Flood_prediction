@@ -1,0 +1,48 @@
+Phase 11 -- Dataset Preparation Report
+============================================================
+
+SOURCE FILE 1: India_Flood_Inventory_v3.csv
+  Columns : ['Unnamed: 0', 'UEI', 'Start Date', 'End Date', 'Duration(Days)', 'Main Cause', 'Location', 'Districts', 'State', 'Latitude', 'Longitude', 'Severity', 'Area Affected', 'Human fatality', 'Human injured', 'Human Displaced', 'Animal Fatality', 'Description of Casualties/injured', 'Extent of damage ', 'Event Source', 'Event Souce ID', 'District_LGD_Codes', 'State_Codes']
+  Total rows (original) : 6876
+
+SOURCE FILE 2: District_FloodedArea.csv
+  Columns : ['Dist_Name', 'Percent_Flooded_Area', 'Parmanent_Water', 'Corrected_Percent_Flooded_Area']
+  Total rows (original) : 732
+
+============================================================
+OUTPUT: three_state_flood_events.csv
+============================================================
+  Target states         : ['Tamil Nadu', 'Kerala', 'Uttarakhand']
+  Filtered rows         : 917
+  Rows per state:
+    Kerala: 608
+    Tamil Nadu: 188
+    Uttarakhand: 121
+
+  Date range            : 1968-07-01 to 2023-08-26
+  With latitude         : 0
+  With longitude        : 0
+  With both coordinates : 0 / 917
+  Missing district      : 7
+  Missing location      : 917
+  Exact duplicates removed: 0
+
+============================================================
+OUTPUT: district_flood_exposure.csv
+============================================================
+  Total rows saved      : 732
+  WARNING: No state column in District_FloodedArea.csv.
+           Full file saved. State-based filtering requires an
+           external district-to-state mapping (not available in raw data).
+           Do NOT use this file as flood labels.
+
+============================================================
+PROCESSING RULES APPLIED
+============================================================
+  - Rows matched where State column *contains* the target state name.
+  - Multi-state rows: one output row created per matched target state.
+  - Missing values returned as None/NaN — never replaced with 0.
+  - Exact duplicate rows removed only.
+  - flood_occurred = 1 for all events (positive class, historical records).
+  - No negative samples created.
+  - No model trained.
