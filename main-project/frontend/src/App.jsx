@@ -1,4 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
+import AdminLoginPage from "./pages/AdminLoginPage";
 import Sidebar from "./components/Sidebar";
 import OverviewDashboard from "./pages/OverviewDashboard";
 import "./App.css";
@@ -67,7 +72,8 @@ const locations = [
   },
 ];
 
-function App() {
+// Dashboard wrapper coordinating predictions and stats
+function DashboardWrapper() {
   const [selectedLocation, setSelectedLocation] = useState(locations[0]);
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -77,8 +83,6 @@ function App() {
     try {
       setLoading(true);
       setError("");
-      // Do not clear the previous result immediately to avoid layout thrashing,
-      // but let the UI know it is loading.
 
       const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
       const response = await fetch(`${apiBaseUrl}/api/predict`, {
@@ -104,19 +108,17 @@ function App() {
     }
   };
 
-  // Run analysis automatically when location changes (includes mount)
   useEffect(() => {
     analyzeRisk();
   }, [selectedLocation]);
 
-  // Dynamic risk level classification based on flood probability percentage
   const getRiskClassification = (prob) => {
     const p = Number(prob);
     if (isNaN(p)) return { level: "UNKNOWN", color: "#82cfff" };
-    if (p < 30) return { level: "LOW", color: "#22c55e" };      // 0-29%
-    if (p < 60) return { level: "MODERATE", color: "#f5a623" }; // 30-59%
-    if (p < 80) return { level: "HIGH", color: "#f97316" };     // 60-79%
-    return { level: "CRITICAL", color: "#ef5350" };             // 80-100%
+    if (p < 30) return { level: "LOW", color: "#22c55e" };
+    if (p < 60) return { level: "MODERATE", color: "#f5a623" };
+    if (p < 80) return { level: "HIGH", color: "#f97316" };
+    return { level: "CRITICAL", color: "#ef5350" };
   };
 
   const classification = result
@@ -148,6 +150,21 @@ function App() {
         riskColor={riskColor}
       />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/admin/login" element={<AdminLoginPage />} />
+        <Route path="/dashboard" element={<DashboardWrapper />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </Router>
   );
 }
 
