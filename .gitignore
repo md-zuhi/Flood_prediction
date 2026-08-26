@@ -3,3 +3,31 @@ node_modules/
 *.pyc
 .venv/
 dist/
+
+# Environment files / secrets
+.env
+**/.env
+/backend/.env
+/frontend/.env
+
+# Node
+node_modules/
+**/node_modules/
+
+# Build
+dist/
+dist-ssr/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Logs
+*.log
+logs/
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
