@@ -1,0 +1,135 @@
+Phase 11 -- Negative Sample Generation Report (FINAL)
+============================================================
+Generated : 2026-08-25
+Script    : data/generate_negative_samples.py
+Retry     : data/retry_failed_negative.py  (patched NEG-00610)
+
+------------------------------------------------------------
+SAMPLE COUNTS
+------------------------------------------------------------
+Target negatives               : 909
+Generated negatives            : 909
+Successful ERA5 retrievals     : 909   (100.0%)
+API failures                   : 0
+No valid negative date found   : 0
+
+------------------------------------------------------------
+ROWS PER STATE
+------------------------------------------------------------
+  Kerala         : 602
+  Tamil Nadu     : 187
+  Uttarakhand    : 120
+  Total          : 909
+
+  Target distribution (mirrors positive samples):
+    Kerala         : 602   (target 602)  ✓
+    Tamil Nadu     : 187   (target 187)  ✓
+    Uttarakhand    : 120   (target 120)  ✓
+
+------------------------------------------------------------
+DATE RANGE
+------------------------------------------------------------
+  Earliest negative date : 1968-04-02
+  Latest negative date   : 2023-11-22
+  Antecedent day range   : 1968-04-01  to  2023-11-21
+  ERA5 coverage window   : 1940-01-01  to  ~5 days before run date
+
+------------------------------------------------------------
+COLLISION / DUPLICATE CHECKS
+------------------------------------------------------------
+  Known flood-event exact-date collisions  : 0
+    (forbidden set enforced: all known flood dates blocked)
+
+  +-7 day buffer collisions                : 0
+    (forbidden window of +-7 days around each known event enforced)
+
+  Duplicate district/date pairs            : 0
+    (used_set tracking enforced per district key)
+
+  Shared coord+date with positive samples  : 1  (NOT a true collision)
+    NEG-00285 | Uttarakhand | 2023-08-04 | first_district='Azamgarh'
+    PH11-00906 | Uttarakhand | 2023-08-04 | first_district='Rudra Prayag'
+    Explanation: Two different Uttarakhand events share the same district
+    centroid coordinate (30.0417, 79.0897) but have different first-district
+    keys. The forbidden-date check is keyed by district name, so 'Azamgarh'
+    and 'Rudra Prayag' are treated as distinct -- no actual label conflict.
+
+------------------------------------------------------------
+MISSING VALUES PER FEATURE  (all 909 success rows)
+------------------------------------------------------------
+  rain_1h_mm               : 0
+  rain_3h_mm               : 0
+  rain_6h_mm               : 0
+  rain_12h_mm              : 0
+  rain_24h_mm              : 0
+  temperature_c            : 0
+  humidity_percent         : 0
+  soil_moisture_m3m3       : 0
+
+------------------------------------------------------------
+API STATISTICS
+------------------------------------------------------------
+  Total ERA5 API calls made  : 909
+    Original run             : 908  (1 connection-reset failure on NEG-00610)
+    Retry run                : 1    (NEG-00610 patched successfully)
+  Cache hits                 : 1    (shared coord+date key reused)
+  Rate limit                 : 1.1 s delay between calls (Open-Meteo ToS)
+  API endpoint               : https://archive-api.open-meteo.com/v1/archive
+  Variables fetched          : temperature_2m, precipitation,
+                               relative_humidity_2m, soil_moisture_0_to_7cm
+  Cache file                 : data/era5_api_cache.json
+
+------------------------------------------------------------
+PATCHED ROW DETAIL  (NEG-00610)
+------------------------------------------------------------
+  event_id       : NEG-00610
+  date           : 1975-06-16
+  antecedent_day : 1975-06-15
+  state          : Kerala
+  district       : Alappuzha, Ernakulam, Idukki, Kollam, Kottayam, ...
+  latitude       : 9.5003416
+  longitude      : 76.4123364
+  rain_1h_mm     : 1.0
+  rain_3h_mm     : 1.6
+  rain_6h_mm     : 5.1
+  rain_12h_mm    : 7.3
+  rain_24h_mm    : 24.8
+  temperature_c  : 25.0042
+  humidity_percent: 92.5833
+  soil_moisture  : 0.3715
+  Original error : ConnectionResetError(10054) -- remote host closed connection
+  Retry result   : success (attempt 1 of 3)
+
+------------------------------------------------------------
+METHODOLOGY
+------------------------------------------------------------
+  Negative date selection  : same calendar month, different year (seed=42).
+                             Falls back to adjacent months (+-1,+-2,+-3)
+                             if same-month exhausted for a district.
+  Non-flood definition     : absence from flood inventory + 7-day buffer.
+                             NOT classified by low rainfall values.
+  Feature retrieval        : ERA5-Land values fetched AFTER date selection.
+                             Antecedent window = calendar day before neg date.
+                             rain_Xh_mm = rolling sums ending at 23:00 UTC.
+                             temperature/humidity/soil = daily mean.
+  Label                    : flood_occurred = 0
+  Sample type              : sample_type = 'non_flood'
+  Source field             : 'generated_negative'
+  Coordinates              : same district centroid as paired positive sample.
+  coordinate_precision     : 'district'  (matches positive samples)
+  Random seed              : 42
+
+------------------------------------------------------------
+OUTPUT FILES
+------------------------------------------------------------
+  data/processed/historical_negative_features.csv  -- 909 rows, 24 columns
+  data/processed/negative_samples_report.txt        -- this file
+
+------------------------------------------------------------
+CONSTRAINTS HONOURED
+------------------------------------------------------------
+  Positive samples modified  : NO
+  Phase 10 modified          : NO
+  ML model trained           : NO
+  Synthetic values created   : NO
+  flood_occurred=1 in negatives : NO  (all rows have flood_occurred=0)

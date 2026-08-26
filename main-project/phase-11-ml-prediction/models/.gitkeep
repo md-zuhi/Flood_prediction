@@ -1,0 +1,8 @@
+Phase 11 — Trained Model Artefacts
+
+Place the following here after training:
+
+  model.joblib     — trained classifier (RandomForest / XGBoost / etc.)
+  scaler.joblib    — fitted StandardScaler or MinMaxScaler
+  features.json    — ordered feature list used during training (must match FEATURE_NAMES)
+  metrics.json     — evaluation results (accuracy, F1, ROC-AUC, etc.)

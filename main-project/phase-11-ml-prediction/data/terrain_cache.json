@@ -1,0 +1,422 @@
+{
+  "12.422196,75.190445": {
+    "elevation_m": 83.0,
+    "slope_deg": 9.45,
+    "local_relief_m": 223.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "10.352874,76.51204": {
+    "elevation_m": 144.0,
+    "slope_deg": 22.21,
+    "local_relief_m": 330.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "13.083694,80.270186": {
+    "elevation_m": 10.0,
+    "slope_deg": 2.82,
+    "local_relief_m": 28.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "10.52701,76.214621": {
+    "elevation_m": 22.0,
+    "slope_deg": 4.19,
+    "local_relief_m": 39.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "8.488227,76.947551": {
+    "elevation_m": 21.0,
+    "slope_deg": 5.01,
+    "local_relief_m": 43.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "10.659037,79.201428": {
+    "elevation_m": 37.0,
+    "slope_deg": 1.32,
+    "local_relief_m": 20.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "11.001812,76.962842": {
+    "elevation_m": 419.0,
+    "slope_deg": 2.68,
+    "local_relief_m": 34.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "11.4,76.7": {
+    "elevation_m": 2232.0,
+    "slope_deg": 11.52,
+    "local_relief_m": 253.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "9.500342,76.412336": {
+    "elevation_m": 1.0,
+    "slope_deg": 1.32,
+    "local_relief_m": 35.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "9.983726,76.274": {
+    "elevation_m": 4.0,
+    "slope_deg": 2.82,
+    "local_relief_m": 24.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "11.876384,75.373797": {
+    "elevation_m": 21.0,
+    "slope_deg": 1.67,
+    "local_relief_m": 43.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "11.245056,75.775472": {
+    "elevation_m": 13.0,
+    "slope_deg": 1.98,
+    "local_relief_m": 29.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "10.787369,76.474217": {
+    "elevation_m": 83.0,
+    "slope_deg": 3.15,
+    "local_relief_m": 57.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "9.926115,78.114098": {
+    "elevation_m": 138.0,
+    "slope_deg": 2.65,
+    "local_relief_m": 23.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "10.290307,78.817362": {
+    "elevation_m": 87.0,
+    "slope_deg": 1.68,
+    "local_relief_m": 25.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "9.520558,78.518463": {
+    "elevation_m": 46.0,
+    "slope_deg": 2.39,
+    "local_relief_m": 17.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "11.520207,79.339636": {
+    "elevation_m": 53.0,
+    "slope_deg": 1.47,
+    "local_relief_m": 36.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "10.807114,78.688094": {
+    "elevation_m": 78.0,
+    "slope_deg": 1.68,
+    "local_relief_m": 25.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "8.549501,77.580518": {
+    "elevation_m": 113.0,
+    "slope_deg": 1.04,
+    "local_relief_m": 143.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "30.498596,79.619054": {
+    "elevation_m": 1853.0,
+    "slope_deg": 23.8,
+    "local_relief_m": 928.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "30.041738,79.089691": {
+    "elevation_m": 2041.0,
+    "slope_deg": 30.37,
+    "local_relief_m": 706.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "9.628738,76.645533": {
+    "elevation_m": 40.0,
+    "slope_deg": 3.14,
+    "local_relief_m": 97.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "12.684089,79.983637": {
+    "elevation_m": 47.0,
+    "slope_deg": 2.01,
+    "local_relief_m": 59.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "11.106568,76.110174": {
+    "elevation_m": 47.0,
+    "slope_deg": 9.32,
+    "local_relief_m": 83.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "9.815478,76.99916": {
+    "elevation_m": 723.0,
+    "slope_deg": 0.0,
+    "local_relief_m": 409.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "12.902185,79.061104": {
+    "elevation_m": 233.0,
+    "slope_deg": 0.73,
+    "local_relief_m": 17.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "29.222031,79.522986": {
+    "elevation_m": 441.0,
+    "slope_deg": 4.34,
+    "local_relief_m": 47.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "12.116697,79.598924": {
+    "elevation_m": 51.0,
+    "slope_deg": 2.61,
+    "local_relief_m": 34.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "30.325565,78.043681": {
+    "elevation_m": 672.0,
+    "slope_deg": 3.84,
+    "local_relief_m": 53.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "29.702651,79.432632": {
+    "elevation_m": 1142.0,
+    "slope_deg": 16.65,
+    "local_relief_m": 255.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "11.715129,76.127118": {
+    "elevation_m": 757.0,
+    "slope_deg": 7.78,
+    "local_relief_m": 77.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "29.294995,79.416251": {
+    "elevation_m": 819.0,
+    "slope_deg": 31.56,
+    "local_relief_m": 555.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "13.253762,80.056257": {
+    "elevation_m": 26.0,
+    "slope_deg": 1.99,
+    "local_relief_m": 21.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "30.25,79.333333": {
+    "elevation_m": 2253.0,
+    "slope_deg": 26.1,
+    "local_relief_m": 621.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "8.887053,76.59067": {
+    "elevation_m": 17.0,
+    "slope_deg": 1.36,
+    "local_relief_m": 31.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "9.278084,76.973744": {
+    "elevation_m": 465.0,
+    "slope_deg": 9.48,
+    "local_relief_m": 415.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "30.465818,78.483735": {
+    "elevation_m": 1703.0,
+    "slope_deg": 41.77,
+    "local_relief_m": 869.0,
+    "terrain_status": "success",
+    "terrain_error": null
+  },
+  "11.332372,78.609864": {
+    "elevation_m": 753.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "10.425716,77.815473": {
+    "elevation_m": 303.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "12.879605,79.704276": {
+    "elevation_m": 79.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "10.60262,79.761935": {
+    "elevation_m": 1.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "10.821767,78.382865": {
+    "elevation_m": 125.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "29.938447,78.145298": {
+    "elevation_m": 290.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "29.585871,80.215167": {
+    "elevation_m": 1612.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "10.687862,79.497944": {
+    "elevation_m": 16.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "30.00879,79.928018": {
+    "elevation_m": 1819.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "30.474679,78.312607": {
+    "elevation_m": 1636.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "11.646962,78.210696": {
+    "elevation_m": 394.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "11.153056,79.25858": {
+    "elevation_m": 73.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "29.235032,80.102307": {
+    "elevation_m": 1013.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "12.428928,78.99915": {
+    "elevation_m": 266.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "12.145613,78.113222": {
+    "elevation_m": 468.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "10.791527,77.532547": {
+    "elevation_m": 238.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "11.490528,77.350527": {
+    "elevation_m": 213.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "9.492629,77.863183": {
+    "elevation_m": 88.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "12.515208,78.009377": {
+    "elevation_m": 707.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "9.848688,78.487046": {
+    "elevation_m": 101.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "11.794685,79.038821": {
+    "elevation_m": 119.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "9.869256,77.422297": {
+    "elevation_m": 386.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  },
+  "12.918624,79.408192": {
+    "elevation_m": 165.0,
+    "slope_deg": null,
+    "local_relief_m": null,
+    "terrain_status": "partial",
+    "terrain_error": "slope/relief unavailable (open-elevation fallback; OpenTopography rate-limited)"
+  }
+}

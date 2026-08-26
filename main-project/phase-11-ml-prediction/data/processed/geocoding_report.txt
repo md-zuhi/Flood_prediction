@@ -1,0 +1,26 @@
+Phase 11 -- Geocoding Report
+============================================================
+
+Input events           : 917
+Location-level coords  : 0  (location column was empty in dataset)
+District-level coords  : 909
+Still missing          : 8
+Total coverage         : 99.1%
+
+Coverage by state:
+  Kerala: 602/608 (99.0%)
+  Tamil Nadu: 187/188 (99.5%)
+  Uttarakhand: 120/121 (99.2%)
+
+Unique queries cached   : 82
+API calls made          : 82
+Cache hits              : 849
+Failed queries          : 0
+
+Notes:
+  coordinate_precision = 'district'
+    -> Coordinates represent the district centroid, NOT the exact
+       flood event location. Do not treat as precise event coordinates.
+  coordinate_precision = 'missing'
+    -> No usable district name available for geocoding.
+  Source: OpenStreetMap Nominatim (countrycodes=in)
