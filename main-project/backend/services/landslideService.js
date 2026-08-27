@@ -205,7 +205,7 @@ function getLandslideHistory(latitude, longitude, state) {
   loadCsvOnce();
 
   // ── Scope guard ────────────────────────────────────────────────────────────
-  if (!isTamilNadu(state)) {
+  if (latitude == null || longitude == null || isNaN(Number(latitude)) || isNaN(Number(longitude)) || !isTamilNadu(state)) {
     return {
       nearest_event_km          : null,
       count_5km                 : null,
@@ -216,8 +216,7 @@ function getLandslideHistory(latitude, longitude, state) {
       source                    : 'GSI',
       dataset                   : 'Field-Validated Landslide Inventory',
       status                    : 'unavailable',
-      message                   :
-        'Historical landslide dataset currently covers Tamil Nadu only.',
+      message                   : 'Coordinates missing or location outside supported region.',
     };
   }
 

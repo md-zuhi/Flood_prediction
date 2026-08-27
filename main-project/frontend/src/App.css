@@ -1608,3 +1608,458 @@ body {
     font-size: 14px;
   }
 }
+
+/* ============================================================
+   SAFE EVACUATION ROUTES SYSTEM STYLES
+   ============================================================ */
+
+.safe-routes-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: var(--bg-primary);
+}
+
+.routes-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.title-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-block h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.gps-status-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  padding: 4px 10px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  color: var(--text-secondary);
+}
+
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-gps, .btn-refresh {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-gps {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+}
+.btn-gps:hover {
+  background: #1d4ed8;
+}
+
+.btn-refresh {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+.btn-refresh:hover {
+  background: var(--border-color);
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.safety-disclaimer-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: 8px;
+  color: #f59e0b;
+  font-size: 13px;
+}
+
+.routes-grid-container {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+  min-height: 650px;
+}
+
+@media (max-width: 1024px) {
+  .routes-grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.map-column {
+  min-height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.details-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Route Summary Panel */
+.route-summary-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.badge-recommended {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  color: #22c55e;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+.last-updated {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.destination-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.dest-icon {
+  color: #22c55e;
+  margin-top: 2px;
+}
+
+.dest-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 2px 0;
+}
+
+.dest-type {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.metric-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.metric-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.metric-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.metric-sub {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.confidence-tag {
+  font-size: 16px;
+  color: #3b82f6;
+}
+
+.exposure-breakdown {
+  margin-bottom: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+}
+
+.exposure-breakdown h4, .why-route-section h4 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin: 0 0 10px 0;
+}
+
+.exposure-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exposure-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.status-pill {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.pill-green { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
+.pill-amber { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+.pill-blue { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }
+
+.reasons-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reason-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.check-icon {
+  color: #22c55e;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Alternative Routes */
+.route-alternatives-panel, .hazard-status-panel, .data-source-health {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.panel-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 12px 0;
+}
+
+.alternatives-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.alt-route-card {
+  padding: 10px 14px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.alt-route-card:hover, .alt-route-card.active-route {
+  border-color: #2563eb;
+  background: rgba(37, 99, 235, 0.05);
+}
+
+.alt-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.tag-pill {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.tag-safest { background: #22c55e; color: #ffffff; }
+.tag-alt { background: #f59e0b; color: #ffffff; }
+
+.alt-score {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.alt-destination {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.alt-stats {
+  display: flex;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* Hazard Status */
+.hazard-section {
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+}
+
+.status-notice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+.notice-info { background: var(--bg-secondary); color: var(--text-secondary); }
+
+.hazard-zone-card, .incident-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.source-tag {
+  font-size: 10px;
+  color: var(--text-secondary);
+}
+
+/* Data Source Health */
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.source-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.source-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.source-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.source-meta {
+  font-size: 10px;
+  color: var(--text-secondary);
+}
+
+.health-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+.badge-green { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
+.badge-red { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+.badge-blue { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }

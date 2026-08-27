@@ -7,6 +7,7 @@ import AdminLoginPage from "./pages/AdminLoginPage";
 import Sidebar from "./components/Sidebar";
 import OverviewDashboard from "./pages/OverviewDashboard";
 import LiveMonitorDashboard from "./pages/LiveMonitorDashboard";
+import SafeRoutesDashboard from "./pages/SafeRoutesDashboard";
 import "./App.css";
 
 const locations = [
@@ -230,6 +231,15 @@ function DashboardWrapper({ view }) {
           onToggleTheme={toggleTheme}
         />
       )}
+      {view === "safe-routes" && (
+        <SafeRoutesDashboard
+          locations={locations}
+          selectedLocation={selectedLocation}
+          onLocationChange={setSelectedLocation}
+          theme={theme}
+          onToggleTheme={toggleTheme}
+        />
+      )}
     </div>
   );
 }
@@ -244,6 +254,7 @@ function App() {
         <Route path="/admin/login" element={<AdminLoginPage />} />
         <Route path="/dashboard" element={<DashboardWrapper view="overview" />} />
         <Route path="/dashboard/live-monitor" element={<DashboardWrapper view="live-monitor" />} />
+        <Route path="/dashboard/safe-routes" element={<DashboardWrapper view="safe-routes" />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
