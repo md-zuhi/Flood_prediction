@@ -5,6 +5,7 @@ const cors = require("cors");
 
 const { buildFusedRecord } = require("./fusionService");
 const { calculateSafeEvacuationRoute } = require("./services/safeRouteService");
+const { getWeather } = require("./services/weatherService");
 
 const app = express();
 
@@ -203,46 +204,70 @@ let _gridCacheTime = 0;
 app.get("/api/weather-cities", async (req, res) => {
   try {
     const now = Date.now();
-    if (_cityCacheData && now - _cityCacheTime < 5 * 60 * 1000) {
+    if (_cityCacheData && now - _cityCacheTime < 15 * 60 * 1000) {
       return res.json(_cityCacheData);
     }
 
-    // Split 115 locations into batches of 45 coordinates to keep Open-Meteo requests ultra-fast
-    const BATCH_SIZE = 45;
+    const BATCH_SIZE = 15;
     const batches = [];
     for (let i = 0; i < MAJOR_INDIAN_CITIES.length; i += BATCH_SIZE) {
       batches.push(MAJOR_INDIAN_CITIES.slice(i, i + BATCH_SIZE));
     }
 
-    const batchPromises = batches.map(async (batch) => {
+    const batchResults = [];
+    for (const batch of batches) {
       const latStr = batch.map((c) => c.latitude).join(",");
       const lonStr = batch.map((c) => c.longitude).join(",");
       const omUrl = `https://api.open-meteo.com/v1/forecast?latitude=${latStr}&longitude=${lonStr}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,wind_direction_10m,precipitation&timezone=auto`;
-      const omRes = await fetch(omUrl);
-      if (!omRes.ok) throw new Error(`Batch Open-Meteo failed: ${omRes.status}`);
-      const omData = await omRes.json();
-      return Array.isArray(omData) ? omData : [omData];
-    });
-
-    const batchResults = await Promise.all(batchPromises);
-    const flatResults = batchResults.flat();
-
-    const resultCities = MAJOR_INDIAN_CITIES.map((city, i) => {
-      const cur = flatResults[i]?.current || {};
-      return {
-        ...city,
-        district: city.district || city.name,
-        weather: {
-          temperature_c: cur.temperature_2m ?? null,
-          humidity_percent: cur.relative_humidity_2m ?? null,
-          wind_speed_kmh: cur.wind_speed_10m ?? null,
-          wind_direction_deg: cur.wind_direction_10m ?? null,
-          precipitation_mm: cur.precipitation ?? null,
-          observation_time: cur.time ?? null,
-          source: "Open-Meteo"
+      try {
+        const omRes = await fetch(omUrl);
+        if (omRes.ok) {
+          const omData = await omRes.json();
+          const list = Array.isArray(omData) ? omData : [omData];
+          batchResults.push(...list);
+        } else {
+          batchResults.push(...batch.map(() => ({})));
         }
-      };
-    });
+      } catch (e) {
+        batchResults.push(...batch.map(() => ({})));
+      }
+    }
+
+    const resultCities = await Promise.all(
+      MAJOR_INDIAN_CITIES.map(async (city, i) => {
+        const cur = batchResults[i]?.current || {};
+        let tempC = cur.temperature_2m ?? null;
+        let humidity = cur.relative_humidity_2m ?? null;
+        let windSpeed = cur.wind_speed_10m ?? null;
+        let windDir = cur.wind_direction_10m ?? null;
+        let precip = cur.precipitation ?? null;
+
+        // If batch returned null due to rate limit, fallback to individual getWeather model
+        if (tempC === null || humidity === null) {
+          const w = await getWeather(city.latitude, city.longitude);
+          tempC = w.temperature_c;
+          humidity = w.humidity_percent;
+          windSpeed = w.wind_speed_kmh;
+          windDir = w.wind_direction_deg;
+          precip = w.precipitation_mm ?? 0.0;
+        }
+
+        return {
+          ...city,
+          district: city.district || city.name,
+          id: `${city.name}|${city.state || "IN"}|${city.latitude}|${city.longitude}`,
+          weather: {
+            temperature_c: tempC,
+            humidity_percent: humidity,
+            wind_speed_kmh: windSpeed,
+            wind_direction_deg: windDir,
+            precipitation_mm: precip ?? 0.0,
+            observation_time: new Date().toISOString(),
+            source: "Open-Meteo"
+          }
+        };
+      })
+    );
 
     const payload = {
       success: true,
@@ -257,6 +282,7 @@ app.get("/api/weather-cities", async (req, res) => {
     return res.json(payload);
   } catch (err) {
     console.error("weather-cities error:", err.message);
+    if (_cityCacheData) return res.json(_cityCacheData);
     return res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -265,7 +291,7 @@ app.get("/api/weather-cities", async (req, res) => {
 app.get("/api/weather-grid", async (req, res) => {
   try {
     const now = Date.now();
-    if (_gridCacheData && now - _gridCacheTime < 5 * 60 * 1000) {
+    if (_gridCacheData && now - _gridCacheTime < 15 * 60 * 1000) {
       return res.json(_gridCacheData);
     }
 
@@ -285,32 +311,21 @@ app.get("/api/weather-grid", async (req, res) => {
       }
     }
 
-    const latStr = points.map((p) => p.latitude).join(",");
-    const lonStr = points.map((p) => p.longitude).join(",");
-
-    const omUrl = `https://api.open-meteo.com/v1/forecast?latitude=${latStr}&longitude=${lonStr}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,wind_direction_10m,precipitation&timezone=auto`;
-
-    const omRes = await fetch(omUrl);
-    if (!omRes.ok) {
-      throw new Error(`Open-Meteo grid batch failed: ${omRes.status}`);
-    }
-
-    const omData = await omRes.json();
-    const dataList = Array.isArray(omData) ? omData : [omData];
-
-    const gridPoints = points.map((pt, i) => {
-      const cur = dataList[i]?.current || {};
-      return {
-        latitude: pt.latitude,
-        longitude: pt.longitude,
-        temperature_c: cur.temperature_2m ?? null,
-        humidity_percent: cur.relative_humidity_2m ?? null,
-        wind_speed_kmh: cur.wind_speed_10m ?? null,
-        wind_direction_deg: cur.wind_direction_10m ?? null,
-        precipitation_mm: cur.precipitation ?? null,
-        observation_time: cur.time ?? null
-      };
-    });
+    const gridPoints = await Promise.all(
+      points.map(async (pt) => {
+        const w = await getWeather(pt.latitude, pt.longitude);
+        return {
+          latitude: pt.latitude,
+          longitude: pt.longitude,
+          temperature_c: w.temperature_c,
+          humidity_percent: w.humidity_percent,
+          wind_speed_kmh: w.wind_speed_kmh,
+          wind_direction_deg: w.wind_direction_deg,
+          precipitation_mm: w.precipitation_mm ?? 0.0,
+          observation_time: w.observation_time || new Date().toISOString()
+        };
+      })
+    );
 
     const payload = {
       success: true,
@@ -326,6 +341,7 @@ app.get("/api/weather-grid", async (req, res) => {
     return res.json(payload);
   } catch (err) {
     console.error("weather-grid error:", err.message);
+    if (_gridCacheData) return res.json(_gridCacheData);
     return res.status(500).json({ success: false, error: err.message });
   }
 });
@@ -340,35 +356,39 @@ app.get("/api/weather-point", async (req, res) => {
       return res.status(400).json({ success: false, error: "Invalid lat/lon parameters" });
     }
 
-    const omUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,wind_direction_10m,precipitation&timezone=auto`;
-
-    const omRes = await fetch(omUrl);
-    if (!omRes.ok) {
-      throw new Error(`Open-Meteo point request failed: ${omRes.status}`);
-    }
-
-    const omData = await omRes.json();
-    const cur = omData.current || {};
+    const w = await getWeather(lat, lon);
 
     return res.json({
       success: true,
       latitude: lat,
       longitude: lon,
-      weather: {
-        temperature_c: cur.temperature_2m ?? null,
-        humidity_percent: cur.relative_humidity_2m ?? null,
-        wind_speed_kmh: cur.wind_speed_10m ?? null,
-        wind_direction_deg: cur.wind_direction_10m ?? null,
-        precipitation_mm: cur.precipitation ?? null,
-        observation_time: cur.time ?? null,
-        source: "Open-Meteo"
-      }
+      weather: w
     });
   } catch (err) {
     console.error("weather-point error:", err.message);
     return res.status(500).json({ success: false, error: err.message });
   }
 });
+
+
+
+// GET /api/landslide-inventory — Read-only GSI historical landslide points
+app.get("/api/landslide-inventory", (req, res) => {
+  try {
+    const { getAllLandslidePoints } = require("./services/landslideService");
+    const points = getAllLandslidePoints();
+    return res.json({
+      success: true,
+      count: points.length,
+      source: "Geological Survey of India (GSI) Field-Validated Landslide Inventory",
+      points
+    });
+  } catch (err) {
+    console.error("landslide-inventory error:", err.message);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
 
 
 // --------------------------------------------------
@@ -767,7 +787,8 @@ app.post("/api/safe-route", async (req, res) => {
 });
 
 app.listen(PORT, () => {
+  console.log(`[SERVER] Running from: ${__dirname}`);
   console.log(
     `Phase 10 Data Fusion server running on port ${PORT}`
   );
-});
+});

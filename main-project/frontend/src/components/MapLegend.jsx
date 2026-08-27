@@ -83,6 +83,14 @@ function MapLegend({ activeLayer }) {
             { label: "CRITICAL", color: "var(--color-critical)" }
           ]
         };
+      case "landslide_history":
+        return {
+          title: "HISTORICAL LANDSLIDE INVENTORY",
+          subtitle: "Geological Survey of India (GSI)",
+          items: [
+            { label: "GSI Landslide Point", color: "#f59e0b" }
+          ]
+        };
       default:
         return null;
     }

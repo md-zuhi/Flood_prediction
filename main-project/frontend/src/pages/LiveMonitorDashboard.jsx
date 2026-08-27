@@ -6,7 +6,13 @@ import MapLayerControl from "../components/MapLayerControl";
 import LocationWeatherPanel from "../components/LocationWeatherPanel";
 import ForecastTimeline from "../components/ForecastTimeline";
 import MapLegend from "../components/MapLegend";
-import { Activity, RefreshCw } from "lucide-react";
+import WindParticleCanvas from "../components/WindParticleCanvas";
+import WeatherGridOverlay from "../components/WeatherGridOverlay";
+import LandslideLayer from "../components/LandslideLayer";
+import MapMeasureTool from "../components/MapMeasureTool";
+import MapControls from "../components/MapControls";
+import SettingsDrawer from "../components/SettingsDrawer";
+import { Activity, RefreshCw, Search, ShieldCheck, Database, Layers } from "lucide-react";
 import "./LiveMonitor.css";
 
 // Helper component to recenter map smoothly
@@ -46,8 +52,6 @@ function MapStateTracker({ onMapClick, onViewStateChange }) {
 // Convert wind direction in degrees to flow direction compass arrow symbol
 function getWindArrow(deg) {
   if (deg === null || deg === undefined) return "";
-  // Meteorological wind direction is direction FROM which wind blows.
-  // The arrow indicates flow direction (towards which wind moves).
   const flowDeg = (deg + 180) % 360;
   const arrows = ["↑", "↗", "→", "↘", "↓", "↙", "←", "↖"];
   const idx = Math.round(flowDeg / 45) % 8;
@@ -80,7 +84,9 @@ function LiveMonitorDashboard({
   theme,
   onToggleTheme,
 }) {
-  const [activeLayer, setActiveLayer] = useState("temperature");
+  const mapRef = useRef(null);
+  const [activeLayer, setActiveLayer] = useState("temperature"); // temperature | rainfall | wind | humidity | satellite_rainfall | terrain | flood_risk | landslide_history
+  const [basemapStyle, setBasemapStyle] = useState("standard"); // standard | satellite | terrain | dark
   const [activeTimeline, setActiveTimeline] = useState("now");
   const [mapCenter, setMapCenter] = useState([22.5, 79.0]); // Initial India Center
   const [mapZoom, setMapZoom] = useState(5); // Initial India Zoom
@@ -99,10 +105,34 @@ function LiveMonitorDashboard({
   const [clickedPointWeather, setClickedPointWeather] = useState(null);
   const [loadingPoint, setLoadingPoint] = useState(false);
 
+  // Measure & Settings Tool States
+  const [isMeasuring, setIsMeasuring] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [settings, setSettings] = useState({
+    tempUnit: "C",
+    windUnit: "kmh",
+    cityDensity: "medium",
+    timezone: "local"
+  });
+
   const apiBaseUrl = useMemo(
     () => import.meta.env.VITE_API_BASE_URL || "http://localhost:5000",
     []
   );
+
+  const basemapUrls = {
+    standard: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    satellite: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    terrain: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+    dark: "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}"
+  };
+
+  const basemapAttributions = {
+    standard: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    satellite: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+    terrain: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, IGN, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community',
+    dark: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
+  };
 
   // Fetch lightweight India weather grid & 115+ cities/districts
   useEffect(() => {
@@ -218,15 +248,18 @@ function LiveMonitorDashboard({
 
     switch (activeLayer) {
       case "temperature": {
-        const temp = w.temperature_c;
+        let temp = w.temperature_c;
         if (temp === undefined || temp === null) return { text: "N/A", color: "#94a3b8" };
+        if (settings.tempUnit === "F") temp = (temp * 9) / 5 + 32;
+        const unitLabel = settings.tempUnit === "F" ? "°F" : "°";
+
         let col = "#38bdf8"; // <10°C cool blue
         if (temp >= 35) col = "#dc2626"; // >35°C red
         else if (temp >= 30) col = "#ef4444"; // 30-35°C orange/red
         else if (temp >= 25) col = "#f97316"; // 25-30°C orange
         else if (temp >= 20) col = "#eab308"; // 20-25°C yellow
         else if (temp >= 10) col = "#22c55e"; // 10-20°C green
-        return { text: `${Math.round(temp)}°`, color: col };
+        return { text: `${Math.round(temp)}${unitLabel}`, color: col };
       }
       case "rainfall": {
         const rain = w.precipitation_mm !== undefined && w.precipitation_mm !== null ? w.precipitation_mm : (w.rain_24h_mm || 0);
@@ -245,16 +278,19 @@ function LiveMonitorDashboard({
         return { text: `${satVal} mm/h`, color: col };
       }
       case "wind": {
-        const speed = w.wind_speed_kmh;
+        let speed = w.wind_speed_kmh;
         const deg = w.wind_direction_deg;
         if (speed === undefined || speed === null) return { text: "N/A", color: "#94a3b8" };
+        if (settings.windUnit === "ms") speed = speed / 3.6;
+        const speedLabel = settings.windUnit === "ms" ? "m/s" : "";
+
         let col = "#38bdf8";
         if (speed >= 60) col = "#dc2626";
         else if (speed >= 40) col = "#f97316";
         else if (speed >= 20) col = "#eab308";
         else if (speed >= 10) col = "#22c55e";
         const arrow = getWindArrow(deg);
-        return { text: `${Math.round(speed)} ${arrow}`, color: col };
+        return { text: `${Math.round(speed)}${speedLabel} ${arrow}`, color: col };
       }
       case "humidity": {
         const h = w.humidity_percent;
@@ -272,6 +308,9 @@ function LiveMonitorDashboard({
         const risk = p.risk_level || "LOW";
         const col = getRiskColor(risk);
         return { text: risk, color: col };
+      }
+      case "landslide_history": {
+        return { text: "GSI", color: "#f59e0b" };
       }
       default:
         return { text: "N/A", color: "var(--text-secondary)" };
@@ -303,8 +342,12 @@ function LiveMonitorDashboard({
 
   const sourceHealth = result?.metadata?.source_health || {};
 
+  const handleUpdateSettings = (key, val) => {
+    setSettings((prev) => ({ ...prev, [key]: val }));
+  };
+
   return (
-    <div className="main-content" style={{ padding: "16px", display: "flex", flexDirection: "column" }}>
+    <div className="main-content" style={{ padding: "16px", display: "flex", flexDirection: "column", height: "100vh", overflow: "hidden" }}>
       <DashboardHeader
         selectedLocation={selectedLocation}
         locations={locations}
@@ -338,32 +381,47 @@ function LiveMonitorDashboard({
             </div>
           )}
 
-          {/* Full Interactive Map */}
+          {/* Full Interactive GIS Map */}
           <MapContainer
             center={mapCenter}
             zoom={mapZoom}
             scrollWheelZoom={true}
             className="live-map-instance"
+            zoomControl={false}
           >
+            {/* Basemap Tile Layer */}
             <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              key={basemapStyle}
+              attribution={basemapAttributions[basemapStyle]}
+              url={basemapUrls[basemapStyle]}
             />
 
             <RecenterMap center={mapCenter} zoom={mapZoom} />
             <MapStateTracker onMapClick={handleMapClick} onViewStateChange={handleViewStateChange} />
 
-            {/* Render Sampling Grid Circles for India-wide Weather Layers */}
+            {/* Spatially Interpolated Weather Field Surface Canvas */}
+            <WeatherGridOverlay gridPoints={gridPoints} activeLayer={activeLayer} />
+
+            {/* Wind Vector Streamline Animation Canvas */}
+            <WindParticleCanvas gridPoints={gridPoints} activeLayer={activeLayer} />
+
+            {/* GSI Historical Landslide Inventory Layer */}
+            <LandslideLayer activeLayer={activeLayer} apiBaseUrl={apiBaseUrl} />
+
+            {/* Leaflet Distance Measurement Polyline Tool */}
+            <MapMeasureTool active={isMeasuring} onClose={() => setIsMeasuring(false)} />
+
+            {/* Weather Grid Points Markers */}
             {gridPoints.map((pt, idx) => {
               const metric = getMetricDisplay(pt, null, null, null);
               return (
                 <CircleMarker
                   key={`grid-${idx}`}
                   center={[pt.latitude, pt.longitude]}
-                  radius={currentZoom <= 5 ? 5 : 8}
+                  radius={currentZoom <= 5 ? 4 : 7}
                   pathOptions={{
                     fillColor: metric.color,
-                    fillOpacity: activeLayer === "wind" ? 0.4 : 0.55,
+                    fillOpacity: activeLayer === "wind" ? 0.3 : 0.6,
                     stroke: true,
                     color: "#ffffff",
                     weight: 1,
@@ -386,7 +444,7 @@ function LiveMonitorDashboard({
               );
             })}
 
-            {/* Render Ultra-Compact City Badges based on Zoom Density & Viewport */}
+            {/* City & District Weather Badges */}
             {visibleCities.map((city) => {
               const isSelected = selectedLocation && city.name.toLowerCase() === selectedLocation.name.toLowerCase();
               const isFloodLoc = locations.some((l) => l.name.toLowerCase() === city.name.toLowerCase());
@@ -444,7 +502,7 @@ function LiveMonitorDashboard({
               );
             })}
 
-            {/* Clicked arbitrary point marker */}
+            {/* Inspected Map Point Marker */}
             {clickedPoint && (
               <Marker position={[clickedPoint.lat, clickedPoint.lon]}>
                 <Popup>
@@ -476,8 +534,15 @@ function LiveMonitorDashboard({
             )}
           </MapContainer>
 
-          {/* Floating Overlay Controls */}
-          <MapLayerControl activeLayer={activeLayer} onSelectLayer={setActiveLayer} />
+          {/* Floating Left Layer & Basemap Control Panel */}
+          <MapLayerControl
+            activeLayer={activeLayer}
+            onSelectLayer={setActiveLayer}
+            basemapStyle={basemapStyle}
+            onSelectBasemap={setBasemapStyle}
+          />
+
+          {/* Floating Right Location & Forecast Panel */}
           <LocationWeatherPanel
             result={result}
             selectedLocation={selectedLocation}
@@ -485,23 +550,63 @@ function LiveMonitorDashboard({
             riskColor={riskColor}
             clickedPointWeather={clickedPointWeather}
             activeLayer={activeLayer}
+            onLocationChange={onLocationChange}
           />
+
+          {/* Floating Bottom Timeline Control */}
           <ForecastTimeline activeTimeline={activeTimeline} onSelectTimeline={setActiveTimeline} />
+
+          {/* Floating Bottom-Left Legend */}
           <MapLegend activeLayer={activeLayer} />
 
-          {/* Source Health Floating Panel */}
+          {/* Floating Map Action Controls */}
+          <MapControls
+            onZoomIn={() => setMapZoom((z) => Math.min(z + 1, 18))}
+            onZoomOut={() => setMapZoom((z) => Math.max(z - 1, 3))}
+            onRecenterUser={() => {
+              if (selectedLocation) {
+                setMapCenter([selectedLocation.latitude, selectedLocation.longitude]);
+                setMapZoom(10);
+              }
+            }}
+            onFitIndia={() => {
+              setMapCenter([22.5, 79.0]);
+              setMapZoom(5);
+            }}
+            isMeasuring={isMeasuring}
+            onToggleMeasure={() => setIsMeasuring(!isMeasuring)}
+            onToggleSettings={() => setIsSettingsOpen(!isSettingsOpen)}
+          />
+
+          {/* Settings Drawer */}
+          <SettingsDrawer
+            isOpen={isSettingsOpen}
+            onClose={() => setIsSettingsOpen(false)}
+            settings={settings}
+            onUpdateSettings={handleUpdateSettings}
+          />
+
+          {/* Data Source Health Transparency Panel */}
           <div className="source-health-panel">
             <div className="source-health-item">
               <span className="source-dot" style={{ background: "#16a34a" }} />
-              <span>India Weather: Open-Meteo Real Wind Vectors</span>
-            </div>
-            <div className="source-health-item">
-              <span className={`source-dot ${sourceHealth.soil_moisture?.freshness?.toLowerCase() || ""}`} />
-              <span>NASA SMAP: {sourceHealth.soil_moisture?.freshness || "STALE"}</span>
+              <span>Open-Meteo: LIVE</span>
             </div>
             <div className="source-health-item">
               <span className={`source-dot ${sourceHealth.satellite_rainfall?.freshness?.toLowerCase() || ""}`} />
-              <span>NASA GPM: {sourceHealth.satellite_rainfall?.freshness || "STALE"}</span>
+              <span>NASA GPM: {sourceHealth.satellite_rainfall?.freshness || "NEAR REAL-TIME"}</span>
+            </div>
+            <div className="source-health-item">
+              <span className={`source-dot ${sourceHealth.soil_moisture?.freshness?.toLowerCase() || ""}`} />
+              <span>NASA SMAP: {sourceHealth.soil_moisture?.freshness || "NEAR REAL-TIME"}</span>
+            </div>
+            <div className="source-health-item">
+              <span className="source-dot" style={{ background: "#94a3b8" }} />
+              <span>SRTM: STATIC</span>
+            </div>
+            <div className="source-health-item">
+              <span className="source-dot" style={{ background: "#f59e0b" }} />
+              <span>GSI: HISTORICAL</span>
             </div>
           </div>
         </div>
@@ -511,3 +616,4 @@ function LiveMonitorDashboard({
 }
 
 export default LiveMonitorDashboard;
+

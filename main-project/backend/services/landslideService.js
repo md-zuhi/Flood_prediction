@@ -282,10 +282,28 @@ function getLandslideHistory(latitude, longitude, state) {
   };
 }
 
+function getAllLandslidePoints() {
+  loadCsvOnce();
+  return (_csvCache || []).map((r) => ({
+    slideNo: r.slideNo,
+    name: r.slideName,
+    district: r.district,
+    location: r.nhShLocation,
+    latitude: r.latitude,
+    longitude: r.longitude,
+    material: r.materialInvolved,
+    movementType: r.movementType,
+    history: r.history,
+    source: "Geological Survey of India (GSI)"
+  }));
+}
+
 // --------------------------------------------------
 // EXPORTS
 // --------------------------------------------------
 
 module.exports = {
   getLandslideHistory,
+  getAllLandslidePoints,
 };
+
