@@ -6,6 +6,7 @@ import SignupPage from "./pages/SignupPage";
 import AdminLoginPage from "./pages/AdminLoginPage";
 import Sidebar from "./components/Sidebar";
 import OverviewDashboard from "./pages/OverviewDashboard";
+import LiveMonitorDashboard from "./pages/LiveMonitorDashboard";
 import "./App.css";
 
 const locations = [
@@ -73,11 +74,23 @@ const locations = [
 ];
 
 // Dashboard wrapper coordinating predictions and stats
-function DashboardWrapper() {
+function DashboardWrapper({ view }) {
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "dark";
+  });
   const [selectedLocation, setSelectedLocation] = useState(locations[0]);
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  };
 
   const analyzeRisk = async () => {
     try {
@@ -96,10 +109,44 @@ function DashboardWrapper() {
       const data = await response.json();
 
       if (!response.ok || !data.success) {
-        throw new Error(data.message || "Prediction request failed");
+        if (data.data) {
+           // Backend provided partial environmental data (fusedRecord) despite ML failure
+           const partialResult = {
+             location: data.data.location,
+             ml_features: {
+               rain_1h_mm: data.data.rainfall?.rain_1h_mm,
+               rain_3h_mm: data.data.rainfall?.rain_3h_mm,
+               rain_6h_mm: data.data.rainfall?.rain_6h_mm,
+               rain_12h_mm: data.data.rainfall?.rain_12h_mm,
+               rain_24h_mm: data.data.rainfall?.rain_24h_mm,
+               temperature_c: data.data.weather?.temperature_c,
+               humidity_percent: data.data.weather?.humidity_percent,
+               soil_moisture_m3m3: data.data.soil_moisture?.value_m3_m3,
+               elevation_m: data.data.terrain?.elevation_m
+             },
+             prediction: { risk_level: "UNKNOWN", flood_probability_percent: 0, alert_message: data.message },
+             environmental_data: {
+               weather: data.data.weather,
+               rainfall: data.data.rainfall,
+               rainfall_forecast: data.data.rainfall_forecast,
+               soil_moisture: data.data.soil_moisture,
+               terrain: data.data.terrain,
+               landslide_history: data.data.landslide_history,
+               satellite_rainfall: data.data.satellite_rainfall,
+               iot: data.data.iot
+             },
+             metadata: data.data.metadata,
+             data_sources: data.data.data_sources,
+             generated_at: data.data.generated_at
+           };
+           setResult(partialResult);
+           setError(data.message);
+        } else {
+           throw new Error(data.message || "Prediction request failed");
+        }
+      } else {
+         setResult(data);
       }
-
-      setResult(data);
     } catch (err) {
       console.error(err);
       setError(err.message);
@@ -139,16 +186,32 @@ function DashboardWrapper() {
 
   return (
     <div className="dashboard-layout">
-      <Sidebar />
-      <OverviewDashboard
-        result={uiResult}
-        selectedLocation={selectedLocation}
-        locations={locations}
-        onLocationChange={setSelectedLocation}
-        loading={loading}
-        error={error}
-        riskColor={riskColor}
-      />
+      <Sidebar activeView={view} theme={theme} onToggleTheme={toggleTheme} />
+      {view === "overview" && (
+        <OverviewDashboard
+          result={uiResult}
+          selectedLocation={selectedLocation}
+          locations={locations}
+          onLocationChange={setSelectedLocation}
+          loading={loading}
+          error={error}
+          riskColor={riskColor}
+          theme={theme}
+          onToggleTheme={toggleTheme}
+        />
+      )}
+      {view === "live-monitor" && (
+        <LiveMonitorDashboard
+          result={uiResult}
+          selectedLocation={selectedLocation}
+          locations={locations}
+          onLocationChange={setSelectedLocation}
+          loading={loading}
+          error={error}
+          theme={theme}
+          onToggleTheme={toggleTheme}
+        />
+      )}
     </div>
   );
 }
@@ -161,7 +224,8 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/admin/login" element={<AdminLoginPage />} />
-        <Route path="/dashboard" element={<DashboardWrapper />} />
+        <Route path="/dashboard" element={<DashboardWrapper view="overview" />} />
+        <Route path="/dashboard/live-monitor" element={<DashboardWrapper view="live-monitor" />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>

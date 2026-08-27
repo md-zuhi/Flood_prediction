@@ -34,7 +34,6 @@ const JSON_PATH = path.join(
   __dirname,
   '..',
   '..',
-  '..',
   'Phase-7-Satellite-Rainfall',
   'output',
   'rainfall_data.json'
@@ -167,8 +166,6 @@ function getSatelliteRainfall(latitude, longitude) {
   const { bbox, timeseries, grid } = _data;
 
   // ── Bounding box check ─────────────────────────────────────────────────────
-  // The current Phase 7 dataset covers the Nilgiris region only.
-  // If the requested point is outside the bbox, return unavailable.
   const latPadding = 0.1;  // half a grid cell tolerance
   const lonPadding = 0.1;
 
@@ -195,24 +192,19 @@ function getSatelliteRainfall(latitude, longitude) {
       status                        : 'unavailable',
       message                       :
         `GPM satellite rainfall dataset currently covers ` +
-        `lat ${bbox.latMin}–${bbox.latMax}, lon ${bbox.lonMin}–${bbox.lonMax} ` +
-        `(Nilgiris region). Requested point (${latitude}, ${longitude}) is outside this area.`,
+        `lat ${bbox.latMin}–${bbox.latMax}, lon ${bbox.lonMin}–${bbox.lonMax}. ` +
+        `Requested point (${latitude}, ${longitude}) is outside this area.`,
     };
   }
 
   // ── Latest timestep ────────────────────────────────────────────────────────
-  const n          = timeseries.length;
-  const latest     = timeseries[n - 1];
-  const latestRoll = _rolling[n - 1];
+  const n      = timeseries.length;
+  const latest = timeseries[n - 1];
 
-  // ── Nearest grid cell for local intensity ──────────────────────────────────
-  // grid.lons maps to dimension 0 (first index of grid arrays)
-  // grid.lats maps to dimension 1 (second index of grid arrays)
-
+  // ── Nearest grid cell for target coordinates ──────────────────────────────
   const lonIdx = nearestIdx(grid.lons, longitude);
   const latIdx = nearestIdx(grid.lats, latitude);
 
-  // latest.grid is [lon][lat]
   let localIntensity = null;
   if (
     latest.grid &&
@@ -229,15 +221,40 @@ function getSatelliteRainfall(latitude, longitude) {
       ? localIntensity
       : latest.meanPrecip_mmhr;
 
+  // ── Location-specific rolling accumulations ──────────────────────────────
+  // Sum precipitation over trailing timesteps for target location cell
+  const locationRoll = {};
+  for (const { key, steps } of WINDOWS) {
+    if (n < steps) {
+      locationRoll[key] = null;
+    } else {
+      let sum = 0;
+      let valid = true;
+      for (let k = n - steps; k < n; k++) {
+        const stepGrid = timeseries[k].grid;
+        const val = (stepGrid && stepGrid[lonIdx] && stepGrid[lonIdx][latIdx] !== undefined && stepGrid[lonIdx][latIdx] !== null)
+          ? stepGrid[lonIdx][latIdx]
+          : timeseries[k].meanPrecip_mmhr;
+
+        if (val === null || val === undefined) {
+          valid = false;
+          break;
+        }
+        sum += val * 0.5;
+      }
+      locationRoll[key] = valid ? +sum.toFixed(3) : null;
+    }
+  }
+
   return {
     current_intensity_mm_hr       : currentIntensity,
     regional_max_intensity_mm_hr  : latest.maxPrecip_mmhr,
-    rain_30m_mm                   : latestRoll.rain_30m_mm,
-    rain_1h_mm                    : latestRoll.rain_1h_mm,
-    rain_3h_mm                    : latestRoll.rain_3h_mm,
-    rain_6h_mm                    : latestRoll.rain_6h_mm,
-    rain_12h_mm                   : latestRoll.rain_12h_mm,
-    rain_24h_mm                   : latestRoll.rain_24h_mm,
+    rain_30m_mm                   : locationRoll.rain_30m_mm,
+    rain_1h_mm                    : locationRoll.rain_1h_mm,
+    rain_3h_mm                    : locationRoll.rain_3h_mm,
+    rain_6h_mm                    : locationRoll.rain_6h_mm,
+    rain_12h_mm                   : locationRoll.rain_12h_mm,
+    rain_24h_mm                   : locationRoll.rain_24h_mm,
     observation_time              : latest.timestamp,
     source                        : 'NASA GPM IMERG',
     product                       : 'GPM_3IMERGHHE',

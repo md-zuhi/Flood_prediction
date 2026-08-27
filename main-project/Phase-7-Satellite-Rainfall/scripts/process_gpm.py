@@ -7,9 +7,10 @@ from datetime import datetime, timezone
 
 HDF5_DIR = os.path.join(os.path.dirname(__file__), "GPM_3IMERGHHE_07")
 OUT_FILE  = os.path.join(os.path.dirname(__file__), "..", "output", "rainfall_data.json")
+ALT_OUT_FILE = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "Phase-7-Satellite-Rainfall", "output", "rainfall_data.json"))
 
-LAT_MIN, LAT_MAX = 11.2, 11.5
-LON_MIN, LON_MAX = 76.65, 76.95
+LAT_MIN, LAT_MAX = 9.5, 31.0
+LON_MIN, LON_MAX = 75.5, 80.0
 
 def parse_timestamp(filename):
     m = re.search(r'3IMERG\.(\d{8})-S(\d{6})', filename)
@@ -60,6 +61,10 @@ def process():
     os.makedirs(os.path.dirname(OUT_FILE), exist_ok=True)
     with open(OUT_FILE, "w") as fout:
         json.dump(result, fout)
+
+    if os.path.exists(os.path.dirname(ALT_OUT_FILE)):
+        with open(ALT_OUT_FILE, "w") as fout:
+            json.dump(result, fout)
 
     total_mm = sum(t["meanPrecip_mmhr"] * 0.5 for t in result["timeseries"] if t["meanPrecip_mmhr"] > 0)
     print(f"Done. {len(result['timeseries'])} time steps written to {OUT_FILE}")
