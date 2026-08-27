@@ -258,7 +258,13 @@ def get_terrain_features(lat: float, lon: float, state: str) -> dict:
 def fetch_era5_antecedent(lat: float, lon: float, ante_date_str: str, session: requests.Session) -> dict:
     cache_key = f"{round(lat, 4)},{round(lon, 4)},{ante_date_str}"
     if cache_key in era5_cache:
-        return era5_cache[cache_key]
+        cached_val = era5_cache[cache_key]
+        expected_keys = [
+            "rain_1h_mm", "rain_3h_mm", "rain_6h_mm", "rain_12h_mm", "rain_24h_mm",
+            "temperature_c", "humidity_percent", "soil_moisture_m3m3"
+        ]
+        if all(k in cached_val for k in expected_keys):
+            return cached_val
         
     params = {
         "latitude": lat,
