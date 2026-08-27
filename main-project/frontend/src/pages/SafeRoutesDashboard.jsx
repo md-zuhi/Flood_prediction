@@ -272,6 +272,8 @@ export default function SafeRoutesDashboard({
                   onSelectRoute={setSelectedRouteId}
                   hazardZones={routeResult?.hazard_zones || []}
                   incidents={routeResult?.incidents || []}
+                  locations={locations}
+                  onSelectLocation={onLocationChange}
                 />
               </div>
 

@@ -94,6 +94,35 @@ export default function RouteSummaryPanel({ route, destination, generatedAt, rou
             <div><strong>Elevation:</strong> {destination.elevation_m != null ? `${destination.elevation_m} m` : "N/A"}</div>
             <div><strong>Distance:</strong> {destination.distance_km != null ? `${destination.distance_km} km` : `${route.distance_km} km`}</div>
           </div>
+
+          <button
+            type="button"
+            className="btn-start-route"
+            onClick={() => {
+              const el = document.querySelector(".map-column");
+              if (el) el.scrollIntoView({ behavior: "smooth" });
+            }}
+            style={{
+              width: "100%",
+              marginTop: "12px",
+              background: "#059669",
+              color: "#ffffff",
+              border: "none",
+              padding: "10px 16px",
+              borderRadius: "8px",
+              fontWeight: "800",
+              fontSize: "13px",
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "8px",
+              boxShadow: "0 4px 12px rgba(5, 150, 105, 0.3)",
+              transition: "transform 0.15s ease"
+            }}
+          >
+            <ShieldCheck size={18} /> START / VIEW ROUTE NAVIGATION
+          </button>
         </div>
       </div>
 
