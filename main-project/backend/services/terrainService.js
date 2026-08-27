@@ -826,8 +826,16 @@ async function getTerrain(
       `[Terrain] Cache hit for ${cacheKey}`
     );
 
+    const cachedEntry = { ...terrainCache[cacheKey] };
+    if (cachedEntry.elevation_m !== null && cachedEntry.slope_deg === null) {
+      cachedEntry.status = "partial";
+      if (!cachedEntry.terrain_mode) {
+        cachedEntry.terrain_mode = "elevation_fallback";
+      }
+    }
+
     return {
-      ...terrainCache[cacheKey],
+      ...cachedEntry,
       cache: "hit"
     };
   }
@@ -1097,10 +1105,10 @@ async function getTerrain(
         "SRTMGL1",
 
       status:
-        "success",
+        centerSlope !== null && Number.isFinite(centerSlope) ? "success" : "partial",
 
       terrain_mode:
-        "full_terrain",
+        centerSlope !== null && Number.isFinite(centerSlope) ? "full_terrain" : "elevation_fallback",
 
       cache:
         "miss"
@@ -1180,7 +1188,7 @@ async function getTerrain(
           "Copernicus DEM 2021 GLO-90",
 
         status:
-          "success",
+          "partial",
 
         terrain_mode:
           "elevation_fallback",

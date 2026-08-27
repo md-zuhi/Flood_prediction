@@ -1,0 +1,347 @@
+event_id,event_date,state,district,locality,latitude,longitude,coordinate_precision,label_source,flood_occurred,negative_reason
+V2-POS-0001,2022-07-16,Kerala,Palakkad,District Centroid,10.7873692,76.4742172,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-0553),1,
+V2-POS-0002,2020-07-05,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2020-0047),1,
+V2-POS-0003,2021-11-06,Tamil Nadu,Kallakurichi,District Centroid,11.7946847,79.0388211,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0261),1,
+V2-POS-0004,2009-08-08,Uttarakhand,Pithoragarh,District Centroid,29.585871,80.215167,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2009-0076),1,
+V2-POS-0005,2018-05-20,Tamil Nadu,Salem,Edappadi,11.6469616,78.2106958,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2018-0078),1,
+V2-POS-0006,2016-04-14,Kerala,Kannur,District Centroid,11.8763836,75.3737973,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2016-0076),1,
+V2-POS-0007,2021-02-07,Uttarakhand,Chamoli,District Centroid,30.4985956,79.6190537,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0306),1,
+V2-POS-0008,1985-06-15,Kerala,Kozhikode,District Centroid,11.2450558,75.7754716,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1985-0029),1,
+V2-POS-0009,2012-09-04,Kerala,Kollam,District Centroid,8.8870533,76.5906696,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2012-0055),1,
+V2-POS-0010,2004-07-19,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2004-0037),1,
+V2-POS-0011,2011-10-10,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2011-0051),1,
+V2-POS-0012,2021-11-14,Kerala,Kannur,District Centroid,11.8763836,75.3737973,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0120),1,
+V2-POS-0013,2019-02-09,Uttarakhand,Almora,Jajar,29.702651,79.4326318,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2019-0155),1,
+V2-POS-0014,2021-11-06,Tamil Nadu,Krishnagiri,District Centroid,12.5152075,78.0093769,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0262),1,
+V2-POS-0015,2022-11-01,Tamil Nadu,Ranipet,District Centroid,12.9186243,79.4081921,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-0837),1,
+V2-POS-0016,2010-11-22,Tamil Nadu,Many districts of Tamil Nadu.,District Centroid,11.3323723,78.6098639,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2010-0127),1,
+V2-POS-0017,1980-11-12,Tamil Nadu,Chengalpattu,Satyavedu,12.6840886,79.9836371,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1980-0053),1,
+V2-POS-0018,2005-03-15,Kerala,Thiruvananthapuram,Vellaroda,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2005-0067),1,
+V2-POS-0019,2021-07-11,Uttarakhand,Bageshwar,District Centroid,30.0087902,79.9280183,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0308),1,
+V2-POS-0020,2021-05-18,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0073),1,
+V2-POS-0021,2001-09-22,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2001-0053),1,
+V2-POS-0022,2021-07-21,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0081),1,
+V2-POS-0023,2011-10-30,Tamil Nadu,Cuddalore,District Centroid,11.5202071,79.3396356,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2011-0090),1,
+V2-POS-0024,1982-07-30,Kerala,Kannur,Hosdurg,11.8763836,75.3737973,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1982-0021),1,
+V2-POS-0025,1979-11-12,Tamil Nadu,Tirunelveli,District Centroid,8.5495014,77.5805178,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1979-0056),1,
+V2-POS-0026,2022-07-05,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-0548),1,
+V2-POS-0027,2012-08-04,Uttarakhand,Chamoli,Gangitri,30.4985956,79.6190537,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2012-0077),1,
+V2-POS-0028,2023-08-15,Uttarakhand,Chamoli,District Centroid,30.4985956,79.6190537,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2023-0592),1,
+V2-POS-0029,2004-06-01,Uttarakhand,Almora,District Centroid,29.702651,79.4326318,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2004-0063),1,
+V2-POS-0030,1996-08-12,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1996-0059),1,
+V2-POS-0031,2007-11-06,Tamil Nadu,Kanniyakumariumari,District Centroid,11.3323723,78.6098639,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2007-0127),1,
+V2-POS-0032,2021-10-16,Kerala,Kollam,District Centroid,8.8870533,76.5906696,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0102),1,
+V2-POS-0033,2019-04-07,Uttarakhand,Rudra Prayag,Sari Chamshil,30.0417376,79.089691,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2019-0150),1,
+V2-POS-0034,2013-09-01,Kerala,Idukki,Mangad,9.8154785,76.9991599,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2013-0087),1,
+V2-POS-0035,2021-10-16,Kerala,Kottayam,District Centroid,9.6287383,76.6455326,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0103),1,
+V2-POS-0036,2021-10-20,Kerala,Malappuram,District Centroid,11.1065685,76.1101742,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0112),1,
+V2-POS-0037,2020-05-16,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2020-0048),1,
+V2-POS-0038,2005-05-29,Kerala,Wayanad,Sultanbattery,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2005-0074),1,
+V2-POS-0039,2006-10-18,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2006-0058),1,
+V2-POS-0040,2008-05-25,Tamil Nadu,Coimbatore,District Centroid,11.0018115,76.9628425,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2008-0110),1,
+V2-POS-0041,2015-10-08,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2015-0061),1,
+V2-POS-0042,2008-07-11,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2008-0065),1,
+V2-POS-0043,1999-05-05,Tamil Nadu,Dindigul,District Centroid,10.4257161,77.8154728,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1999-0073),1,
+V2-POS-0044,2022-07-19,Uttarakhand,Rudra Prayag,District Centroid,30.0417376,79.089691,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-1098),1,
+V2-POS-0045,2013-08-10,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2013-0086),1,
+V2-POS-0046,1984-04-23,Kerala,Malappuram,District Centroid,11.1065685,76.1101742,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1984-0035),1,
+V2-POS-0047,2023-07-17,Uttarakhand,Rudra Prayag,District Centroid,30.0417376,79.089691,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2023-0583),1,
+V2-POS-0048,2010-12-08,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2010-0079),1,
+V2-POS-0049,2020-09-23,Kerala,Thiruvananthapuram,Vilavoorkal,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2020-0067),1,
+V2-POS-0050,2023-08-14,Uttarakhand,Tehri Garhwal,District Centroid,30.4658181,78.4837349,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2023-0591),1,
+V2-POS-0051,1980-11-15,Tamil Nadu,Chennai,District Centroid,13.0836939,80.270186,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1980-0054),1,
+V2-POS-0052,2018-05-21,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2018-0034),1,
+V2-POS-0053,2021-10-16,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0101),1,
+V2-POS-0054,2021-04-22,Kerala,Palakkad,District Centroid,10.7873692,76.4742172,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0071),1,
+V2-POS-0055,2014-03-07,Kerala,Wayanad,Athiyoor,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2014-0041),1,
+V2-POS-0056,1993-08-06,Tamil Nadu,Dindigul,District Centroid,10.4257161,77.8154728,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1993-0064),1,
+V2-POS-0057,1986-11-03,Tamil Nadu,Tiruchirappalli,Hanganurodai,10.8071144,78.6880939,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1986-0073),1,
+V2-POS-0058,2019-12-09,Kerala,Malappuram,District Centroid,11.1065685,76.1101742,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2019-0071),1,
+V2-POS-0059,2023-07-11,Uttarakhand,Pithoragarh,District Centroid,29.585871,80.215167,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2023-0579),1,
+V2-POS-0060,2023-07-16,Uttarakhand,Rudra Prayag,District Centroid,30.0417376,79.089691,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2023-0582),1,
+V2-POS-0061,2005-11-22,Tamil Nadu,Nagapattinam,District Centroid,10.6026203,79.7619348,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2005-0140),1,
+V2-POS-0062,2010-11-30,Tamil Nadu,Many districts of Tamil Nadu.,District Centroid,11.3323723,78.6098639,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2010-0129),1,
+V2-POS-0063,2022-08-02,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-0574),1,
+V2-POS-0064,2005-09-05,Uttarakhand,Bageshwar,Jaojit,30.0087902,79.9280183,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2005-0156),1,
+V2-POS-0065,2012-07-02,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2012-0051),1,
+V2-POS-0066,2021-11-06,Tamil Nadu,Viluppuram,District Centroid,12.1166967,79.5989236,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0268),1,
+V2-POS-0067,2021-10-23,Kerala,Pathanamthitta,District Centroid,9.2780841,76.9737443,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0116),1,
+V2-POS-0068,2022-08-01,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-0562),1,
+V2-POS-0069,1984-10-06,Kerala,Kozhikode,District Centroid,11.2450558,75.7754716,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1984-0043),1,
+V2-POS-0070,2014-06-21,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2014-0048),1,
+V2-POS-0071,1989-06-09,Kerala,Kasaragod,District Centroid,12.4221964,75.1904446,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1989-0028),1,
+V2-POS-0072,1986-06-24,Kerala,Kollam,Neendakare,8.8870533,76.5906696,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1986-0042),1,
+V2-POS-0073,2000-06-17,Kerala,Alappuzha,District Centroid,9.5003416,76.4123364,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2000-0064),1,
+V2-POS-0074,2010-06-08,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2010-0066),1,
+V2-POS-0075,2013-09-17,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2013-0089),1,
+V2-POS-0076,2019-10-22,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2019-0075),1,
+V2-POS-0077,1987-12-17,Kerala,Kozhikode,District Centroid,11.2450558,75.7754716,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1987-0026),1,
+V2-POS-0078,1979-07-02,Kerala,Kannur,District Centroid,11.8763836,75.3737973,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1979-0023),1,
+V2-POS-0079,2022-11-01,Tamil Nadu,Chennai,District Centroid,13.0836939,80.270186,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-0836),1,
+V2-POS-0080,2019-11-30,Tamil Nadu,Thanjavur,District Centroid,10.659037,79.2014278,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2019-0135),1,
+V2-POS-0081,2023-07-23,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2023-0356),1,
+V2-POS-0082,2003-10-02,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2003-0049),1,
+V2-POS-0083,2007-06-14,Kerala,Kasaragod,District Centroid,12.4221964,75.1904446,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2007-0081),1,
+V2-POS-0084,2012-04-09,Kerala,Wayanad,Punalur,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2012-0046),1,
+V2-POS-0085,2022-10-21,Tamil Nadu,Erode,District Centroid,11.4905282,77.3505274,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-0835),1,
+V2-POS-0086,2021-10-12,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0097),1,
+V2-POS-0087,1980-07-01,Tamil Nadu,Coimbatore,Erode,11.0018115,76.9628425,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1980-0052),1,
+V2-POS-0088,2005-07-01,Kerala,Kozhikode,Atholi,11.2450558,75.7754716,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2005-0077),1,
+V2-POS-0089,2006-11-04,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2006-0060),1,
+V2-POS-0090,1987-11-09,Kerala,Kozhikode,District Centroid,11.2450558,75.7754716,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1987-0023),1,
+V2-POS-0091,2022-06-16,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-0544),1,
+V2-POS-0092,2006-11-18,Tamil Nadu,Nagapattinam,District Centroid,10.6026203,79.7619348,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2006-0105),1,
+V2-POS-0093,2019-10-07,Kerala,Kottayam,District Centroid,9.6287383,76.6455326,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2019-0059),1,
+V2-POS-0094,2007-06-07,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2007-0079),1,
+V2-POS-0095,2013-06-02,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2013-0068),1,
+V2-POS-0096,2020-03-05,Kerala,Pathanamthitta,District Centroid,9.2780841,76.9737443,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2020-0046),1,
+V2-POS-0097,2018-04-22,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2018-0031),1,
+V2-POS-0098,1978-11-22,Tamil Nadu,The Nilgiris,District Centroid,11.4,76.7,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1978-0056),1,
+V2-POS-0099,2016-07-21,Uttarakhand,Dehradun,District Centroid,30.3255646,78.0436813,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2016-0131),1,
+V2-POS-0100,1989-07-21,Kerala,Thiruvananthapuram,Ponmudi,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1989-0033),1,
+V2-POS-0101,2020-03-07,Kerala,Kozhikode,Pulloorampara,11.2450558,75.7754716,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2020-0051),1,
+V2-POS-0102,2021-08-29,Uttarakhand,Pithoragarh,District Centroid,29.585871,80.215167,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0311),1,
+V2-POS-0103,1971-05-08,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1971-0002),1,
+V2-POS-0104,2023-07-23,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2023-0355),1,
+V2-POS-0105,2019-03-12,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2019-0081),1,
+V2-POS-0106,2021-10-12,Kerala,Pathanamthitta,District Centroid,9.2780841,76.9737443,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0095),1,
+V2-POS-0107,2023-08-23,Uttarakhand,Garhwal,District Centroid,30.25,79.333333,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2023-0594),1,
+V2-POS-0108,2019-09-26,Kerala,Thiruvananthapuram,Attingal,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2019-0072),1,
+V2-POS-0109,2005-05-17,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2005-0073),1,
+V2-POS-0110,2021-11-17,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0127),1,
+V2-POS-0111,2009-12-27,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2009-0042),1,
+V2-POS-0112,2012-07-28,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2012-0052),1,
+V2-POS-0113,1987-06-18,Kerala,Ernakulam,Kakkanad,9.9837257,76.2740001,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1987-0021),1,
+V2-POS-0114,1994-07-23,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1994-0044),1,
+V2-POS-0115,2010-05-03,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2010-0064),1,
+V2-POS-0116,2011-10-20,Tamil Nadu,Cuddalore,District Centroid,11.5202071,79.3396356,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2011-0089),1,
+V2-POS-0117,2022-08-02,Kerala,Alappuzha,District Centroid,9.5003416,76.4123364,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-0565),1,
+V2-POS-0118,1993-10-06,Kerala,Kottayam,District Centroid,9.6287383,76.6455326,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1993-0031),1,
+V2-POS-0119,2011-10-16,Tamil Nadu,Coimbatore,District Centroid,11.0018115,76.9628425,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2011-0088),1,
+V2-POS-0120,1984-02-16,Tamil Nadu,Chennai,District Centroid,13.0836939,80.270186,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1984-0078),1,
+V2-POS-0121,2021-11-06,Tamil Nadu,Chennai,District Centroid,13.0836939,80.270186,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0260),1,
+V2-POS-0122,2021-10-11,Kerala,Kollam,District Centroid,8.8870533,76.5906696,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0087),1,
+V2-POS-0123,2019-09-27,Uttarakhand,Dehradun,Clement,30.3255646,78.0436813,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2019-0157),1,
+V2-POS-0124,1999-02-05,Kerala,Kollam,District Centroid,8.8870533,76.5906696,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1999-0043),1,
+V2-POS-0125,2022-08-02,Kerala,Pathanamthitta,District Centroid,9.2780841,76.9737443,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-0572),1,
+V2-POS-0126,2022-07-01,Kerala,Kannur,District Centroid,11.8763836,75.3737973,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-0545),1,
+V2-POS-0127,1984-06-29,Uttarakhand,Nainital,District Centroid,29.294995,79.4162511,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1984-0087),1,
+V2-POS-0128,2021-07-14,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0079),1,
+V2-POS-0129,2021-11-18,Tamil Nadu,Vellore,District Centroid,12.9021849,79.061104,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0271),1,
+V2-POS-0130,2014-06-12,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2014-0047),1,
+V2-POS-0131,2021-10-11,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0111),1,
+V2-POS-0132,2014-08-22,Tamil Nadu,Erode,District Centroid,11.4905282,77.3505274,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2014-0080),1,
+V2-POS-0133,2004-11-09,Tamil Nadu,Chennai,District Centroid,13.0836939,80.270186,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2004-0059),1,
+V2-POS-0134,2021-10-12,Kerala,Kottayam,District Centroid,9.6287383,76.6455326,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0092),1,
+V2-POS-0135,2021-05-12,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0072),1,
+V2-POS-0136,1988-07-21,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1988-0048),1,
+V2-POS-0137,1997-06-30,Kerala,Ernakulam,District Centroid,9.9837257,76.2740001,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1997-0041),1,
+V2-POS-0138,2023-08-07,Uttarakhand,Rudra Prayag,District Centroid,30.0417376,79.089691,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2023-0586),1,
+V2-POS-0139,2006-06-29,Kerala,Malappuram,District Centroid,11.1065685,76.1101742,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2006-0051),1,
+V2-POS-0140,1995-03-28,Kerala,Pathanamthitta,District Centroid,9.2780841,76.9737443,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1995-0040),1,
+V2-POS-0141,1985-07-14,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1985-0032),1,
+V2-POS-0142,2019-10-11,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2019-0078),1,
+V2-POS-0143,1993-07-27,Kerala,Malappuram,District Centroid,11.1065685,76.1101742,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1993-0029),1,
+V2-POS-0144,1983-07-23,Kerala,Malappuram,District Centroid,11.1065685,76.1101742,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1983-0046),1,
+V2-POS-0145,1985-07-22,Uttarakhand,Garhwal,Gola,30.25,79.333333,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1985-0060),1,
+V2-POS-0146,2022-07-04,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-0547),1,
+V2-POS-0147,2010-11-08,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2010-0075),1,
+V2-POS-0148,2015-07-18,Kerala,Kannur,District Centroid,11.8763836,75.3737973,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2015-0057),1,
+V2-POS-0149,1993-10-09,Kerala,Palakkad,District Centroid,10.7873692,76.4742172,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1993-0033),1,
+V2-POS-0150,1987-12-01,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1987-0024),1,
+V2-POS-0151,1980-10-01,Kerala,Kozhikode,District Centroid,11.2450558,75.7754716,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1980-0026),1,
+V2-POS-0152,2015-04-12,Tamil Nadu,Virudhunagar,District Centroid,9.4926289,77.8631831,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2015-0084),1,
+V2-POS-0153,2022-08-19,Uttarakhand,Garhwal,District Centroid,30.25,79.333333,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2022-1100),1,
+V2-POS-0154,1993-10-11,Kerala,Alappuzha,District Centroid,9.5003416,76.4123364,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1993-0034),1,
+V2-POS-0155,2017-10-22,Kerala,Thiruvananthapuram,Varkala Taluka,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2017-0075),1,
+V2-POS-0156,1978-04-01,Tamil Nadu,The Nilgiris,District Centroid,11.4,76.7,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1978-0054),1,
+V2-POS-0157,2021-01-03,Kerala,Kasaragod,District Centroid,12.4221964,75.1904446,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2021-0062),1,
+V2-POS-0158,2006-11-25,Kerala,Kottayam,Jhalanadu,9.6287383,76.6455326,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2006-0063),1,
+V2-POS-0159,2006-08-13,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2006-0055),1,
+V2-POS-0160,2003-07-15,Kerala,Kasaragod,District Centroid,12.4221964,75.1904446,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2003-0048),1,
+V2-POS-0161,2015-04-25,Tamil Nadu,Vellore,District Centroid,12.9021849,79.061104,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2015-0086),1,
+V2-POS-0162,2011-09-16,Tamil Nadu,Kancheepuram,District Centroid,12.8796052,79.7042762,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2011-0087),1,
+V2-POS-0163,1993-07-28,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1993-0030),1,
+V2-POS-0164,2011-06-17,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2011-0046),1,
+V2-POS-0165,2013-03-26,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2013-0063),1,
+V2-POS-0166,2019-01-12,Tamil Nadu,Tirunelveli,District Centroid,8.5495014,77.5805178,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2019-0136),1,
+V2-POS-0167,2013-11-25,Tamil Nadu,Pudukkottai,District Centroid,10.2903072,78.8173617,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2013-0122),1,
+V2-POS-0168,1982-08-08,Uttarakhand,Chamoli,Admala,30.4985956,79.6190537,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1982-0052),1,
+V2-POS-0169,2018-08-30,Uttarakhand,Tehri Garhwal,District Centroid,30.4658181,78.4837349,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2018-0117),1,
+V2-POS-0170,1990-07-09,Uttarakhand,Garhwal,Tali,30.25,79.333333,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1990-0075),1,
+V2-POS-0171,2009-09-25,Tamil Nadu,Tiruvannamalai,District Centroid,12.4289282,78.99915,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2009-0070),1,
+V2-POS-0172,1984-03-04,Tamil Nadu,Tirunelveli,District Centroid,8.5495014,77.5805178,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-1984-0079),1,
+V2-POS-0173,2005-02-01,Kerala,Thiruvananthapuram,Kallar,8.4882267,76.947551,district,India_Flood_Inventory_v3 (UEI: UEI-IMD-FL-2005-0066),1,
+V2-NEG-0001,2018-07-16,Kerala,Palakkad,District Centroid,10.7873692,76.4742172,district,Generated Negative (Matched: V2-POS-0001),0,"No known flood event in Palakkad within ±14 days of 2018-07-16 (same month, year 2018)"
+V2-NEG-0002,1983-07-05,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0002),0,"No known flood event in Thiruvananthapuram within ±14 days of 1983-07-05 (same month, year 1983)"
+V2-NEG-0003,1992-11-06,Tamil Nadu,Kallakurichi,District Centroid,11.7946847,79.0388211,district,Generated Negative (Matched: V2-POS-0003),0,"No known flood event in Kallakurichi within ±14 days of 1992-11-06 (same month, year 1992)"
+V2-NEG-0004,2022-08-08,Uttarakhand,Pithoragarh,District Centroid,29.585871,80.215167,district,Generated Negative (Matched: V2-POS-0004),0,"No known flood event in Pithoragarh within ±14 days of 2022-08-08 (same month, year 2022)"
+V2-NEG-0005,1993-05-20,Tamil Nadu,Salem,Edappadi,11.6469616,78.2106958,district,Generated Negative (Matched: V2-POS-0005),0,"No known flood event in Salem within ±14 days of 1993-05-20 (same month, year 1993)"
+V2-NEG-0006,1990-04-14,Kerala,Kannur,District Centroid,11.8763836,75.3737973,district,Generated Negative (Matched: V2-POS-0006),0,"No known flood event in Kannur within ±14 days of 1990-04-14 (same month, year 1990)"
+V2-NEG-0007,2012-02-07,Uttarakhand,Chamoli,District Centroid,30.4985956,79.6190537,district,Generated Negative (Matched: V2-POS-0007),0,"No known flood event in Chamoli within ±14 days of 2012-02-07 (same month, year 2012)"
+V2-NEG-0008,1983-06-15,Kerala,Kozhikode,District Centroid,11.2450558,75.7754716,district,Generated Negative (Matched: V2-POS-0008),0,"No known flood event in Kozhikode within ±14 days of 1983-06-15 (same month, year 1983)"
+V2-NEG-0009,2014-09-04,Kerala,Kollam,District Centroid,8.8870533,76.5906696,district,Generated Negative (Matched: V2-POS-0009),0,"No known flood event in Kollam within ±14 days of 2014-09-04 (same month, year 2014)"
+V2-NEG-0010,2021-07-19,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0010),0,"No known flood event in Thiruvananthapuram within ±14 days of 2021-07-19 (same month, year 2021)"
+V2-NEG-0011,2022-10-10,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0011),0,"No known flood event in Wayanad within ±14 days of 2022-10-10 (same month, year 2022)"
+V2-NEG-0012,1970-11-14,Kerala,Kannur,District Centroid,11.8763836,75.3737973,district,Generated Negative (Matched: V2-POS-0012),0,"No known flood event in Kannur within ±14 days of 1970-11-14 (same month, year 1970)"
+V2-NEG-0013,2013-02-09,Uttarakhand,Almora,Jajar,29.702651,79.4326318,district,Generated Negative (Matched: V2-POS-0013),0,"No known flood event in Almora within ±14 days of 2013-02-09 (same month, year 2013)"
+V2-NEG-0014,2011-11-06,Tamil Nadu,Krishnagiri,District Centroid,12.5152075,78.0093769,district,Generated Negative (Matched: V2-POS-0014),0,"No known flood event in Krishnagiri within ±14 days of 2011-11-06 (same month, year 2011)"
+V2-NEG-0015,1993-11-01,Tamil Nadu,Ranipet,District Centroid,12.9186243,79.4081921,district,Generated Negative (Matched: V2-POS-0015),0,"No known flood event in Ranipet within ±14 days of 1993-11-01 (same month, year 1993)"
+V2-NEG-0016,1999-11-22,Tamil Nadu,Many districts of Tamil Nadu.,District Centroid,11.3323723,78.6098639,district,Generated Negative (Matched: V2-POS-0016),0,"No known flood event in Many districts of Tamil Nadu. within ±14 days of 1999-11-22 (same month, year 1999)"
+V2-NEG-0017,1990-11-12,Tamil Nadu,Chengalpattu,Satyavedu,12.6840886,79.9836371,district,Generated Negative (Matched: V2-POS-0017),0,"No known flood event in Chengalpattu within ±14 days of 1990-11-12 (same month, year 1990)"
+V2-NEG-0018,1973-03-15,Kerala,Thiruvananthapuram,Vellaroda,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0018),0,"No known flood event in Thiruvananthapuram within ±14 days of 1973-03-15 (same month, year 1973)"
+V2-NEG-0019,2000-07-11,Uttarakhand,Bageshwar,District Centroid,30.0087902,79.9280183,district,Generated Negative (Matched: V2-POS-0019),0,"No known flood event in Bageshwar within ±14 days of 2000-07-11 (same month, year 2000)"
+V2-NEG-0020,2008-05-18,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0020),0,"No known flood event in Thiruvananthapuram within ±14 days of 2008-05-18 (same month, year 2008)"
+V2-NEG-0021,2002-09-22,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0021),0,"No known flood event in Thiruvananthapuram within ±14 days of 2002-09-22 (same month, year 2002)"
+V2-NEG-0022,1981-07-21,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0022),0,"No known flood event in Wayanad within ±14 days of 1981-07-21 (same month, year 1981)"
+V2-NEG-0023,2022-10-30,Tamil Nadu,Cuddalore,District Centroid,11.5202071,79.3396356,district,Generated Negative (Matched: V2-POS-0023),0,"No known flood event in Cuddalore within ±14 days of 2022-10-30 (same month, year 2022)"
+V2-NEG-0024,2007-07-30,Kerala,Kannur,Hosdurg,11.8763836,75.3737973,district,Generated Negative (Matched: V2-POS-0024),0,"No known flood event in Kannur within ±14 days of 2007-07-30 (same month, year 2007)"
+V2-NEG-0025,2021-11-12,Tamil Nadu,Tirunelveli,District Centroid,8.5495014,77.5805178,district,Generated Negative (Matched: V2-POS-0025),0,"No known flood event in Tirunelveli within ±14 days of 2021-11-12 (same month, year 2021)"
+V2-NEG-0026,1974-07-05,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,Generated Negative (Matched: V2-POS-0026),0,"No known flood event in Idukki within ±14 days of 1974-07-05 (same month, year 1974)"
+V2-NEG-0027,2014-08-04,Uttarakhand,Chamoli,Gangitri,30.4985956,79.6190537,district,Generated Negative (Matched: V2-POS-0027),0,"No known flood event in Chamoli within ±14 days of 2014-08-04 (same month, year 2014)"
+V2-NEG-0028,2002-08-15,Uttarakhand,Chamoli,District Centroid,30.4985956,79.6190537,district,Generated Negative (Matched: V2-POS-0028),0,"No known flood event in Chamoli within ±14 days of 2002-08-15 (same month, year 2002)"
+V2-NEG-0029,2016-06-01,Uttarakhand,Almora,District Centroid,29.702651,79.4326318,district,Generated Negative (Matched: V2-POS-0029),0,"No known flood event in Almora within ±14 days of 2016-06-01 (same month, year 2016)"
+V2-NEG-0030,1991-08-12,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,Generated Negative (Matched: V2-POS-0030),0,"No known flood event in Idukki within ±14 days of 1991-08-12 (same month, year 1991)"
+V2-NEG-0031,2000-11-06,Tamil Nadu,Kanniyakumariumari,District Centroid,11.3323723,78.6098639,district,Generated Negative (Matched: V2-POS-0031),0,"No known flood event in Kanniyakumariumari within ±14 days of 2000-11-06 (same month, year 2000)"
+V2-NEG-0032,1972-10-16,Kerala,Kollam,District Centroid,8.8870533,76.5906696,district,Generated Negative (Matched: V2-POS-0032),0,"No known flood event in Kollam within ±14 days of 1972-10-16 (same month, year 1972)"
+V2-NEG-0033,2017-04-07,Uttarakhand,Rudra Prayag,Sari Chamshil,30.0417376,79.089691,district,Generated Negative (Matched: V2-POS-0033),0,"No known flood event in Rudra Prayag within ±14 days of 2017-04-07 (same month, year 2017)"
+V2-NEG-0034,1989-09-01,Kerala,Idukki,Mangad,9.8154785,76.9991599,district,Generated Negative (Matched: V2-POS-0034),0,"No known flood event in Idukki within ±14 days of 1989-09-01 (same month, year 1989)"
+V2-NEG-0035,2016-10-16,Kerala,Kottayam,District Centroid,9.6287383,76.6455326,district,Generated Negative (Matched: V2-POS-0035),0,"No known flood event in Kottayam within ±14 days of 2016-10-16 (same month, year 2016)"
+V2-NEG-0036,1977-10-20,Kerala,Malappuram,District Centroid,11.1065685,76.1101742,district,Generated Negative (Matched: V2-POS-0036),0,"No known flood event in Malappuram within ±14 days of 1977-10-20 (same month, year 1977)"
+V2-NEG-0037,2016-05-16,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0037),0,"No known flood event in Thiruvananthapuram within ±14 days of 2016-05-16 (same month, year 2016)"
+V2-NEG-0038,1990-05-29,Kerala,Wayanad,Sultanbattery,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0038),0,"No known flood event in Wayanad within ±14 days of 1990-05-29 (same month, year 1990)"
+V2-NEG-0039,1971-10-18,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0039),0,"No known flood event in Thiruvananthapuram within ±14 days of 1971-10-18 (same month, year 1971)"
+V2-NEG-0040,1979-05-25,Tamil Nadu,Coimbatore,District Centroid,11.0018115,76.9628425,district,Generated Negative (Matched: V2-POS-0040),0,"No known flood event in Coimbatore within ±14 days of 1979-05-25 (same month, year 1979)"
+V2-NEG-0041,2001-10-08,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0041),0,"No known flood event in Thiruvananthapuram within ±14 days of 2001-10-08 (same month, year 2001)"
+V2-NEG-0042,1978-07-11,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0042),0,"No known flood event in Thiruvananthapuram within ±14 days of 1978-07-11 (same month, year 1978)"
+V2-NEG-0043,1995-05-05,Tamil Nadu,Dindigul,District Centroid,10.4257161,77.8154728,district,Generated Negative (Matched: V2-POS-0043),0,"No known flood event in Dindigul within ±14 days of 1995-05-05 (same month, year 1995)"
+V2-NEG-0044,1982-07-19,Uttarakhand,Rudra Prayag,District Centroid,30.0417376,79.089691,district,Generated Negative (Matched: V2-POS-0044),0,"No known flood event in Rudra Prayag within ±14 days of 1982-07-19 (same month, year 1982)"
+V2-NEG-0045,1970-08-10,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0045),0,"No known flood event in Wayanad within ±14 days of 1970-08-10 (same month, year 1970)"
+V2-NEG-0046,1972-04-23,Kerala,Malappuram,District Centroid,11.1065685,76.1101742,district,Generated Negative (Matched: V2-POS-0046),0,"No known flood event in Malappuram within ±14 days of 1972-04-23 (same month, year 1972)"
+V2-NEG-0047,1988-07-17,Uttarakhand,Rudra Prayag,District Centroid,30.0417376,79.089691,district,Generated Negative (Matched: V2-POS-0047),0,"No known flood event in Rudra Prayag within ±14 days of 1988-07-17 (same month, year 1988)"
+V2-NEG-0048,2008-12-08,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0048),0,"No known flood event in Thiruvananthapuram within ±14 days of 2008-12-08 (same month, year 2008)"
+V2-NEG-0049,1986-09-23,Kerala,Thiruvananthapuram,Vilavoorkal,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0049),0,"No known flood event in Thiruvananthapuram within ±14 days of 1986-09-23 (same month, year 1986)"
+V2-NEG-0050,1992-08-14,Uttarakhand,Tehri Garhwal,District Centroid,30.4658181,78.4837349,district,Generated Negative (Matched: V2-POS-0050),0,"No known flood event in Tehri Garhwal within ±14 days of 1992-08-14 (same month, year 1992)"
+V2-NEG-0051,1982-11-15,Tamil Nadu,Chennai,District Centroid,13.0836939,80.270186,district,Generated Negative (Matched: V2-POS-0051),0,"No known flood event in Chennai within ±14 days of 1982-11-15 (same month, year 1982)"
+V2-NEG-0052,1990-05-21,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0052),0,"No known flood event in Thiruvananthapuram within ±14 days of 1990-05-21 (same month, year 1990)"
+V2-NEG-0053,2018-10-16,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,Generated Negative (Matched: V2-POS-0053),0,"No known flood event in Idukki within ±14 days of 2018-10-16 (same month, year 2018)"
+V2-NEG-0054,2020-04-22,Kerala,Palakkad,District Centroid,10.7873692,76.4742172,district,Generated Negative (Matched: V2-POS-0054),0,"No known flood event in Palakkad within ±14 days of 2020-04-22 (same month, year 2020)"
+V2-NEG-0055,2022-03-07,Kerala,Wayanad,Athiyoor,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0055),0,"No known flood event in Wayanad within ±14 days of 2022-03-07 (same month, year 2022)"
+V2-NEG-0056,1980-08-06,Tamil Nadu,Dindigul,District Centroid,10.4257161,77.8154728,district,Generated Negative (Matched: V2-POS-0056),0,"No known flood event in Dindigul within ±14 days of 1980-08-06 (same month, year 1980)"
+V2-NEG-0057,1973-11-03,Tamil Nadu,Tiruchirappalli,Hanganurodai,10.8071144,78.6880939,district,Generated Negative (Matched: V2-POS-0057),0,"No known flood event in Tiruchirappalli within ±14 days of 1973-11-03 (same month, year 1973)"
+V2-NEG-0058,1988-12-09,Kerala,Malappuram,District Centroid,11.1065685,76.1101742,district,Generated Negative (Matched: V2-POS-0058),0,"No known flood event in Malappuram within ±14 days of 1988-12-09 (same month, year 1988)"
+V2-NEG-0059,1994-07-11,Uttarakhand,Pithoragarh,District Centroid,29.585871,80.215167,district,Generated Negative (Matched: V2-POS-0059),0,"No known flood event in Pithoragarh within ±14 days of 1994-07-11 (same month, year 1994)"
+V2-NEG-0060,1974-07-16,Uttarakhand,Rudra Prayag,District Centroid,30.0417376,79.089691,district,Generated Negative (Matched: V2-POS-0060),0,"No known flood event in Rudra Prayag within ±14 days of 1974-07-16 (same month, year 1974)"
+V2-NEG-0061,1968-11-22,Tamil Nadu,Nagapattinam,District Centroid,10.6026203,79.7619348,district,Generated Negative (Matched: V2-POS-0061),0,"No known flood event in Nagapattinam within ±14 days of 1968-11-22 (same month, year 1968)"
+V2-NEG-0062,1979-11-30,Tamil Nadu,Many districts of Tamil Nadu.,District Centroid,11.3323723,78.6098639,district,Generated Negative (Matched: V2-POS-0062),0,"No known flood event in Many districts of Tamil Nadu. within ±14 days of 1979-11-30 (same month, year 1979)"
+V2-NEG-0063,1979-08-02,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,Generated Negative (Matched: V2-POS-0063),0,"No known flood event in Thrissur within ±14 days of 1979-08-02 (same month, year 1979)"
+V2-NEG-0064,2006-09-05,Uttarakhand,Bageshwar,Jaojit,30.0087902,79.9280183,district,Generated Negative (Matched: V2-POS-0064),0,"No known flood event in Bageshwar within ±14 days of 2006-09-05 (same month, year 2006)"
+V2-NEG-0065,1974-07-02,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0065),0,"No known flood event in Thiruvananthapuram within ±14 days of 1974-07-02 (same month, year 1974)"
+V2-NEG-0066,1976-11-06,Tamil Nadu,Viluppuram,District Centroid,12.1166967,79.5989236,district,Generated Negative (Matched: V2-POS-0066),0,"No known flood event in Viluppuram within ±14 days of 1976-11-06 (same month, year 1976)"
+V2-NEG-0067,2023-10-23,Kerala,Pathanamthitta,District Centroid,9.2780841,76.9737443,district,Generated Negative (Matched: V2-POS-0067),0,"No known flood event in Pathanamthitta within ±14 days of 2023-10-23 (same month, year 2023)"
+V2-NEG-0068,2018-08-01,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0068),0,"No known flood event in Thiruvananthapuram within ±14 days of 2018-08-01 (same month, year 2018)"
+V2-NEG-0069,1968-10-06,Kerala,Kozhikode,District Centroid,11.2450558,75.7754716,district,Generated Negative (Matched: V2-POS-0069),0,"No known flood event in Kozhikode within ±14 days of 1968-10-06 (same month, year 1968)"
+V2-NEG-0070,1976-06-21,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,Generated Negative (Matched: V2-POS-0070),0,"No known flood event in Idukki within ±14 days of 1976-06-21 (same month, year 1976)"
+V2-NEG-0071,2012-06-09,Kerala,Kasaragod,District Centroid,12.4221964,75.1904446,district,Generated Negative (Matched: V2-POS-0071),0,"No known flood event in Kasaragod within ±14 days of 2012-06-09 (same month, year 2012)"
+V2-NEG-0072,1981-06-24,Kerala,Kollam,Neendakare,8.8870533,76.5906696,district,Generated Negative (Matched: V2-POS-0072),0,"No known flood event in Kollam within ±14 days of 1981-06-24 (same month, year 1981)"
+V2-NEG-0073,2021-06-17,Kerala,Alappuzha,District Centroid,9.5003416,76.4123364,district,Generated Negative (Matched: V2-POS-0073),0,"No known flood event in Alappuzha within ±14 days of 2021-06-17 (same month, year 2021)"
+V2-NEG-0074,1985-06-08,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,Generated Negative (Matched: V2-POS-0074),0,"No known flood event in Idukki within ±14 days of 1985-06-08 (same month, year 1985)"
+V2-NEG-0075,2010-09-17,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0075),0,"No known flood event in Thiruvananthapuram within ±14 days of 2010-09-17 (same month, year 2010)"
+V2-NEG-0076,1983-10-22,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0076),0,"No known flood event in Thiruvananthapuram within ±14 days of 1983-10-22 (same month, year 1983)"
+V2-NEG-0077,2002-12-17,Kerala,Kozhikode,District Centroid,11.2450558,75.7754716,district,Generated Negative (Matched: V2-POS-0077),0,"No known flood event in Kozhikode within ±14 days of 2002-12-17 (same month, year 2002)"
+V2-NEG-0078,1984-07-02,Kerala,Kannur,District Centroid,11.8763836,75.3737973,district,Generated Negative (Matched: V2-POS-0078),0,"No known flood event in Kannur within ±14 days of 1984-07-02 (same month, year 1984)"
+V2-NEG-0079,1992-11-01,Tamil Nadu,Chennai,District Centroid,13.0836939,80.270186,district,Generated Negative (Matched: V2-POS-0079),0,"No known flood event in Chennai within ±14 days of 1992-11-01 (same month, year 1992)"
+V2-NEG-0080,1972-11-30,Tamil Nadu,Thanjavur,District Centroid,10.659037,79.2014278,district,Generated Negative (Matched: V2-POS-0080),0,"No known flood event in Thanjavur within ±14 days of 1972-11-30 (same month, year 1972)"
+V2-NEG-0081,1996-07-23,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0081),0,"No known flood event in Wayanad within ±14 days of 1996-07-23 (same month, year 1996)"
+V2-NEG-0082,2006-10-02,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,Generated Negative (Matched: V2-POS-0082),0,"No known flood event in Thrissur within ±14 days of 2006-10-02 (same month, year 2006)"
+V2-NEG-0083,1969-06-14,Kerala,Kasaragod,District Centroid,12.4221964,75.1904446,district,Generated Negative (Matched: V2-POS-0083),0,"No known flood event in Kasaragod within ±14 days of 1969-06-14 (same month, year 1969)"
+V2-NEG-0084,1990-04-09,Kerala,Wayanad,Punalur,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0084),0,"No known flood event in Wayanad within ±14 days of 1990-04-09 (same month, year 1990)"
+V2-NEG-0085,1996-10-21,Tamil Nadu,Erode,District Centroid,11.4905282,77.3505274,district,Generated Negative (Matched: V2-POS-0085),0,"No known flood event in Erode within ±14 days of 1996-10-21 (same month, year 1996)"
+V2-NEG-0086,1973-10-12,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,Generated Negative (Matched: V2-POS-0086),0,"No known flood event in Thrissur within ±14 days of 1973-10-12 (same month, year 1973)"
+V2-NEG-0087,2011-07-01,Tamil Nadu,Coimbatore,Erode,11.0018115,76.9628425,district,Generated Negative (Matched: V2-POS-0087),0,"No known flood event in Coimbatore within ±14 days of 2011-07-01 (same month, year 2011)"
+V2-NEG-0088,2000-07-01,Kerala,Kozhikode,Atholi,11.2450558,75.7754716,district,Generated Negative (Matched: V2-POS-0088),0,"No known flood event in Kozhikode within ±14 days of 2000-07-01 (same month, year 2000)"
+V2-NEG-0089,1970-11-04,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0089),0,"No known flood event in Wayanad within ±14 days of 1970-11-04 (same month, year 1970)"
+V2-NEG-0090,1999-11-09,Kerala,Kozhikode,District Centroid,11.2450558,75.7754716,district,Generated Negative (Matched: V2-POS-0090),0,"No known flood event in Kozhikode within ±14 days of 1999-11-09 (same month, year 1999)"
+V2-NEG-0091,1969-06-16,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0091),0,"No known flood event in Wayanad within ±14 days of 1969-06-16 (same month, year 1969)"
+V2-NEG-0092,1972-11-18,Tamil Nadu,Nagapattinam,District Centroid,10.6026203,79.7619348,district,Generated Negative (Matched: V2-POS-0092),0,"No known flood event in Nagapattinam within ±14 days of 1972-11-18 (same month, year 1972)"
+V2-NEG-0093,1971-10-07,Kerala,Kottayam,District Centroid,9.6287383,76.6455326,district,Generated Negative (Matched: V2-POS-0093),0,"No known flood event in Kottayam within ±14 days of 1971-10-07 (same month, year 1971)"
+V2-NEG-0094,2023-06-07,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0094),0,"No known flood event in Wayanad within ±14 days of 2023-06-07 (same month, year 2023)"
+V2-NEG-0095,2001-06-02,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0095),0,"No known flood event in Thiruvananthapuram within ±14 days of 2001-06-02 (same month, year 2001)"
+V2-NEG-0096,1997-03-05,Kerala,Pathanamthitta,District Centroid,9.2780841,76.9737443,district,Generated Negative (Matched: V2-POS-0096),0,"No known flood event in Pathanamthitta within ±14 days of 1997-03-05 (same month, year 1997)"
+V2-NEG-0097,2023-04-22,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0097),0,"No known flood event in Wayanad within ±14 days of 2023-04-22 (same month, year 2023)"
+V2-NEG-0098,2003-11-22,Tamil Nadu,The Nilgiris,District Centroid,11.4,76.7,district,Generated Negative (Matched: V2-POS-0098),0,"No known flood event in The Nilgiris within ±14 days of 2003-11-22 (same month, year 2003)"
+V2-NEG-0099,1989-07-21,Uttarakhand,Dehradun,District Centroid,30.3255646,78.0436813,district,Generated Negative (Matched: V2-POS-0099),0,"No known flood event in Dehradun within ±14 days of 1989-07-21 (same month, year 1989)"
+V2-NEG-0100,1977-07-21,Kerala,Thiruvananthapuram,Ponmudi,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0100),0,"No known flood event in Thiruvananthapuram within ±14 days of 1977-07-21 (same month, year 1977)"
+V2-NEG-0101,2009-03-07,Kerala,Kozhikode,Pulloorampara,11.2450558,75.7754716,district,Generated Negative (Matched: V2-POS-0101),0,"No known flood event in Kozhikode within ±14 days of 2009-03-07 (same month, year 2009)"
+V2-NEG-0102,2018-08-29,Uttarakhand,Pithoragarh,District Centroid,29.585871,80.215167,district,Generated Negative (Matched: V2-POS-0102),0,"No known flood event in Pithoragarh within ±14 days of 2018-08-29 (same month, year 2018)"
+V2-NEG-0103,1979-05-08,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,Generated Negative (Matched: V2-POS-0103),0,"No known flood event in Thrissur within ±14 days of 1979-05-08 (same month, year 1979)"
+V2-NEG-0104,1990-07-23,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,Generated Negative (Matched: V2-POS-0104),0,"No known flood event in Thrissur within ±14 days of 1990-07-23 (same month, year 1990)"
+V2-NEG-0105,1968-03-12,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0105),0,"No known flood event in Wayanad within ±14 days of 1968-03-12 (same month, year 1968)"
+V2-NEG-0106,1984-10-12,Kerala,Pathanamthitta,District Centroid,9.2780841,76.9737443,district,Generated Negative (Matched: V2-POS-0106),0,"No known flood event in Pathanamthitta within ±14 days of 1984-10-12 (same month, year 1984)"
+V2-NEG-0107,1987-08-23,Uttarakhand,Garhwal,District Centroid,30.25,79.333333,district,Generated Negative (Matched: V2-POS-0107),0,"No known flood event in Garhwal within ±14 days of 1987-08-23 (same month, year 1987)"
+V2-NEG-0108,1996-09-26,Kerala,Thiruvananthapuram,Attingal,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0108),0,"No known flood event in Thiruvananthapuram within ±14 days of 1996-09-26 (same month, year 1996)"
+V2-NEG-0109,2008-05-17,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0109),0,"No known flood event in Thiruvananthapuram within ±14 days of 2008-05-17 (same month, year 2008)"
+V2-NEG-0110,1984-11-17,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0110),0,"No known flood event in Thiruvananthapuram within ±14 days of 1984-11-17 (same month, year 1984)"
+V2-NEG-0111,1969-12-27,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0111),0,"No known flood event in Wayanad within ±14 days of 1969-12-27 (same month, year 1969)"
+V2-NEG-0112,1995-07-28,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0112),0,"No known flood event in Wayanad within ±14 days of 1995-07-28 (same month, year 1995)"
+V2-NEG-0113,1969-06-18,Kerala,Ernakulam,Kakkanad,9.9837257,76.2740001,district,Generated Negative (Matched: V2-POS-0113),0,"No known flood event in Ernakulam within ±14 days of 1969-06-18 (same month, year 1969)"
+V2-NEG-0114,2016-07-23,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,Generated Negative (Matched: V2-POS-0114),0,"No known flood event in Thrissur within ±14 days of 2016-07-23 (same month, year 2016)"
+V2-NEG-0115,1993-05-03,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0115),0,"No known flood event in Wayanad within ±14 days of 1993-05-03 (same month, year 1993)"
+V2-NEG-0116,1997-10-20,Tamil Nadu,Cuddalore,District Centroid,11.5202071,79.3396356,district,Generated Negative (Matched: V2-POS-0116),0,"No known flood event in Cuddalore within ±14 days of 1997-10-20 (same month, year 1997)"
+V2-NEG-0117,1983-08-02,Kerala,Alappuzha,District Centroid,9.5003416,76.4123364,district,Generated Negative (Matched: V2-POS-0117),0,"No known flood event in Alappuzha within ±14 days of 1983-08-02 (same month, year 1983)"
+V2-NEG-0118,1988-10-06,Kerala,Kottayam,District Centroid,9.6287383,76.6455326,district,Generated Negative (Matched: V2-POS-0118),0,"No known flood event in Kottayam within ±14 days of 1988-10-06 (same month, year 1988)"
+V2-NEG-0119,2000-10-16,Tamil Nadu,Coimbatore,District Centroid,11.0018115,76.9628425,district,Generated Negative (Matched: V2-POS-0119),0,"No known flood event in Coimbatore within ±14 days of 2000-10-16 (same month, year 2000)"
+V2-NEG-0120,2004-02-16,Tamil Nadu,Chennai,District Centroid,13.0836939,80.270186,district,Generated Negative (Matched: V2-POS-0120),0,"No known flood event in Chennai within ±14 days of 2004-02-16 (same month, year 2004)"
+V2-NEG-0121,2013-11-06,Tamil Nadu,Chennai,District Centroid,13.0836939,80.270186,district,Generated Negative (Matched: V2-POS-0121),0,"No known flood event in Chennai within ±14 days of 2013-11-06 (same month, year 2013)"
+V2-NEG-0122,2018-10-11,Kerala,Kollam,District Centroid,8.8870533,76.5906696,district,Generated Negative (Matched: V2-POS-0122),0,"No known flood event in Kollam within ±14 days of 2018-10-11 (same month, year 2018)"
+V2-NEG-0123,2017-09-27,Uttarakhand,Dehradun,Clement,30.3255646,78.0436813,district,Generated Negative (Matched: V2-POS-0123),0,"No known flood event in Dehradun within ±14 days of 2017-09-27 (same month, year 2017)"
+V2-NEG-0124,1996-02-05,Kerala,Kollam,District Centroid,8.8870533,76.5906696,district,Generated Negative (Matched: V2-POS-0124),0,"No known flood event in Kollam within ±14 days of 1996-02-05 (same month, year 1996)"
+V2-NEG-0125,1975-08-02,Kerala,Pathanamthitta,District Centroid,9.2780841,76.9737443,district,Generated Negative (Matched: V2-POS-0125),0,"No known flood event in Pathanamthitta within ±14 days of 1975-08-02 (same month, year 1975)"
+V2-NEG-0126,2005-07-01,Kerala,Kannur,District Centroid,11.8763836,75.3737973,district,Generated Negative (Matched: V2-POS-0126),0,"No known flood event in Kannur within ±14 days of 2005-07-01 (same month, year 2005)"
+V2-NEG-0127,1993-06-29,Uttarakhand,Nainital,District Centroid,29.294995,79.4162511,district,Generated Negative (Matched: V2-POS-0127),0,"No known flood event in Nainital within ±14 days of 1993-06-29 (same month, year 1993)"
+V2-NEG-0128,1990-07-14,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0128),0,"No known flood event in Wayanad within ±14 days of 1990-07-14 (same month, year 1990)"
+V2-NEG-0129,2015-11-18,Tamil Nadu,Vellore,District Centroid,12.9021849,79.061104,district,Generated Negative (Matched: V2-POS-0129),0,"No known flood event in Vellore within ±14 days of 2015-11-18 (same month, year 2015)"
+V2-NEG-0130,2019-06-12,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0130),0,"No known flood event in Thiruvananthapuram within ±14 days of 2019-06-12 (same month, year 2019)"
+V2-NEG-0131,1971-10-11,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,Generated Negative (Matched: V2-POS-0131),0,"No known flood event in Thrissur within ±14 days of 1971-10-11 (same month, year 1971)"
+V2-NEG-0132,2012-08-22,Tamil Nadu,Erode,District Centroid,11.4905282,77.3505274,district,Generated Negative (Matched: V2-POS-0132),0,"No known flood event in Erode within ±14 days of 2012-08-22 (same month, year 2012)"
+V2-NEG-0133,2020-11-09,Tamil Nadu,Chennai,District Centroid,13.0836939,80.270186,district,Generated Negative (Matched: V2-POS-0133),0,"No known flood event in Chennai within ±14 days of 2020-11-09 (same month, year 2020)"
+V2-NEG-0134,1987-10-12,Kerala,Kottayam,District Centroid,9.6287383,76.6455326,district,Generated Negative (Matched: V2-POS-0134),0,"No known flood event in Kottayam within ±14 days of 1987-10-12 (same month, year 1987)"
+V2-NEG-0135,1974-05-12,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0135),0,"No known flood event in Thiruvananthapuram within ±14 days of 1974-05-12 (same month, year 1974)"
+V2-NEG-0136,2010-07-21,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,Generated Negative (Matched: V2-POS-0136),0,"No known flood event in Idukki within ±14 days of 2010-07-21 (same month, year 2010)"
+V2-NEG-0137,2000-06-30,Kerala,Ernakulam,District Centroid,9.9837257,76.2740001,district,Generated Negative (Matched: V2-POS-0137),0,"No known flood event in Ernakulam within ±14 days of 2000-06-30 (same month, year 2000)"
+V2-NEG-0138,2008-08-07,Uttarakhand,Rudra Prayag,District Centroid,30.0417376,79.089691,district,Generated Negative (Matched: V2-POS-0138),0,"No known flood event in Rudra Prayag within ±14 days of 2008-08-07 (same month, year 2008)"
+V2-NEG-0139,2002-06-29,Kerala,Malappuram,District Centroid,11.1065685,76.1101742,district,Generated Negative (Matched: V2-POS-0139),0,"No known flood event in Malappuram within ±14 days of 2002-06-29 (same month, year 2002)"
+V2-NEG-0140,2003-03-28,Kerala,Pathanamthitta,District Centroid,9.2780841,76.9737443,district,Generated Negative (Matched: V2-POS-0140),0,"No known flood event in Pathanamthitta within ±14 days of 2003-03-28 (same month, year 2003)"
+V2-NEG-0141,2023-07-14,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0141),0,"No known flood event in Thiruvananthapuram within ±14 days of 2023-07-14 (same month, year 2023)"
+V2-NEG-0142,2007-10-11,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0142),0,"No known flood event in Wayanad within ±14 days of 2007-10-11 (same month, year 2007)"
+V2-NEG-0143,1976-07-27,Kerala,Malappuram,District Centroid,11.1065685,76.1101742,district,Generated Negative (Matched: V2-POS-0143),0,"No known flood event in Malappuram within ±14 days of 1976-07-27 (same month, year 1976)"
+V2-NEG-0144,1982-07-23,Kerala,Malappuram,District Centroid,11.1065685,76.1101742,district,Generated Negative (Matched: V2-POS-0144),0,"No known flood event in Malappuram within ±14 days of 1982-07-23 (same month, year 1982)"
+V2-NEG-0145,1979-07-22,Uttarakhand,Garhwal,Gola,30.25,79.333333,district,Generated Negative (Matched: V2-POS-0145),0,"No known flood event in Garhwal within ±14 days of 1979-07-22 (same month, year 1979)"
+V2-NEG-0146,1983-07-04,Kerala,Idukki,District Centroid,9.8154785,76.9991599,district,Generated Negative (Matched: V2-POS-0146),0,"No known flood event in Idukki within ±14 days of 1983-07-04 (same month, year 1983)"
+V2-NEG-0147,2008-11-08,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0147),0,"No known flood event in Thiruvananthapuram within ±14 days of 2008-11-08 (same month, year 2008)"
+V2-NEG-0148,2001-07-18,Kerala,Kannur,District Centroid,11.8763836,75.3737973,district,Generated Negative (Matched: V2-POS-0148),0,"No known flood event in Kannur within ±14 days of 2001-07-18 (same month, year 2001)"
+V2-NEG-0149,2020-10-09,Kerala,Palakkad,District Centroid,10.7873692,76.4742172,district,Generated Negative (Matched: V2-POS-0149),0,"No known flood event in Palakkad within ±14 days of 2020-10-09 (same month, year 2020)"
+V2-NEG-0150,2000-12-01,Kerala,Thrissur,District Centroid,10.5270099,76.214621,district,Generated Negative (Matched: V2-POS-0150),0,"No known flood event in Thrissur within ±14 days of 2000-12-01 (same month, year 2000)"
+V2-NEG-0151,2003-10-01,Kerala,Kozhikode,District Centroid,11.2450558,75.7754716,district,Generated Negative (Matched: V2-POS-0151),0,"No known flood event in Kozhikode within ±14 days of 2003-10-01 (same month, year 2003)"
+V2-NEG-0152,2009-04-12,Tamil Nadu,Virudhunagar,District Centroid,9.4926289,77.8631831,district,Generated Negative (Matched: V2-POS-0152),0,"No known flood event in Virudhunagar within ±14 days of 2009-04-12 (same month, year 2009)"
+V2-NEG-0153,1987-08-19,Uttarakhand,Garhwal,District Centroid,30.25,79.333333,district,Generated Negative (Matched: V2-POS-0153),0,"No known flood event in Garhwal within ±14 days of 1987-08-19 (same month, year 1987)"
+V2-NEG-0154,2018-10-11,Kerala,Alappuzha,District Centroid,9.5003416,76.4123364,district,Generated Negative (Matched: V2-POS-0154),0,"No known flood event in Alappuzha within ±14 days of 2018-10-11 (same month, year 2018)"
+V2-NEG-0155,2000-10-22,Kerala,Thiruvananthapuram,Varkala Taluka,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0155),0,"No known flood event in Thiruvananthapuram within ±14 days of 2000-10-22 (same month, year 2000)"
+V2-NEG-0156,2013-04-01,Tamil Nadu,The Nilgiris,District Centroid,11.4,76.7,district,Generated Negative (Matched: V2-POS-0156),0,"No known flood event in The Nilgiris within ±14 days of 2013-04-01 (same month, year 2013)"
+V2-NEG-0157,1970-01-03,Kerala,Kasaragod,District Centroid,12.4221964,75.1904446,district,Generated Negative (Matched: V2-POS-0157),0,"No known flood event in Kasaragod within ±14 days of 1970-01-03 (same month, year 1970)"
+V2-NEG-0158,1982-11-25,Kerala,Kottayam,Jhalanadu,9.6287383,76.6455326,district,Generated Negative (Matched: V2-POS-0158),0,"No known flood event in Kottayam within ±14 days of 1982-11-25 (same month, year 1982)"
+V2-NEG-0159,1974-08-13,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0159),0,"No known flood event in Wayanad within ±14 days of 1974-08-13 (same month, year 1974)"
+V2-NEG-0160,1987-07-15,Kerala,Kasaragod,District Centroid,12.4221964,75.1904446,district,Generated Negative (Matched: V2-POS-0160),0,"No known flood event in Kasaragod within ±14 days of 1987-07-15 (same month, year 1987)"
+V2-NEG-0161,1996-04-25,Tamil Nadu,Vellore,District Centroid,12.9021849,79.061104,district,Generated Negative (Matched: V2-POS-0161),0,"No known flood event in Vellore within ±14 days of 1996-04-25 (same month, year 1996)"
+V2-NEG-0162,2022-09-16,Tamil Nadu,Kancheepuram,District Centroid,12.8796052,79.7042762,district,Generated Negative (Matched: V2-POS-0162),0,"No known flood event in Kancheepuram within ±14 days of 2022-09-16 (same month, year 2022)"
+V2-NEG-0163,1981-07-28,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0163),0,"No known flood event in Thiruvananthapuram within ±14 days of 1981-07-28 (same month, year 1981)"
+V2-NEG-0164,1974-06-17,Kerala,Wayanad,District Centroid,11.7151291,76.1271185,district,Generated Negative (Matched: V2-POS-0164),0,"No known flood event in Wayanad within ±14 days of 1974-06-17 (same month, year 1974)"
+V2-NEG-0165,1968-03-26,Kerala,Thiruvananthapuram,District Centroid,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0165),0,"No known flood event in Thiruvananthapuram within ±14 days of 1968-03-26 (same month, year 1968)"
+V2-NEG-0166,2010-01-12,Tamil Nadu,Tirunelveli,District Centroid,8.5495014,77.5805178,district,Generated Negative (Matched: V2-POS-0166),0,"No known flood event in Tirunelveli within ±14 days of 2010-01-12 (same month, year 2010)"
+V2-NEG-0167,1972-11-25,Tamil Nadu,Pudukkottai,District Centroid,10.2903072,78.8173617,district,Generated Negative (Matched: V2-POS-0167),0,"No known flood event in Pudukkottai within ±14 days of 1972-11-25 (same month, year 1972)"
+V2-NEG-0168,1979-08-08,Uttarakhand,Chamoli,Admala,30.4985956,79.6190537,district,Generated Negative (Matched: V2-POS-0168),0,"No known flood event in Chamoli within ±14 days of 1979-08-08 (same month, year 1979)"
+V2-NEG-0169,2014-08-30,Uttarakhand,Tehri Garhwal,District Centroid,30.4658181,78.4837349,district,Generated Negative (Matched: V2-POS-0169),0,"No known flood event in Tehri Garhwal within ±14 days of 2014-08-30 (same month, year 2014)"
+V2-NEG-0170,1980-07-09,Uttarakhand,Garhwal,Tali,30.25,79.333333,district,Generated Negative (Matched: V2-POS-0170),0,"No known flood event in Garhwal within ±14 days of 1980-07-09 (same month, year 1980)"
+V2-NEG-0171,1971-09-25,Tamil Nadu,Tiruvannamalai,District Centroid,12.4289282,78.99915,district,Generated Negative (Matched: V2-POS-0171),0,"No known flood event in Tiruvannamalai within ±14 days of 1971-09-25 (same month, year 1971)"
+V2-NEG-0172,1998-03-04,Tamil Nadu,Tirunelveli,District Centroid,8.5495014,77.5805178,district,Generated Negative (Matched: V2-POS-0172),0,"No known flood event in Tirunelveli within ±14 days of 1998-03-04 (same month, year 1998)"
+V2-NEG-0173,1988-02-01,Kerala,Thiruvananthapuram,Kallar,8.4882267,76.947551,district,Generated Negative (Matched: V2-POS-0173),0,"No known flood event in Thiruvananthapuram within ±14 days of 1988-02-01 (same month, year 1988)"

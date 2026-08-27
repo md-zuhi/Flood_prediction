@@ -1,19 +1,4 @@
 {
-  "11.3533,76.7959": {
-    "elevation_m": 1835,
-    "min_elevation_m": null,
-    "max_elevation_m": null,
-    "mean_elevation_m": null,
-    "local_relief_m": null,
-    "slope_deg": null,
-    "mean_slope_deg": null,
-    "max_slope_deg": null,
-    "source": "NASA SRTM",
-    "access_service": "OpenTopography",
-    "dataset": "SRTMGL1",
-    "status": "success",
-    "cache": "stored"
-  },
   "10.2381,77.4892": {
     "elevation_m": 2085,
     "min_elevation_m": null,
@@ -123,6 +108,22 @@
     "slope_deg": 17.83,
     "mean_slope_deg": 25.47,
     "max_slope_deg": 63.02,
+    "source": "NASA SRTM",
+    "access_service": "OpenTopography",
+    "dataset": "SRTMGL1",
+    "status": "success",
+    "terrain_mode": "full_terrain",
+    "cache": "stored"
+  },
+  "11.3533,76.7959": {
+    "elevation_m": 1835,
+    "min_elevation_m": 1711,
+    "max_elevation_m": 1906,
+    "mean_elevation_m": 1802.21,
+    "local_relief_m": 195,
+    "slope_deg": 17.55,
+    "mean_slope_deg": 12.13,
+    "max_slope_deg": 42.09,
     "source": "NASA SRTM",
     "access_service": "OpenTopography",
     "dataset": "SRTMGL1",

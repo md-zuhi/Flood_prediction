@@ -1,0 +1,350 @@
+{
+  "Kasaragod, Kerala, India": {
+    "lat": 12.4221964,
+    "lon": 75.1904446
+  },
+  "Kerala, India": {
+    "lat": 10.3528744,
+    "lon": 76.5120396
+  },
+  "Beedar, Kerala, India": {
+    "lat": 10.3528744,
+    "lon": 76.5120396
+  },
+  "Chennai, Tamil Nadu, India": {
+    "lat": 13.0836939,
+    "lon": 80.270186
+  },
+  "Thrissur, Kerala, India": {
+    "lat": 10.5270099,
+    "lon": 76.214621
+  },
+  "Amroha, Kerala, India": {
+    "lat": 10.3528744,
+    "lon": 76.5120396
+  },
+  "Thiruvananthapuram, Kerala, India": {
+    "lat": 8.4882267,
+    "lon": 76.947551,
+    "precision": "district"
+  },
+  "Thanjavur, Tamil Nadu, India": {
+    "lat": 10.659037,
+    "lon": 79.2014278
+  },
+  "Coimbatore, Tamil Nadu, India": {
+    "lat": 11.0018115,
+    "lon": 76.9628425
+  },
+  "The Nilgiris, Tamil Nadu, India": {
+    "lat": 11.4,
+    "lon": 76.7
+  },
+  "Alappuzha, Kerala, India": {
+    "lat": 9.5003416,
+    "lon": 76.4123364
+  },
+  "Ernakulam, Kerala, India": {
+    "lat": 9.9837257,
+    "lon": 76.2740001
+  },
+  "Kannur, Kerala, India": {
+    "lat": 11.8763836,
+    "lon": 75.3737973
+  },
+  "Kozhikode, Kerala, India": {
+    "lat": 11.2450558,
+    "lon": 75.7754716
+  },
+  "Palakkad, Kerala, India": {
+    "lat": 10.7873692,
+    "lon": 76.4742172,
+    "precision": "district"
+  },
+  "Madurai, Tamil Nadu, India": {
+    "lat": 9.9261153,
+    "lon": 78.1140983
+  },
+  "Pudukkottai, Tamil Nadu, India": {
+    "lat": 10.2903072,
+    "lon": 78.8173617
+  },
+  "Ramanathapuram, Tamil Nadu, India": {
+    "lat": 9.5205576,
+    "lon": 78.5184635
+  },
+  "Cuddalore, Tamil Nadu, India": {
+    "lat": 11.5202071,
+    "lon": 79.3396356
+  },
+  "Tiruchirappalli, Tamil Nadu, India": {
+    "lat": 10.8071144,
+    "lon": 78.6880939
+  },
+  "Tirunelveli, Tamil Nadu, India": {
+    "lat": 8.5495014,
+    "lon": 77.5805178
+  },
+  "Chamoli, Uttarakhand, India": {
+    "lat": 30.4985956,
+    "lon": 79.6190537
+  },
+  "Uttarakhand, India": {
+    "lat": 30.0417376,
+    "lon": 79.089691
+  },
+  "Azamgarh, Uttarakhand, India": {
+    "lat": 30.0417376,
+    "lon": 79.089691
+  },
+  "Kottayam, Kerala, India": {
+    "lat": 9.6287383,
+    "lon": 76.6455326
+  },
+  "Chengalpattu, Tamil Nadu, India": {
+    "lat": 12.6840886,
+    "lon": 79.9836371
+  },
+  "Uttar Kashi Kashi, Uttarakhand, India": {
+    "lat": 30.0417376,
+    "lon": 79.089691
+  },
+  "Bahraich, Uttarakhand, India": {
+    "lat": 30.0417376,
+    "lon": 79.089691
+  },
+  "Prayagraj, Uttarakhand, India": {
+    "lat": 30.0417376,
+    "lon": 79.089691
+  },
+  "Malappuram, Kerala, India": {
+    "lat": 11.1065685,
+    "lon": 76.1101742
+  },
+  "Idukki, Kerala, India": {
+    "lat": 9.8154785,
+    "lon": 76.9991599
+  },
+  "Vellore, Tamil Nadu, India": {
+    "lat": 12.9021849,
+    "lon": 79.061104
+  },
+  "Mathura, Uttarakhand, India": {
+    "lat": 29.2220315,
+    "lon": 79.5229864
+  },
+  "Viluppuram, Tamil Nadu, India": {
+    "lat": 12.1166967,
+    "lon": 79.5989236
+  },
+  "Dehradun, Uttarakhand, India": {
+    "lat": 30.3255646,
+    "lon": 78.0436813
+  },
+  "Almora, Uttarakhand, India": {
+    "lat": 29.702651,
+    "lon": 79.4326318
+  },
+  "Wayanad, Kerala, India": {
+    "lat": 11.7151291,
+    "lon": 76.1271185
+  },
+  "Nainital, Uttarakhand, India": {
+    "lat": 29.294995,
+    "lon": 79.4162511
+  },
+  "Thiruvallur, Tamil Nadu, India": {
+    "lat": 13.2537619,
+    "lon": 80.0562572
+  },
+  "Garhwal, Uttarakhand, India": {
+    "lat": 30.25,
+    "lon": 79.333333
+  },
+  "Ballia, Uttarakhand, India": {
+    "lat": 30.0417376,
+    "lon": 79.089691
+  },
+  "Kollam, Kerala, India": {
+    "lat": 8.8870533,
+    "lon": 76.5906696
+  },
+  "Pathanamthitta, Kerala, India": {
+    "lat": 9.2780841,
+    "lon": 76.9737443
+  },
+  "Tehri Garhwal, Uttarakhand, India": {
+    "lat": 30.4658181,
+    "lon": 78.4837349
+  },
+  "Tamil Nadu, India": {
+    "lat": 11.3323723,
+    "lon": 78.6098639
+  },
+  "Kanniyakumariumari, Tamil Nadu, India": {
+    "lat": 11.3323723,
+    "lon": 78.6098639
+  },
+  "Dindigul, Tamil Nadu, India": {
+    "lat": 10.4257161,
+    "lon": 77.8154728
+  },
+  "Kancheepuram, Tamil Nadu, India": {
+    "lat": 12.8796052,
+    "lon": 79.7042762
+  },
+  "Nagapattinam, Tamil Nadu, India": {
+    "lat": 10.6026203,
+    "lon": 79.7619348
+  },
+  "Karur, Tamil Nadu, India": {
+    "lat": 10.8217671,
+    "lon": 78.3828654
+  },
+  "Rudra Prayag, Uttarakhand, India": {
+    "lat": 30.0417376,
+    "lon": 79.089691
+  },
+  "East Uttar Kashi Pradesh, Uttarakhand, India": {
+    "lat": 30.0417376,
+    "lon": 79.089691
+  },
+  "Many parts, Tamil Nadu, India": {
+    "lat": 11.3323723,
+    "lon": 78.6098639
+  },
+  "Haridwar, Uttarakhand, India": {
+    "lat": 29.9384473,
+    "lon": 78.1452985
+  },
+  "South Tripura, Tamil Nadu, India": {
+    "lat": 11.3323723,
+    "lon": 78.6098639
+  },
+  "Pithoragarh, Uttarakhand, India": {
+    "lat": 29.585871,
+    "lon": 80.215167
+  },
+  "Thiruvarur, Tamil Nadu, India": {
+    "lat": 10.6878621,
+    "lon": 79.4979437
+  },
+  "Bageshwar, Uttarakhand, India": {
+    "lat": 30.0087902,
+    "lon": 79.9280183
+  },
+  "Udam Singh Nagar, Uttarakhand, India": {
+    "lat": 30.0417376,
+    "lon": 79.089691
+  },
+  "Southern parts, Kerala, India": {
+    "lat": 10.3528744,
+    "lon": 76.5120396
+  },
+  "Ernakulam ant Thiruvananthapuram, Kerala, India": {
+    "lat": 10.3528744,
+    "lon": 76.5120396
+  },
+  "Banda, Uttarakhand, India": {
+    "lat": 30.4746788,
+    "lon": 78.3126068
+  },
+  "Malikkeri, Kerala, India": {
+    "lat": 10.3528744,
+    "lon": 76.5120396
+  },
+  "Salem, Tamil Nadu, India": {
+    "lat": 11.6469616,
+    "lon": 78.2106958
+  },
+  "Lucknow, Uttarakhand, India": {
+    "lat": 30.0417376,
+    "lon": 79.089691
+  },
+  "Ariyalur, Tamil Nadu, India": {
+    "lat": 11.1530559,
+    "lon": 79.2585797
+  },
+  "Champawat, Uttarakhand, India": {
+    "lat": 29.235032,
+    "lon": 80.1023068
+  },
+  "Tiruvannamalai, Tamil Nadu, India": {
+    "lat": 12.4289282,
+    "lon": 78.99915
+  },
+  "Dharmapuri, Tamil Nadu, India": {
+    "lat": 12.1456131,
+    "lon": 78.1132217
+  },
+  "Many districts of Tamil Nadu., Tamil Nadu, India": {
+    "lat": 11.3323723,
+    "lon": 78.6098639
+  },
+  "Tiruppur, Tamil Nadu, India": {
+    "lat": 10.7915267,
+    "lon": 77.5325466
+  },
+  "Districts of Cauvery delta zone, Tamil Nadu, India": {
+    "lat": 11.3323723,
+    "lon": 78.6098639
+  },
+  "Districts of Cauvery delta, Tamil Nadu, India": {
+    "lat": 11.3323723,
+    "lon": 78.6098639
+  },
+  "Parts of Uttar Kashiakhand, Uttarakhand, India": {
+    "lat": 30.0417376,
+    "lon": 79.089691
+  },
+  "Many parts of Tamil Nadu., Tamil Nadu, India": {
+    "lat": 11.3323723,
+    "lon": 78.6098639
+  },
+  "Erode, Tamil Nadu, India": {
+    "lat": 11.4905282,
+    "lon": 77.3505274
+  },
+  "Virudhunagar, Tamil Nadu, India": {
+    "lat": 9.4926289,
+    "lon": 77.8631831
+  },
+  "Krishnagiri, Tamil Nadu, India": {
+    "lat": 12.5152075,
+    "lon": 78.0093769
+  },
+  "Sivaganga, Tamil Nadu, India": {
+    "lat": 9.8486881,
+    "lon": 78.4870461
+  },
+  "Kallakurichi, Tamil Nadu, India": {
+    "lat": 11.7946847,
+    "lon": 79.0388211
+  },
+  "Theni, Tamil Nadu, India": {
+    "lat": 9.8692558,
+    "lon": 77.4222974
+  },
+  "Ranipet, Tamil Nadu, India": {
+    "lat": 12.9186243,
+    "lon": 79.4081921
+  },
+  "Shimla, Himachal Pradesh, India": {
+    "lat": 31.1048,
+    "lon": 77.1734,
+    "precision": "district",
+    "display_name": "Shimla, Himachal Pradesh, India (Local Fallback)"
+  },
+  "Una, Himachal Pradesh, India": {
+    "lat": 31.4684,
+    "lon": 76.2708,
+    "precision": "district",
+    "display_name": "Una, Himachal Pradesh, India (Local Fallback)"
+  },
+  "Mandi, Himachal Pradesh, India": {
+    "lat": 31.5892,
+    "lon": 76.9182,
+    "precision": "district",
+    "display_name": "Mandi, Himachal Pradesh, India (Local Fallback)"
+  }
+}

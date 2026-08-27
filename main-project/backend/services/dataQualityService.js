@@ -304,6 +304,18 @@ function evaluateDataQuality(record) {
       };
 
       if (!sane) newWarnings.push('Terrain data failed internal sanity checks.');
+    } else if (status === 'partial') {
+      const sane = typeof t.elevation_m === 'number' && isFinite(t.elevation_m);
+
+      source_health.terrain = {
+        status,
+        freshness : 'STATIC',
+        quality   : sane ? 'VALID' : 'INVALID',
+      };
+
+      if (!sane) {
+        newWarnings.push('Terrain fallback elevation failed sanity checks.');
+      }
     } else {
       source_health.terrain = { status, freshness: 'STATIC', quality: 'INVALID' };
     }

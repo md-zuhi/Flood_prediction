@@ -180,18 +180,33 @@ function LiveMonitorDashboard({
     }
   };
 
-  const getRiskColor = (prob) => {
-    const p = Number(prob);
-    if (isNaN(p)) return "#82cfff";
-    if (p < 30) return "#22c55e";
-    if (p < 60) return "#f5a623";
-    if (p < 80) return "#f97316";
-    return "#ef5350";
+  const getRiskColor = (levelOrProb) => {
+    let level = "UNKNOWN";
+    let prob = null;
+
+    if (typeof levelOrProb === "string") {
+      level = levelOrProb;
+    } else if (typeof levelOrProb === "number" || !isNaN(Number(levelOrProb))) {
+      prob = Number(levelOrProb);
+    }
+
+    if ((level === "UNKNOWN" || !level) && prob !== null && !isNaN(prob)) {
+      if (prob < 30) level = "LOW";
+      else if (prob < 50) level = "MODERATE";
+      else if (prob < 70) level = "HIGH";
+      else level = "CRITICAL";
+    }
+
+    if (level === "LOW") return "#22c55e";
+    if (level === "MODERATE") return "#f5a623";
+    if (level === "HIGH") return "#f97316";
+    if (level === "CRITICAL") return "#ef5350";
+    return "#82cfff";
   };
 
   const riskColor = useMemo(() => {
     if (!result?.prediction) return "#82cfff";
-    return getRiskColor(result.prediction.flood_probability_percent);
+    return getRiskColor(result.prediction.risk_level);
   }, [result]);
 
   // Format metric text and layer-driven color classification
@@ -255,8 +270,7 @@ function LiveMonitorDashboard({
       }
       case "flood_risk": {
         const risk = p.risk_level || "LOW";
-        const prob = p.flood_probability_percent;
-        const col = getRiskColor(prob);
+        const col = getRiskColor(risk);
         return { text: risk, color: col };
       }
       default:

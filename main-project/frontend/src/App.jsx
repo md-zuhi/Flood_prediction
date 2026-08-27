@@ -159,17 +159,35 @@ function DashboardWrapper({ view }) {
     analyzeRisk();
   }, [selectedLocation]);
 
-  const getRiskClassification = (prob) => {
-    const p = Number(prob);
-    if (isNaN(p)) return { level: "UNKNOWN", color: "#82cfff" };
-    if (p < 30) return { level: "LOW", color: "#22c55e" };
-    if (p < 60) return { level: "MODERATE", color: "#f5a623" };
-    if (p < 80) return { level: "HIGH", color: "#f97316" };
-    return { level: "CRITICAL", color: "#ef5350" };
+  const getRiskClassification = (predictionOrProb) => {
+    let level = "UNKNOWN";
+    let prob = null;
+
+    if (predictionOrProb && typeof predictionOrProb === "object") {
+      level = predictionOrProb.risk_level || "UNKNOWN";
+      prob = predictionOrProb.flood_probability_percent;
+    } else if (predictionOrProb !== undefined && predictionOrProb !== null) {
+      prob = Number(predictionOrProb);
+    }
+
+    if ((level === "UNKNOWN" || !level) && prob !== null && !isNaN(prob)) {
+      if (prob < 30) level = "LOW";
+      else if (prob < 50) level = "MODERATE";
+      else if (prob < 70) level = "HIGH";
+      else level = "CRITICAL";
+    }
+
+    let color = "#82cfff";
+    if (level === "LOW") color = "#22c55e";
+    else if (level === "MODERATE") color = "#f5a623";
+    else if (level === "HIGH") color = "#f97316";
+    else if (level === "CRITICAL") color = "#ef5350";
+
+    return { level, color };
   };
 
-  const classification = result
-    ? getRiskClassification(result.prediction.flood_probability_percent)
+  const classification = result && result.prediction
+    ? getRiskClassification(result.prediction)
     : { level: "UNKNOWN", color: "#82cfff" };
 
   const uiResult = result
