@@ -39,7 +39,7 @@ async function searchLatestGranule(lat, lon) {
     short_name:   DATASET_SHORT_NAME,
     version:      DATASET_VERSION,
     bounding_box: bbox,
-    page_size:    "5",
+    page_size:    "15",
   });
   params.append("sort_key[]", "-start_date");
 
@@ -190,6 +190,10 @@ async function extractSoilMoisture(filePath, targetLat, targetLon) {
 
 // ── Main exported function ───────────────────────────────────────────────────
 
+// ── In-Memory Cache ──────────────────────────────────────────────────────────
+const _smapCache = new Map();
+const CACHE_TTL_MS = 15 * 60 * 1000; // 15 minutes cache
+
 async function getSoilMoisture(latitude, longitude) {
   const token = (process.env.EARTHDATA_TOKEN ?? "").trim();
 
@@ -202,6 +206,17 @@ async function getSoilMoisture(latitude, longitude) {
       source:           "NASA SMAP",
       status:           "failed",
       error:            "EARTHDATA_TOKEN not configured.",
+    };
+  }
+
+  // Check cache first
+  const cacheKey = `${latitude.toFixed(4)}_${longitude.toFixed(4)}`;
+  const cached = _smapCache.get(cacheKey);
+  if (cached && (Date.now() - cached.cachedAt) < CACHE_TTL_MS) {
+    const ageHours = Math.round(((Date.now() - new Date(cached.result.observation_time).getTime()) / 3_600_000) * 10) / 10;
+    return {
+      ...cached.result,
+      age_hours: ageHours,
     };
   }
 
@@ -269,7 +284,7 @@ async function getSoilMoisture(latitude, longitude) {
     const qualityMap = { good: "good", poor: "poor", fill_value: "poor", no_coverage: "poor", valid: "good" };
     const qualityLabel = qualityMap[result.quality] ?? "unknown";
 
-    return {
+    const resData = {
       value_m3_m3:      result.soilMoisture,
       observation_time: obsTimeStr,
       age_hours:        ageHours,
@@ -281,6 +296,12 @@ async function getSoilMoisture(latitude, longitude) {
       status:           result.soilMoisture !== null ? "success" : "failed",
       error:            result.error ?? null,
     };
+
+    if (result.soilMoisture !== null) {
+      _smapCache.set(cacheKey, { result: resData, cachedAt: Date.now() });
+    }
+
+    return resData;
 
   } catch (err) {
     console.error("[SMAP] Error:", err.message);

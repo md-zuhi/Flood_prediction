@@ -17,6 +17,8 @@ function OverviewDashboard({
   error,
   riskColor,
   getRiskColor,
+  theme,
+  onToggleTheme,
 }) {
   return (
     <div className="main-content">
@@ -25,6 +27,8 @@ function OverviewDashboard({
         locations={locations}
         onLocationChange={onLocationChange}
         loading={loading}
+        theme={theme}
+        onToggleTheme={onToggleTheme}
       />
 
       {error && <div className="error-box">⚠ {error}</div>}

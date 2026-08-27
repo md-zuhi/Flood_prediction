@@ -113,5 +113,21 @@
     "status": "success",
     "terrain_mode": "full_terrain",
     "cache": "stored"
+  },
+  "30.4598,78.0644": {
+    "elevation_m": 2002,
+    "min_elevation_m": 1630,
+    "max_elevation_m": 2171,
+    "mean_elevation_m": 1918.89,
+    "local_relief_m": 541,
+    "slope_deg": 17.83,
+    "mean_slope_deg": 25.47,
+    "max_slope_deg": 63.02,
+    "source": "NASA SRTM",
+    "access_service": "OpenTopography",
+    "dataset": "SRTMGL1",
+    "status": "success",
+    "terrain_mode": "full_terrain",
+    "cache": "stored"
   }
 }

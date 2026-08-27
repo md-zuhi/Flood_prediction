@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   LayoutDashboard,
   Radio,
@@ -7,16 +8,19 @@ import {
   Bell,
   History,
   Settings,
+  Sun,
+  Moon,
 } from "lucide-react";
 
-function Sidebar() {
+function Sidebar({ activeView, theme, onToggleTheme }) {
+  const navigate = useNavigate();
   const menuItems = [
-    { name: "Overview", icon: LayoutDashboard, active: true },
-    { name: "Live Monitor", icon: Radio, active: false },
-    { name: "Forecast", icon: CloudRain, active: false },
-    { name: "Risk Map", icon: Map, active: false },
-    { name: "Alerts", icon: Bell, active: false },
-    { name: "History", icon: History, active: false },
+    { name: "Overview", icon: LayoutDashboard, id: "overview", path: "/dashboard" },
+    { name: "Live Monitor", icon: Radio, id: "live-monitor", path: "/dashboard/live-monitor" },
+    { name: "Forecast", icon: CloudRain, id: "forecast", path: "/dashboard/forecast" },
+    { name: "Risk Map", icon: Map, id: "risk-map", path: "/dashboard/risk-map" },
+    { name: "Alerts", icon: Bell, id: "alerts", path: "/dashboard/alerts" },
+    { name: "History", icon: History, id: "history", path: "/dashboard/history" },
   ];
 
   return (
@@ -33,9 +37,13 @@ function Sidebar() {
             return (
               <li
                 key={item.name}
-                className={item.active ? "active" : ""}
+                className={activeView === item.id ? "active" : ""}
               >
-                <button type="button" className="nav-btn">
+                <button
+                  type="button"
+                  className="nav-btn"
+                  onClick={() => navigate(item.path)}
+                >
                   <Icon className="nav-icon" size={18} />
                   <span>{item.name}</span>
                 </button>
@@ -46,6 +54,21 @@ function Sidebar() {
       </nav>
 
       <div className="sidebar-footer">
+        {onToggleTheme && (
+          <button
+            type="button"
+            className="nav-btn theme-toggle-btn"
+            onClick={onToggleTheme}
+            style={{ marginBottom: "8px" }}
+          >
+            {theme === "light" ? (
+              <Moon className="nav-icon" size={18} />
+            ) : (
+              <Sun className="nav-icon" size={18} />
+            )}
+            <span>{theme === "light" ? "Dark Mode" : "Light Mode"}</span>
+          </button>
+        )}
         <button type="button" className="nav-btn footer-btn">
           <Settings className="nav-icon" size={18} />
           <span>Settings</span>

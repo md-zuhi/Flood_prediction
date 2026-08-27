@@ -4,7 +4,7 @@ async function getWeather(latitude, longitude) {
       `https://api.open-meteo.com/v1/forecast` +
       `?latitude=${latitude}` +
       `&longitude=${longitude}` +
-      `&current=temperature_2m,relative_humidity_2m,wind_speed_10m` +
+      `&current=temperature_2m,relative_humidity_2m,wind_speed_10m,wind_direction_10m` +
       `&timezone=auto`;
 
     const response = await fetch(url);
@@ -30,6 +30,9 @@ async function getWeather(latitude, longitude) {
 
       wind_speed_kmh:
         data.current.wind_speed_10m ?? null,
+
+      wind_direction_deg:
+        data.current.wind_direction_10m ?? null,
 
       observation_time:
         data.current.time ?? null,
