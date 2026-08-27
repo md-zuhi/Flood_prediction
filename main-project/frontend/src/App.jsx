@@ -226,6 +226,12 @@ function App() {
         <Route path="/admin/login" element={<AdminLoginPage />} />
         <Route path="/dashboard" element={<DashboardWrapper view="overview" />} />
         <Route path="/dashboard/live-monitor" element={<DashboardWrapper view="live-monitor" />} />
+        <Route path="/dashboard/forecast" element={<DashboardWrapper view="rainfall" />} />
+        <Route path="/dashboard/rainfall" element={<DashboardWrapper view="rainfall" />} />
+        <Route path="/dashboard/river-rise" element={<DashboardWrapper view="river-rise" />} />
+        <Route path="/dashboard/risk-map" element={<DashboardWrapper view="risk-map" />} />
+        <Route path="/dashboard/alerts" element={<DashboardWrapper view="alerts" />} />
+        <Route path="/dashboard/history" element={<DashboardWrapper view="alerts" />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>

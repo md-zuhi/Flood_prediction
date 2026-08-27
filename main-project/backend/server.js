@@ -3,7 +3,21 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
+const riverRoutes = require("./routes/riverRoutes");
 const { buildFusedRecord } = require("./fusionService");
+const { buildRiverMultiSourceRecord } = require("./services/riverMultiSourceFusionService");
+const {
+  calculateRateOfRise,
+  calculateTimeToWarning,
+  predictRiverLevels,
+  classifyRiverRisk,
+  detectRapidRise,
+  getStationThresholds,
+  updateStationThresholds,
+  getAllRiverStations,
+  getStationDetails,
+  applySimulationScenario
+} = require("./services/riverMonitoringService");
 
 const app = express();
 
@@ -58,6 +72,10 @@ function getRiskLevel(probabilityPercent) {
 
 app.use(cors());
 app.use(express.json());
+
+// Dedicated RESTful River Endpoints (Requirement 10)
+app.use("/api/rivers", riverRoutes);
+app.use("/api/river-monitoring", riverRoutes);
 
 // --------------------------------------------------
 // Lightweight India Weather Grid & City Endpoints
@@ -719,6 +737,165 @@ app.post("/api/predict", async (req, res) => {
       error:
         error.message
     });
+  }
+});
+
+
+// --------------------------------------------------
+// SIH 2026: River Rise Intelligence Endpoints
+// --------------------------------------------------
+
+// GET /api/river-monitoring: List all monitored river telemetry stations
+app.get("/api/river-monitoring", async (req, res) => {
+  try {
+    const data = await getAllRiverStations();
+    return res.status(200).json(data);
+  } catch (err) {
+    console.error("River monitoring error:", err);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// GET /api/river-monitoring/thresholds: Retrieve configurable risk threshold profiles
+app.get("/api/river-monitoring/thresholds", (req, res) => {
+  try {
+    const thresholds = getStationThresholds();
+    return res.status(200).json({ success: true, count: thresholds.length, data: thresholds });
+  } catch (err) {
+    console.error("Get thresholds error:", err);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// GET /api/river-monitoring/thresholds/:stationId: Single station threshold configuration
+app.get("/api/river-monitoring/thresholds/:stationId", (req, res) => {
+  try {
+    const threshold = getStationThresholds(req.params.stationId);
+    if (!threshold) {
+      return res.status(404).json({ success: false, message: "Station threshold profile not found" });
+    }
+    return res.status(200).json({ success: true, data: threshold });
+  } catch (err) {
+    console.error("Get station threshold error:", err);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// PUT /api/river-monitoring/thresholds/:stationId: Dynamically configure thresholds per station
+app.put("/api/river-monitoring/thresholds/:stationId", (req, res) => {
+  try {
+    const updated = updateStationThresholds(req.params.stationId, req.body);
+    if (!updated) {
+      return res.status(404).json({ success: false, message: "Station not found to update thresholds" });
+    }
+    return res.status(200).json({
+      success: true,
+      message: `Configurable thresholds updated for station ${req.params.stationId}`,
+      data: updated
+    });
+  } catch (err) {
+    console.error("Update thresholds error:", err);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// GET /api/river-monitoring/multi-source/:stationId: 7-Stream Multi-Source Fused Record
+app.get("/api/river-monitoring/multi-source/:stationId", async (req, res) => {
+  try {
+    const stationId = req.params.stationId;
+    const fusedRecord = await buildRiverMultiSourceRecord(stationId);
+    if (!fusedRecord) {
+      return res.status(404).json({ success: false, message: "River station not found for multi-source fusion" });
+    }
+    return res.status(200).json({ success: true, data: fusedRecord });
+  } catch (err) {
+    console.error("Multi-source fusion error:", err);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// GET /api/river-monitoring/:stationId: Single station hydro-telemetry details
+app.get("/api/river-monitoring/:stationId", async (req, res) => {
+  try {
+    const stationId = req.params.stationId;
+    const result = await getStationDetails(stationId);
+    if (!result) {
+      return res.status(404).json({ success: false, message: "River monitoring station not found" });
+    }
+    return res.status(200).json(result);
+  } catch (err) {
+    console.error("River station detail error:", err);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// POST /api/river-monitoring/simulate: Hackathon simulation scenario trigger
+app.post("/api/river-monitoring/simulate", (req, res) => {
+  try {
+    const mode = req.body?.mode || "standard";
+    const result = applySimulationScenario(mode);
+    return res.status(200).json(result);
+  } catch (err) {
+    console.error("River simulation error:", err);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// POST /api/river-monitoring/calculate-rate: Rate of rise calculation endpoint
+app.post("/api/river-monitoring/calculate-rate", (req, res) => {
+  try {
+    const {
+      current_level,
+      previous_level,
+      current_time,
+      previous_time,
+      time_difference_hours,
+      history
+    } = req.body || {};
+
+    const calculation = calculateRateOfRise({
+      currentLevel: current_level,
+      previousLevel: previous_level,
+      currentTime: current_time,
+      previousTime: previous_time,
+      timeDiffHours: time_difference_hours,
+      history: history || []
+    });
+
+    return res.status(200).json({
+      success: true,
+      data: calculation
+    });
+  } catch (err) {
+    console.error("Rate calculation error:", err);
+    return res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// POST /api/river-monitoring/detect-rapid-rise: Test configurable rapid rise detection
+app.post("/api/river-monitoring/detect-rapid-rise", (req, res) => {
+  try {
+    const {
+      rate_of_rise,
+      current_level,
+      warning_level,
+      custom_thresholds
+    } = req.body || {};
+
+    const detection = detectRapidRise({
+      rateOfRise: rate_of_rise,
+      currentLevel: current_level,
+      warningLevel: warning_level,
+      customThresholds: custom_thresholds
+    });
+
+    return res.status(200).json({
+      success: true,
+      data: detection
+    });
+  } catch (err) {
+    console.error("Rapid rise detection error:", err);
+    return res.status(500).json({ success: false, error: err.message });
   }
 });
 
