@@ -31,3 +31,18 @@ logs/
 .vscode/
 .idea/
 .DS_Store
+
+# Caches & Data Caches
+**/geocache_v2.json
+**/era5_api_cache_v2.json
+**/terrain_cache.json
+
+# Local Python virtualenvs
+.venv/
+venv/
+env/
+
+# Temp files / Downloads
+*.tif
+*.h5
+*.nc
