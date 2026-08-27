@@ -10,6 +10,7 @@ import {
   Settings,
   Sun,
   Moon,
+  ShieldAlert,
 } from "lucide-react";
 
 function Sidebar({ activeView, theme, onToggleTheme }) {
@@ -17,6 +18,7 @@ function Sidebar({ activeView, theme, onToggleTheme }) {
   const menuItems = [
     { name: "Overview", icon: LayoutDashboard, id: "overview", path: "/dashboard" },
     { name: "Live Monitor", icon: Radio, id: "live-monitor", path: "/dashboard/live-monitor" },
+    { name: "Safe Routes", icon: ShieldAlert, id: "safe-routes", path: "/dashboard/safe-routes" },
     { name: "Forecast", icon: CloudRain, id: "forecast", path: "/dashboard/forecast" },
     { name: "Risk Map", icon: Map, id: "risk-map", path: "/dashboard/risk-map" },
     { name: "Alerts", icon: Bell, id: "alerts", path: "/dashboard/alerts" },

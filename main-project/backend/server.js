@@ -4,6 +4,7 @@ const express = require("express");
 const cors = require("cors");
 
 const { buildFusedRecord } = require("./fusionService");
+const { calculateSafeEvacuationRoute } = require("./services/safeRouteService");
 
 const app = express();
 
@@ -718,6 +719,49 @@ app.post("/api/predict", async (req, res) => {
         "Failed to generate flash flood prediction",
       error:
         error.message
+    });
+  }
+});
+
+// --------------------------------------------------
+// Safe Evacuation Route Engine Endpoint
+// --------------------------------------------------
+app.post("/api/safe-route", async (req, res) => {
+  try {
+    const { latitude, longitude, destination_id, name, state, country, testMode, test_mode } = req.body;
+
+    if (latitude === undefined || longitude === undefined) {
+      return res.status(400).json({
+        success: false,
+        message: "Latitude and longitude parameters are required."
+      });
+    }
+
+    const lat = Number(latitude);
+    const lon = Number(longitude);
+
+    if (isNaN(lat) || isNaN(lon)) {
+      return res.status(400).json({
+        success: false,
+        message: "Invalid numeric coordinates provided."
+      });
+    }
+
+    const result = await calculateSafeEvacuationRoute(lat, lon, destination_id, {
+      name,
+      state,
+      country
+    }, {
+      testMode: Boolean(testMode || test_mode)
+    });
+
+    return res.json(result);
+  } catch (error) {
+    console.error("Safe route calculation error:", error);
+    return res.status(500).json({
+      success: false,
+      message: "Failed to calculate safe evacuation route",
+      error: error.message
     });
   }
 });
