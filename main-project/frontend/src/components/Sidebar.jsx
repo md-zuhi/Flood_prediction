@@ -3,14 +3,12 @@ import { useNavigate } from "react-router-dom";
 import {
   LayoutDashboard,
   Radio,
-  CloudRain,
-  Map,
   Bell,
-  History,
   Settings,
   Sun,
   Moon,
   ShieldAlert,
+  Droplets,
 } from "lucide-react";
 
 function Sidebar({ activeView, theme, onToggleTheme }) {
@@ -19,10 +17,8 @@ function Sidebar({ activeView, theme, onToggleTheme }) {
     { name: "Overview", icon: LayoutDashboard, id: "overview", path: "/dashboard" },
     { name: "Live Monitor", icon: Radio, id: "live-monitor", path: "/dashboard/live-monitor" },
     { name: "Safe Routes", icon: ShieldAlert, id: "safe-routes", path: "/dashboard/safe-routes" },
-    { name: "Forecast", icon: CloudRain, id: "forecast", path: "/dashboard/forecast" },
-    { name: "Risk Map", icon: Map, id: "risk-map", path: "/dashboard/risk-map" },
+    { name: "River Monitor", icon: Droplets, id: "river-monitor", path: "/dashboard/river-monitor" },
     { name: "Alerts", icon: Bell, id: "alerts", path: "/dashboard/alerts" },
-    { name: "History", icon: History, id: "history", path: "/dashboard/history" },
   ];
 
   return (

@@ -79,11 +79,16 @@ const createEmptyFeatureRecord = () => ({
   },
 
   iot: {
-    available: false,
-    rainfall_mm: null,
-    soil_moisture: null,
-    water_level: null,
-    observation_time: null
+    available        : false,
+    status           : 'unavailable',
+    source           : null,
+    simulated        : false,
+    observation_time : null,
+    rainfall_mm      : null,
+    soil_moisture    : null,
+    water_level      : null,
+    temperature_c    : null,
+    humidity_percent : null,
   },
 
   metadata: {

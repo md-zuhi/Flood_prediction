@@ -20,8 +20,9 @@ function LoginPage() {
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      setError("Please enter a valid email address.");
+    const phoneRegex = /^\d{10}$/;
+    if (!emailRegex.test(email) && !phoneRegex.test(email)) {
+      setError("Please enter a valid email address or 10-digit mobile number.");
       return;
     }
 
@@ -31,6 +32,7 @@ function LoginPage() {
     }
 
     // Success transition to dashboard (without database verification/mock credential checks)
+    localStorage.setItem("user_phone", email);
     navigate("/dashboard");
   };
 

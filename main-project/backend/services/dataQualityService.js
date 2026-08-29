@@ -419,15 +419,47 @@ function evaluateDataQuality(record) {
 
   // ── 8. IoT SENSORS ────────────────────────────────────────────────────────
   //
-  // Currently not connected. This is expected at the prototype stage.
-  // IoT being unavailable does NOT force LOW confidence.
+  // Populated by iotSimulatorService (SIMULATED_IOT) at the prototype stage,
+  // or by a real IoT API / MQTT adapter in production.
+  // IoT being unavailable does NOT penalise the overall data confidence score.
 
   {
-    const iot = record.iot;
-    if (iot.available) {
-      source_health.iot = { status: 'success',     freshness: 'FRESH',       quality: 'VALID'       };
+    const iot    = record.iot;
+    const status = iot.status || (iot.available ? 'success' : 'unavailable');
+
+    if (status === 'success' && iot.available) {
+      const tsMs      = parseToUtcMs(iot.observation_time, nowMs);
+      const age       = calcAgeHours(tsMs, nowMs);
+      // IoT is expected to be near-real-time; use a tight freshness window
+      const freshness = age !== null && age <= 0.5 ? 'FRESH'
+                      : age !== null && age <= 2   ? 'ACCEPTABLE'
+                      : 'STALE';
+
+      // Quality: ensure at least rainfall_mm and soil_moisture are valid numbers
+      const quality = (typeof iot.rainfall_mm  === 'number' && isFinite(iot.rainfall_mm) &&
+                       typeof iot.soil_moisture === 'number' && isFinite(iot.soil_moisture))
+        ? 'VALID' : 'INVALID';
+
+      source_health.iot = {
+        status,
+        freshness,
+        age_hours : age,
+        quality,
+        simulated : iot.simulated === true,
+        source    : iot.source || null,
+      };
+
+      if (freshness === 'STALE') newWarnings.push('IoT sensor data timestamp is stale.');
+      if (quality   === 'INVALID') newWarnings.push('IoT sensor values are incomplete or invalid.');
     } else {
-      source_health.iot = { status: 'unavailable', freshness: 'UNAVAILABLE', quality: 'UNAVAILABLE' };
+      source_health.iot = {
+        status    : 'unavailable',
+        freshness : 'UNAVAILABLE',
+        age_hours : null,
+        quality   : 'UNAVAILABLE',
+        simulated : iot.simulated === true,
+        source    : iot.source || null,
+      };
       newWarnings.push('IoT sensor data is currently unavailable.');
     }
   }

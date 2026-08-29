@@ -6,6 +6,7 @@ const { getSoilMoisture } = require("./services/soilMoistureService");
 const { getTerrain } = require("./services/terrainService");
 const { getLandslideHistory } = require("./services/landslideService");
 const { getSatelliteRainfall } = require("./services/satelliteRainfallService");
+const { getIoTReading }       = require("./services/iotSimulatorService");
 const { evaluateDataQuality }  = require("./services/dataQualityService");
 
 
@@ -307,6 +308,30 @@ async function buildFusedRecord(locationData) {
 
 
   // --------------------------------------------------
+  // PHASE 9 — SIMULATED IoT SENSOR
+  // --------------------------------------------------
+  // getIoTReading returns a clearly-labelled SIMULATED_IOT object.
+  // It will be replaced by a real IoT API / MQTT adapter in production.
+  // These values are advisory; they do NOT overwrite Open-Meteo or NASA sources.
+
+  const iotReading = getIoTReading(
+    locationData.latitude,
+    locationData.longitude
+  );
+
+  record.iot = {
+    ...record.iot,
+    ...iotReading
+  };
+
+  if (!iotReading.available) {
+    record.metadata.warnings.push(
+      "IoT sensor data is currently unavailable."
+    );
+  }
+
+
+  // --------------------------------------------------
   // METADATA
   // --------------------------------------------------
 
@@ -322,10 +347,6 @@ async function buildFusedRecord(locationData) {
   // Calculate current data completeness
   record.metadata.data_completeness_percent =
     calculateCompleteness(record);
-
-
-  // IoT is not connected yet — quality service will add the warning
-  // and set source_health.iot accordingly.
 
 
   // --------------------------------------------------

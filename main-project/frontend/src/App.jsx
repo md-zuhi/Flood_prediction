@@ -8,6 +8,10 @@ import Sidebar from "./components/Sidebar";
 import OverviewDashboard from "./pages/OverviewDashboard";
 import LiveMonitorDashboard from "./pages/LiveMonitorDashboard";
 import SafeRoutesDashboard from "./pages/SafeRoutesDashboard";
+import RiverMonitoringDashboard from "./pages/RiverMonitoringDashboard";
+import AlertsDashboard from "./pages/AlertsDashboard";
+import { alarmController } from "./services/alarmController";
+import { AlertOctagon } from "lucide-react";
 import "./App.css";
 
 const locations = [
@@ -83,6 +87,34 @@ function DashboardWrapper({ view }) {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  const [activeAlert, setActiveAlert] = useState(() => {
+    try {
+      const stored = localStorage.getItem("active_emergency_alert");
+      return stored ? JSON.parse(stored) : null;
+    } catch {
+      return null;
+    }
+  });
+
+  const [isAlarmPlaying, setIsAlarmPlaying] = useState(() => {
+    try {
+      const storedAlert = localStorage.getItem("active_emergency_alert");
+      const acked = localStorage.getItem("acknowledged_emergency_alert") === "true";
+      return storedAlert && !acked;
+    } catch {
+      return false;
+    }
+  });
+
+  const [alertHistory, setAlertHistory] = useState(() => {
+    try {
+      const history = localStorage.getItem("flood_alert_history");
+      return history ? JSON.parse(history) : [];
+    } catch {
+      return [];
+    }
+  });
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -160,6 +192,183 @@ function DashboardWrapper({ view }) {
     analyzeRisk();
   }, [selectedLocation]);
 
+  // Prime browser AudioContext on first user interaction
+  useEffect(() => {
+    const handleGesture = () => {
+      alarmController.init();
+    };
+    window.addEventListener("click", handleGesture);
+    window.addEventListener("keydown", handleGesture);
+    return () => {
+      window.removeEventListener("click", handleGesture);
+      window.removeEventListener("keydown", handleGesture);
+    };
+  }, []);
+
+  // Sync Audio Playback status
+  useEffect(() => {
+    if (activeAlert && isAlarmPlaying) {
+      alarmController.play();
+    } else {
+      alarmController.stop();
+    }
+  }, [activeAlert, isAlarmPlaying]);
+
+  // Acknowledge Active Threat
+  const handleAcknowledge = () => {
+    setIsAlarmPlaying(false);
+    localStorage.setItem("acknowledged_emergency_alert", "true");
+    alarmController.stop();
+  };
+
+  // Hackathon Test Trigger
+  const handleTriggerTestAlert = async () => {
+    try {
+      const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+      const response = await fetch(`${apiBaseUrl}/api/alerts/test`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({})
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || "Failed to trigger test alert SMS.");
+      }
+
+      const smsResult = data.sms;
+
+      const testAlert = {
+        id: `test-alert-${Date.now()}`,
+        location: `${selectedLocation.name} (TEST)`,
+        probability: 88,
+        severity: "CRITICAL (DEMO)",
+        timestamp: smsResult.timestamp || new Date().toISOString(),
+        message: "DEMO TEST SIGNAL: Extreme flash-flood hazard simulated. Evacuation protocols active. Seek high ground immediately.",
+        triggerReasons: [
+          "Demo Mode: Hackathon manual test alert override active.",
+          `SMS Provider: ${smsResult.provider.toUpperCase()} (${smsResult.status})`,
+          `Recipient: ${smsResult.phoneMasked || "******4459"}`,
+          smsResult.requestId ? `Request ID: ${smsResult.requestId}` : "Request ID: N/A"
+        ],
+        isDemo: true,
+        sms: smsResult
+      };
+
+      setActiveAlert(testAlert);
+      setIsAlarmPlaying(true);
+      localStorage.setItem("active_emergency_alert", JSON.stringify(testAlert));
+      localStorage.setItem("acknowledged_emergency_alert", "false");
+
+      setAlertHistory((prev) => {
+        const updated = [testAlert, ...prev];
+        localStorage.setItem("flood_alert_history", JSON.stringify(updated));
+        return updated;
+      });
+
+    } catch (err) {
+      console.error(err);
+      alert(`Failed to send test alert: ${err.message}`);
+
+      // Keep test UI warning alive but with FAILED SMS state
+      const failedSmsResult = {
+        success: false,
+        provider: "twilio",
+        status: "FAILED",
+        error: err.message,
+        timestamp: new Date().toISOString()
+      };
+
+      const testAlert = {
+        id: `test-alert-${Date.now()}`,
+        location: `${selectedLocation.name} (TEST)`,
+        probability: 88,
+        severity: "CRITICAL (DEMO)",
+        timestamp: new Date().toISOString(),
+        message: "DEMO TEST SIGNAL: Extreme flash-flood hazard simulated. Evacuation protocols active. Seek high ground immediately.",
+        triggerReasons: [
+          "Demo Mode: Hackathon manual test alert override active.",
+          "SMS Delivery status: FAILED",
+          `Error: ${err.message}`
+        ],
+        isDemo: true,
+        sms: failedSmsResult
+      };
+
+      setActiveAlert(testAlert);
+      setIsAlarmPlaying(true);
+      localStorage.setItem("active_emergency_alert", JSON.stringify(testAlert));
+      localStorage.setItem("acknowledged_emergency_alert", "false");
+    }
+  };
+
+  const handleClearHistory = () => {
+    setAlertHistory([]);
+    localStorage.removeItem("flood_alert_history");
+  };
+
+  // Monitor predictions to auto-trigger alarms
+  useEffect(() => {
+    if (!result || !result.prediction) return;
+    const level = classification.level;
+    if (level === "HIGH" || level === "CRITICAL") {
+      const reasons = [];
+      const rain24h = result.ml_features?.rain_24h_mm || 0;
+      const rain3h = result.ml_features?.rain_3h_mm || 0;
+      const soilMoisture = result.ml_features?.soil_moisture_m3m3 || 0;
+      const slope = result.environmental_data?.terrain?.slope_deg || 0;
+      const prob = result.prediction?.flood_probability_percent || 0;
+
+      if (prob > 0) {
+        reasons.push(`Model Warning: ML Model evaluated flood risk at ${prob}%.`);
+      }
+      if (rain24h > 40) {
+        reasons.push(`Extreme Rainfall: 24h accumulated rainfall is high at ${rain24h.toFixed(1)} mm.`);
+      }
+      if (rain3h > 15) {
+        reasons.push(`Intense Downpour: Short-term 3h rainfall reached ${rain3h.toFixed(1)} mm.`);
+      }
+      if (soilMoisture > 0.35) {
+        reasons.push(`Soil Saturated: Moisture level at ${(soilMoisture * 100).toFixed(1)}% limits land absorption.`);
+      }
+      if (slope > 15) {
+        reasons.push(`Terrain Hazard: Runoff accelerated by local slope gradients of ${slope.toFixed(1)}°.`);
+      }
+
+      const existingAlert = activeAlert;
+      const isNew = !existingAlert || 
+                    existingAlert.location !== result.location.name || 
+                    existingAlert.timestamp !== result.generated_at;
+
+      if (isNew) {
+        const newAlert = {
+          id: `alert-${Date.now()}`,
+          location: result.location.name,
+          probability: prob,
+          severity: level,
+          timestamp: result.generated_at || new Date().toISOString(),
+          message: result.prediction.alert_message || "Emergency flash flood risk detected.",
+          triggerReasons: reasons,
+          isDemo: false
+        };
+
+        setActiveAlert(newAlert);
+        setIsAlarmPlaying(true);
+        localStorage.setItem("active_emergency_alert", JSON.stringify(newAlert));
+        localStorage.setItem("acknowledged_emergency_alert", "false");
+
+        setAlertHistory((prev) => {
+          const duplicate = prev.some((h) => h.location === newAlert.location && h.timestamp === newAlert.timestamp);
+          if (duplicate) return prev;
+          const updated = [newAlert, ...prev];
+          localStorage.setItem("flood_alert_history", JSON.stringify(updated));
+          return updated;
+        });
+      }
+    }
+  }, [result]);
+
   const getRiskClassification = (predictionOrProb) => {
     let level = "UNKNOWN";
     let prob = null;
@@ -205,6 +414,49 @@ function DashboardWrapper({ view }) {
 
   return (
     <div className="dashboard-layout">
+      {activeAlert && isAlarmPlaying && (
+        <div className="global-emergency-banner" style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          background: "#ef4444",
+          color: "#ffffff",
+          padding: "14px 24px",
+          zIndex: 99999,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          boxShadow: "0 4px 25px rgba(239, 68, 68, 0.6)",
+          fontWeight: 800,
+          fontSize: "14px",
+          fontFamily: "Inter, sans-serif"
+        }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+            <AlertOctagon className="alert-pulse-animation" size={20} />
+            <span>
+              EMERGENCY ALARM: High Flood Risk Detected in {activeAlert.location} ({activeAlert.probability}%)!
+            </span>
+          </div>
+          <button 
+            onClick={handleAcknowledge}
+            style={{
+              background: "#ffffff",
+              color: "#ef4444",
+              border: "none",
+              padding: "8px 16px",
+              borderRadius: "6px",
+              fontWeight: 800,
+              fontSize: "11px",
+              cursor: "pointer",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.2)",
+              textTransform: "uppercase"
+            }}
+          >
+            Acknowledge & Silence
+          </button>
+        </div>
+      )}
       <Sidebar activeView={view} theme={theme} onToggleTheme={toggleTheme} />
       {view === "overview" && (
         <OverviewDashboard
@@ -240,6 +492,28 @@ function DashboardWrapper({ view }) {
           onToggleTheme={toggleTheme}
         />
       )}
+      {view === "river-monitor" && (
+        <RiverMonitoringDashboard
+          theme={theme}
+          onToggleTheme={toggleTheme}
+        />
+      )}
+      {view === "alerts" && (
+        <AlertsDashboard
+          activeAlert={activeAlert}
+          isAlarmPlaying={isAlarmPlaying}
+          onAcknowledge={handleAcknowledge}
+          onTriggerTestAlert={handleTriggerTestAlert}
+          alertHistory={alertHistory}
+          onClearHistory={handleClearHistory}
+          locations={locations}
+          selectedLocation={selectedLocation}
+          onLocationChange={setSelectedLocation}
+          loading={loading}
+          theme={theme}
+          onToggleTheme={toggleTheme}
+        />
+      )}
     </div>
   );
 }
@@ -255,6 +529,8 @@ function App() {
         <Route path="/dashboard" element={<DashboardWrapper view="overview" />} />
         <Route path="/dashboard/live-monitor" element={<DashboardWrapper view="live-monitor" />} />
         <Route path="/dashboard/safe-routes" element={<DashboardWrapper view="safe-routes" />} />
+        <Route path="/dashboard/river-monitor" element={<DashboardWrapper view="river-monitor" />} />
+        <Route path="/dashboard/alerts" element={<DashboardWrapper view="alerts" />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>

@@ -1,11 +1,18 @@
 require("dotenv").config();
 
+console.log(
+  "DEMO_ALERT_MODE loaded:",
+  process.env.DEMO_ALERT_MODE
+);
+
 const express = require("express");
 const cors = require("cors");
 
 const { buildFusedRecord } = require("./fusionService");
 const { calculateSafeEvacuationRoute } = require("./services/safeRouteService");
 const { getWeather } = require("./services/weatherService");
+const { sendSms } = require("./services/smsService");
+
 
 const app = express();
 
@@ -60,6 +67,10 @@ function getRiskLevel(probabilityPercent) {
 
 app.use(cors());
 app.use(express.json());
+
+// River Monitoring module (non-breaking addition)
+const riverRoutes = require("./routes/riverRoutes");
+app.use("/api/rivers", riverRoutes);
 
 // --------------------------------------------------
 // Lightweight India Weather Grid & City Endpoints
@@ -786,9 +797,141 @@ app.post("/api/safe-route", async (req, res) => {
   }
 });
 
+// --------------------------------------------------
+// Emergency Test Alert Trigger & SMS Endpoint
+// --------------------------------------------------
+let lastSmsSentTimestamp = 0;
+
+app.post("/api/alerts/test", async (req, res) => {
+  try {
+    // 1. DEMO_ALERT_MODE must be true
+    if (process.env.DEMO_ALERT_MODE !== "true") {
+      return res.status(403).json({
+        success: false,
+        message: "Test alerts are disabled. Set DEMO_ALERT_MODE=true in backend .env to enable."
+      });
+    }
+
+    // 2. Resolve recipient from backend env only — frontend never controls this
+    const demoPhone = process.env.DEMO_TEST_PHONE;
+
+    if (!demoPhone) {
+      return res.status(500).json({
+        success: false,
+        message: "DEMO_TEST_PHONE is not configured in backend .env."
+      });
+    }
+
+    // 3. Cooldown check (default 1 minute for demo usability)
+    const now = Date.now();
+    const cooldownMin = parseInt(process.env.ALERT_COOLDOWN_MINUTES) || 1;
+    const cooldownMs = cooldownMin * 60 * 1000;
+
+    if (now - lastSmsSentTimestamp < cooldownMs) {
+      const remainingSeconds = Math.ceil((cooldownMs - (now - lastSmsSentTimestamp)) / 1000);
+      return res.status(429).json({
+        success: false,
+        message: `Cooldown active. Please wait ${remainingSeconds}s before sending another SMS.`
+      });
+    }
+
+    // 4. Generate the demonstration alert message
+    const message = "FloodGuard AI ALERT: HIGH flood risk detected in your monitored area. Please avoid flooded roads and follow local authority instructions. This is a DEMONSTRATION alert.";
+
+    // 5. Dispatch SMS via Service
+    const smsResult = await sendSms({ phone: demoPhone, message });
+
+    if (smsResult.success) {
+      // Update cooldown only on successful acceptance
+      lastSmsSentTimestamp = now;
+      return res.status(200).json({
+        success: true,
+        message: "Test alert triggered successfully.",
+        sms: smsResult
+      });
+    } else {
+      // Do not update cooldown on failure so the user can retry
+      return res.status(400).json({
+        success: false,
+        message: smsResult.error || "SMS provider failed to deliver the message.",
+        sms: smsResult
+      });
+    }
+
+  } catch (err) {
+    console.error("Test alert endpoint error:", err);
+    return res.status(500).json({
+      success: false,
+      message: "Internal server error triggering test alert.",
+      error: err.message
+    });
+  }
+});
+
+// --------------------------------------------------
+// Temporary Twilio Diagnostic Endpoint
+// --------------------------------------------------
+app.get("/api/alerts/twilio-status/:messageSid", async (req, res) => {
+  try {
+    // 1. Only allow this diagnostic endpoint when DEMO_ALERT_MODE=true
+    if (process.env.DEMO_ALERT_MODE !== "true") {
+      return res.status(403).json({
+        success: false,
+        message: "Access Denied: Diagnostic endpoints are disabled."
+      });
+    }
+
+    const { messageSid } = req.params;
+
+    // 2. Validate that messageSid begins with "SM"
+    if (!messageSid || typeof messageSid !== "string" || !messageSid.startsWith("SM")) {
+      return res.status(400).json({
+        success: false,
+        message: "Invalid Message SID: must start with 'SM'."
+      });
+    }
+
+    const accountSid = process.env.TWILIO_ACCOUNT_SID;
+    const authToken = process.env.TWILIO_AUTH_TOKEN;
+
+    if (!accountSid || !authToken) {
+      return res.status(500).json({
+        success: false,
+        message: "Twilio credentials are not configured on the server."
+      });
+    }
+
+    const twilio = require("twilio");
+    const client = twilio(accountSid, authToken);
+
+    const message = await client.messages(messageSid).fetch();
+
+    // 3. Return ONLY safe diagnostic information (no tokens, Account SID or phone numbers)
+    return res.status(200).json({
+      success: true,
+      sid: message.sid,
+      status: message.status,
+      errorCode: message.errorCode,
+      errorMessage: message.errorMessage,
+      dateCreated: message.dateCreated,
+      dateSent: message.dateSent,
+      dateUpdated: message.dateUpdated
+    });
+
+  } catch (error) {
+    console.error("Twilio diagnostic fetch error:", error);
+    return res.status(500).json({
+      success: false,
+      message: "Failed to query Twilio status.",
+      error: error.message,
+      errorCode: error.code || null
+    });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`[SERVER] Running from: ${__dirname}`);
   console.log(
     `Phase 10 Data Fusion server running on port ${PORT}`
   );
-});
+});
